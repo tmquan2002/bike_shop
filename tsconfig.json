@@ -21,6 +21,7 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
+  "extends": "./tsconfig-user.json",
   "include": [
     "src"
   ]
