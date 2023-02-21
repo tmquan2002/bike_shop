@@ -1,0 +1,86 @@
+.neumo-button {
+  border: none;
+  height: 45px !important;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 12.5px;
+}
+.neumo-button.light:not(.highlighted) .image-wrapper > * {
+  fill: black;
+  color: black;
+}
+.neumo-button.light:not(.highlighted) .label {
+  color: black;
+}
+.neumo-button.light.highlighted .image-wrapper > * {
+  fill: white;
+  color: white;
+}
+.neumo-button.light.highlighted .label {
+  color: white;
+}
+.neumo-button.light.raised.highlighted {
+  box-shadow: 2px 2px 10px #d42a2f40;
+  background-color: 2 #e8595d;
+}
+.neumo-button.light.raised:not(.highlighted) {
+  box-shadow: 2px 2px 10px #00000040;
+  background-color: white;
+}
+.neumo-button.dark .image-wrapper > * {
+  fill: white;
+  color: white;
+}
+.neumo-button.dark.raised.highlighted {
+  box-shadow: 2px 2px 10px #7c1c1f;
+  background-color: #c14f53;
+}
+.neumo-button.dark.raised:not(.highlighted) {
+  box-shadow: 2px 2px 10px #00000050;
+  background-color: #5e5e5e;
+}
+.neumo-button.circular {
+  border-radius: 50%;
+}
+.neumo-button.rectangular {
+  border-radius: 10px;
+}
+.neumo-button:not(.raised) {
+  background-color: transparent;
+}
+.neumo-button:not(.raised):hover {
+  background-color: #e8e8e8;
+}
+.neumo-button.with-left-icon.neumo-button:not(.with-right-icon) .label {
+  padding: 0 0 0 15px;
+}
+.neumo-button.with-right-icon.neumo-button:not(.with-left-icon) .label {
+  padding: 0 15px 0 0;
+}
+.neumo-button.with-left-icon.neumo-button.with-right-icon .label {
+  padding: 0;
+}
+.neumo-button:not(.with-label) {
+  width: 45px;
+}
+.neumo-button .image-wrapper {
+  height: 20px;
+  width: 20px;
+}
+.neumo-button .image-wrapper.chevron {
+  width: 10px;
+}
+.neumo-button .image-wrapper.chevron.left {
+  margin: 0 10px 0 0;
+}
+.neumo-button .image-wrapper.chevron.right {
+  margin: 0 0 0 10px;
+}
+.neumo-button .label {
+  font-size: 20px;
+  line-height: 20px;
+}
+.neumo-button.raised .label {
+  font-weight: bold;
+}
