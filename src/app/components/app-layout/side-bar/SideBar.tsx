@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid } from 'semantic-ui-react';
 import './SideBar.css';
 import { ReactComponent as CustomerIcon } from '../../../assets/svgs/customer_icon.svg';
-import { ReactComponent as Envelope } from '../../../assets/svgs/envelope_icon.svg';
+import { ReactComponent as StaffIcon } from '../../../assets/svgs/staff_icon.svg';
 import { ReactComponent as BoxIcon } from '../../../assets/svgs/box_icon.svg';
 import NeumoButton from '../../neumo-button/NeumoButton';
 import { useLocation } from 'react-router-dom';
@@ -23,7 +23,7 @@ const SideBar: React.FC = () => {
             shade={location === '/staff' ? 'light' : 'dark'}
             raised
             navLink={location === '/staff' ? undefined : '/staff'}
-            Icon={<BoxIcon />}
+            Icon={<StaffIcon />}
           />
           {/* <NeumoButton
             shade="dark"
@@ -35,7 +35,7 @@ const SideBar: React.FC = () => {
             shade={location === '/product' ? 'light' : 'dark'}
             raised
             navLink={location === '/product' ? undefined : '/product'}
-            Icon={<Envelope />}
+            Icon={<BoxIcon />}
           />
         </Grid.Column>
       </Grid>

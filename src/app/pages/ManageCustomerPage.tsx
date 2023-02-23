@@ -2,6 +2,7 @@ import React from 'react';
 import AppLayout from '../components/app-layout';
 import DataTable, { ColumnType } from '../components/data-table/index';
 import customerMocks from '../assets/mocks/customers.json'
+import { usaStateConverter } from '../../app/utils/helpers';
 
 interface Customer {
   id: number;
@@ -25,7 +26,7 @@ const data: Customer[] = customerMocks.map((row) => ({
   fullName: row.firstName + ' ' + row.lastName,
   phone: row.phone,
   email: row.email,
-  address: row.street + ' ' + row.city + ' ' + row.state,
+  address: row.street + ', ' + row.city + ', ' + usaStateConverter(row.state),
   zipCode: row.zipCode
 }))
 

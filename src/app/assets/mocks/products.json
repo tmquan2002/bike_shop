@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "name": "Trek 820 - 2016",
+        "brand": "Trek",
+        "category": "Mountain Bikes",
+        "modelYear": 2016,
+        "listPrice": 379.99
+    },
+    {
+        "id": 2,
+        "name": "Ritchey Timberwolf Frameset - 2016",
+        "brand": "Ritchey",
+        "category": "Mountain Bikes",
+        "modelYear": 2016,
+        "listPrice": 749.99
+    },
+    {
+        "id": 1,
+        "name": "Surly Wednesday Frameset - 2016",
+        "brand": "Surly",
+        "category": "Mountain Bikes",
+        "modelYear": 2016,
+        "listPrice": 999.99
+    },
+    {
+        "id": 1,
+        "name": "Trek Fuel EX 8 29 - 2016",
+        "brand": "Trek",
+        "category": "Mountain Bikes",
+        "modelYear": 2016,
+        "listPrice": 2899.99
+    }
+]
