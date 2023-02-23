@@ -3,7 +3,7 @@ import { Grid } from 'semantic-ui-react';
 import './TopBar.css';
 import { ReactComponent as SidebarIcon } from '../../../assets/svgs/sidebar_icon.svg';
 import { ReactComponent as DashboardIcon } from '../../../assets/svgs/dashboard_icon.svg';
-import NeumoButton from '../neumo-button/NeumoButton';
+import NeumoButton from '../../neumo-button/NeumoButton';
 
 const TopBar: React.FC = () => {
   return (
@@ -11,7 +11,7 @@ const TopBar: React.FC = () => {
       <Grid columns={3} className="tight">
         <Grid verticalAlign="middle">
           <Grid.Column className="spaced-content">
-            <NeumoButton raised Icon={<SidebarIcon />}></NeumoButton>
+            <NeumoButton raised navLink='/' Icon={<SidebarIcon />}></NeumoButton>
           </Grid.Column>
         </Grid>
         <Grid centered verticalAlign="middle">

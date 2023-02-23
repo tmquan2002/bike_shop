@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "firstName": "Fabiola",
+        "lastName": "Jackson",
+        "email": "fabiola.jackson@bikes.shop",
+        "phone": "(831) 555-5554",
+        "active": 1,
+        "store": {
+            "id": 1,
+            "name": "Santa Cruz Bikes",
+            "phone": "(831) 476-4321",
+            "email": "santacruz@bikes.shop",
+            "street": "3700 Portola Drive",
+            "city": "Santa Cruz",
+            "state": "CA",
+            "zipCode": "95060"
+        }
+    },
+    {
+        "id": 2,
+        "firstName": "Mireya",
+        "lastName": "Copeland",
+        "email": "mireya.copeland@bikes.shop",
+        "phone": "(831) 555-5555",
+        "active": 1,
+        "store": {
+            "id": 1,
+            "name": "Santa Cruz Bikes",
+            "phone": "(831) 476-4321",
+            "email": "santacruz@bikes.shop",
+            "street": "3700 Portola Drive",
+            "city": "Santa Cruz",
+            "state": "CA",
+            "zipCode": "95060"
+        },
+        "manager": {
+            "id": 1,
+            "firstName": "Fabiola",
+            "lastName": "Jackson",
+            "email": "fabiola.jackson@bikes.shop",
+            "phone": "(831) 555-5554",
+            "active": 1,
+            "store": {
+                "id": 1,
+                "name": "Santa Cruz Bikes",
+                "phone": "(831) 476-4321",
+                "email": "santacruz@bikes.shop",
+                "street": "3700 Portola Drive",
+                "city": "Santa Cruz",
+                "state": "CA",
+                "zipCode": "95060"
+            }
+        }
+    }
+]

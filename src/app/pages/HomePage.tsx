@@ -3,7 +3,7 @@ import AppLayout from '../components/app-layout';
 
 const HomePage: React.FC = () => {
   return (
-    <AppLayout children='testing' routerPath='home' />
+    <AppLayout children='home' routerPath='home' />
   );
 };
 

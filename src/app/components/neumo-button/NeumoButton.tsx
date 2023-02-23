@@ -3,7 +3,7 @@ import './NeumoButton.css';
 import cn from 'classnames';
 import ChevronIcon, {
   ChevronDirection,
-} from '../../../assets/svgs/chevron/chevron_icon';
+} from '../../assets/svgs/chevron/chevron_icon';
 import { NavLink } from 'react-router-dom';
 
 interface NeumoButtonProps {

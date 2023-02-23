@@ -1,0 +1,23 @@
+[
+    {
+        "id" : 1,
+        "firstName" : "Debra",
+        "lastName" : "Burks",
+        "email" : "debra.burks@yahoo.com",
+        "street" : "9273 Thorne Ave.",
+        "city" : "Orchard Park",
+        "state" : "NY",
+        "zipCode" : "14127"
+    },
+    {
+        "id" : 2,
+        "firstName" : "Charolette",
+        "lastName" : "Rice",
+        "phone": "(916) 381-6003",
+        "email" : "charolette.rice@msn.com",
+        "street" : "107 River Dr.",
+        "city" : "Sacramento",
+        "state" : "CA",
+        "zipCode" : "95820"
+    }
+]
