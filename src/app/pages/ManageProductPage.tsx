@@ -13,12 +13,11 @@ interface Product {
 }
 
 const columns: ColumnType<Product, keyof Product>[] = [
-  { key: 'id', header: 'ID' },
   { key: 'name', header: 'Name' },
   { key: 'brand', header: 'Brand' },
   { key: 'category', header: 'Category' },
   { key: 'modelYear', header: 'Model Year' },
-  { key: 'listPrice', header: 'List Price' }
+  { key: 'listPrice', header: 'List Price (USD)' }
 ]
 const data: Product[] = productMocks.map((row) => ({
   id: row.id,
@@ -29,7 +28,7 @@ const data: Product[] = productMocks.map((row) => ({
   listPrice: row.listPrice,
 }))
 
-const productTable = <DataTable columns={columns} data={data} />
+const productTable = <DataTable columns={columns} data={data} pagination/>
 const ManageProductPage: React.FC = () => {
   return (
     <AppLayout children={productTable} routerPath='staff' />

@@ -14,7 +14,6 @@ interface Staff {
 }
 
 const columns: ColumnType<Staff, keyof Staff>[] = [
-  { key: 'id', header: 'ID' },
   { key: 'fullName', header: 'Full Name' },
   { key: 'phone', header: 'Phone' },
   { key: 'email', header: 'Email' },

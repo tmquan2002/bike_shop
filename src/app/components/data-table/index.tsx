@@ -1,37 +1,61 @@
-import { Table } from "semantic-ui-react";
+import { useEffect, useState } from "react";
+import { Pagination, PaginationProps, Table } from "semantic-ui-react";
 
-export type ColumnType<T, K extends keyof T> = {
+export interface ColumnType<T, K extends keyof T> {
     key: K;
     header: string;
     width?: number;
 }
 
-type TableProps<T, K extends keyof T> = {
+interface TableProps<T, K extends keyof T> {
     data: Array<T>;
     columns: Array<ColumnType<T, K>>;
+    pagination?: boolean;
 }
 
-const DataTable = <T, K extends keyof T>({ data, columns }: TableProps<T, K>): JSX.Element => {
+const DataTable = <T, K extends keyof T>({ data, columns, pagination }: TableProps<T, K>): JSX.Element => {
+    const [currentPage, setCurrentPage] = useState<number>(1);
+    const [pageData, setPageData] = useState(data)
+    const pageSize = 2;
+
+    const totalItems = data.length;
+    const totalPages = Math.ceil(totalItems / pageSize)
+
+    const handlePageChange = (event: React.MouseEvent<HTMLAnchorElement>, data: PaginationProps) => {
+        setCurrentPage(data.activePage as number)
+    }
+
+    useEffect(() => {
+        const startIndex = (currentPage - 1) * pageSize;
+        const endIndex = startIndex + pageSize;
+        setPageData(pagination ? data.slice(startIndex, endIndex) : data);
+    }, [currentPage, data, pagination]);
+
     return (
         <>
-            <Table celled padded>
+            <Table basic='very'>
                 <Table.Header>
                     <Table.Row>
+                        <Table.HeaderCell>#</Table.HeaderCell>
                         {columns.map((c, index) => (
                             <Table.HeaderCell key={index}>{c.header}</Table.HeaderCell>
                         ))}
                     </Table.Row>
                 </Table.Header>
                 <Table.Body>
-                    {data.map((d, index) => (
+                    {pageData.map((d, index) => (
                         <Table.Row key={index}>
+                            <Table.Cell>{index + 1}</Table.Cell>
                             {columns.map((c, index2) => (
-                                <Table.Cell key={index2}>{JSON.stringify(d[c.key])}</Table.Cell>
+                                <Table.Cell key={index2}>{d[c.key] as React.ReactNode}</Table.Cell>
                             ))}
                         </Table.Row>
                     ))}
                 </Table.Body>
             </Table>
+            {pagination && totalPages !== 1 &&
+                <Pagination totalPages={totalPages} activePage={currentPage} onPageChange={handlePageChange} pointing secondary />
+            }
         </>
     )
 }

@@ -1,8 +1,8 @@
 import React from 'react';
-import AppLayout from '../components/app-layout';
-import DataTable, { ColumnType } from '../components/data-table/index';
-import customerMocks from '../assets/mocks/customers.json'
-import { usaStateConverter } from '../../app/utils/helpers';
+import AppLayout from '../../components/app-layout';
+import DataTable, { ColumnType } from '../../components/data-table/index';
+import customerMocks from '../../assets/mocks/customers.json'
+import { usaStateConverter } from '../../utils/helpers';
 
 interface Customer {
   id: number;
@@ -29,7 +29,7 @@ const data: Customer[] = customerMocks.map((row) => ({
   zipCode: row.zipCode
 }))
 
-const customerTable = <DataTable columns={columns} data={data}/>
+const customerTable = <DataTable columns={columns} data={data} />
 
 const ManageCustomerPage: React.FC = () => {
   return (
