@@ -29,7 +29,7 @@ const data: Customer[] = customerMocks.map((row) => ({
   zipCode: row.zipCode
 }))
 
-const customerTable = <DataTable columns={columns} data={data}/>
+const customerTable = <DataTable columns={columns} data={data} pagination/>
 
 const ManageCustomerPage: React.FC = () => {
   return (

@@ -1,0 +1,30 @@
+[
+    {
+       "id":1,
+       "name":"Children Bicycles"
+    },
+    {
+       "id":2,
+       "name":"Comfort Bicycles"
+    },
+    {
+       "id":3,
+       "name":"Cruisers Bicycles"
+    },
+    {
+       "id":4,
+       "name":"Cyclocross Bicycles"
+    },
+    {
+       "id":5,
+       "name":"Electric Bikes"
+    },
+    {
+       "id":6,
+       "name":"Mountain Bikes"
+    },
+    {
+       "id":7,
+       "name":"Road Bikes"
+    }
+ ]

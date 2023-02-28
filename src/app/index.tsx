@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import ManageCustomerPage from './pages/ManageCustomerPage';
-import ManageProductPage from './pages/ManageProductPage';
+import ManageProductPage from './pages/product/index';
 import ManageStaffPage from './pages/ManageStaffPage';
 import PageNotFound from './pages/PageNotFound';
 

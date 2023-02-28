@@ -1,0 +1,38 @@
+[
+    {
+       "id":1,
+       "name":"Electra"
+    },
+    {
+       "id":2,
+       "name":"Haro"
+    },
+    {
+       "id":3,
+       "name":"Heller"
+    },
+    {
+       "id":4,
+       "name":"Pure Cycles"
+    },
+    {
+       "id":5,
+       "name":"Ritchey"
+    },
+    {
+       "id":6,
+       "name":"Strider"
+    },
+    {
+       "id":7,
+       "name":"Sun Bicycles"
+    },
+    {
+       "id":8,
+       "name":"Surly"
+    },
+    {
+       "id":9,
+       "name":"Trek"
+    }
+ ]

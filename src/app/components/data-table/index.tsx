@@ -16,7 +16,7 @@ interface TableProps<T, K extends keyof T> {
 const DataTable = <T, K extends keyof T>({ data, columns, pagination }: TableProps<T, K>): JSX.Element => {
     const [currentPage, setCurrentPage] = useState<number>(1);
     const [pageData, setPageData] = useState(data)
-    const pageSize = 2;
+    const pageSize = 10;
 
     const totalItems = data.length;
     const totalPages = Math.ceil(totalItems / pageSize)
@@ -25,9 +25,10 @@ const DataTable = <T, K extends keyof T>({ data, columns, pagination }: TablePro
         setCurrentPage(data.activePage as number)
     }
 
+    const startIndex = (currentPage - 1) * pageSize;
+    const endIndex = startIndex + pageSize;
+
     useEffect(() => {
-        const startIndex = (currentPage - 1) * pageSize;
-        const endIndex = startIndex + pageSize;
         setPageData(pagination ? data.slice(startIndex, endIndex) : data);
     }, [currentPage, data, pagination]);
 
@@ -45,7 +46,7 @@ const DataTable = <T, K extends keyof T>({ data, columns, pagination }: TablePro
                 <Table.Body>
                     {pageData.map((d, index) => (
                         <Table.Row key={index}>
-                            <Table.Cell>{index + 1}</Table.Cell>
+                            <Table.Cell>{index + startIndex + 1}</Table.Cell>
                             {columns.map((c, index2) => (
                                 <Table.Cell key={index2}>{d[c.key] as React.ReactNode}</Table.Cell>
                             ))}

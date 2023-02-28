@@ -1,7 +1,6 @@
-import DataTable, { ColumnType } from '../components/data-table/index';
+import DataTable, { ColumnType } from '../../components/data-table/index';
 import React from 'react';
-import AppLayout from '../components/app-layout';
-import productMocks from '../assets/mocks/products.json'
+import productMocks from '../../assets/mocks/products.json'
 
 interface Product {
   id: number;
@@ -28,11 +27,10 @@ const data: Product[] = productMocks.map((row) => ({
   listPrice: row.listPrice,
 }))
 
-const productTable = <DataTable columns={columns} data={data} pagination/>
-const ManageProductPage: React.FC = () => {
+const ProductTable: React.FC = () => {
   return (
-    <AppLayout children={productTable} routerPath='staff' />
+    <DataTable columns={columns} data={data} pagination />
   );
 };
 
-export default ManageProductPage;
+export default ProductTable;
