@@ -1,11 +1,9 @@
-import React, { Dispatch, SetStateAction } from 'react';
-import AppLayout from '../../components/app-layout';
+import { Dispatch, SetStateAction } from 'react';
 import DataTable, { ColumnType } from '../../components/data-table/index';
 import orderMocks from '../../assets/mocks/orders.json'
-import { usaStateConverter } from '../../utils/helpers';
 import { Button, Icon } from 'semantic-ui-react';
 
-interface OrderItem {
+interface OrderItemType {
   id: number;
   product: string;
   quantity: number;
@@ -19,7 +17,7 @@ interface OrderItemProps {
   setCurrentItemID: Dispatch<SetStateAction<number>>
 }
 
-const columns: ColumnType<OrderItem, keyof OrderItem>[] = [
+const columns: ColumnType<OrderItemType, keyof OrderItemType>[] = [
   { key: 'product', header: 'Product' },
   { key: 'quantity', header: 'Quantity' },
   { key: 'listPrice', header: 'List Price' },
