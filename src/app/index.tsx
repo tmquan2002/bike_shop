@@ -4,8 +4,8 @@ import HomePage from './pages/HomePage';
 import ManageCustomerPage from './pages/ManageCustomerPage';
 import ManageProductPage from './pages/product/index';
 import PageNotFound from './pages/PageNotFound';
-import ManageOrderPage from './pages/order/OrderPage';
 import ManageStorePage from './pages/store';
+import ManageOrderPage from './pages/order';
 
 const App: React.FC = () => {
   return (

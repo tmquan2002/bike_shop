@@ -25,7 +25,6 @@ h1 {
     left: 75px;
     padding: 40px;
     width: 95%;
-    text-align: right;
 }
 
 .content-floated-right>* {

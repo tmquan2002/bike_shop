@@ -1,9 +1,9 @@
-import React from 'react';
-import AppLayout from '../../components/app-layout';
+import React, { Dispatch, SetStateAction } from 'react';
 import DataTable, { ColumnType } from '../../components/data-table/index';
 import orderMocks from '../../assets/mocks/orders.json'
 import { orderStateConverter } from '../../../app/utils/helpers';
 import { OrderStatus } from 'app/utils/enum';
+import { Button } from 'semantic-ui-react';
 
 interface Order {
   id: number;
@@ -14,6 +14,12 @@ interface Order {
   shippedDate?: string;
   store: string;
   staff: string;
+  detail: React.ReactNode;
+}
+
+interface OrderPageProps {
+  setCurrentView: Dispatch<SetStateAction<string>>,
+  setCurrentItemID: Dispatch<SetStateAction<number>>
 }
 
 const columns: ColumnType<Order, keyof Order>[] = [
@@ -23,25 +29,32 @@ const columns: ColumnType<Order, keyof Order>[] = [
   { key: 'requiredDate', header: 'Required Date' },
   { key: 'shippedDate', header: 'Shipped Date' },
   { key: 'store', header: 'Store' },
-  { key: 'staff', header: 'Staff' }
+  { key: 'staff', header: 'Staff' },
+  { key: 'detail', header: '' }
 ]
-const data: Order[] = orderMocks.map((row) => ({
-  id: row.id,
-  customer: row.customer,
-  status: orderStateConverter(row.status),
-  orderDate: row.orderDate,
-  requiredDate: row.requiredDate,
-  shippedDate: row.shippedDate,
-  store: row.store,
-  staff: row.staff
-}))
 
-const orderTable = <DataTable columns={columns} data={data} pagination/>
+const OrderPage = ({ setCurrentView, setCurrentItemID }: OrderPageProps): JSX.Element => {
 
-const ManageOrderPage: React.FC = () => {
+  const handleDetail = (id: number) => {
+    setCurrentItemID(id)
+    setCurrentView('items')
+  }
+
+  const data: Order[] = orderMocks.map((row) => ({
+    id: row.id,
+    customer: row.customer,
+    status: orderStateConverter(row.status),
+    orderDate: row.orderDate,
+    requiredDate: row.requiredDate,
+    shippedDate: row.shippedDate,
+    store: row.store,
+    staff: row.staff,
+    detail: <Button color='grey' onClick={() => handleDetail(row.id)}>Detail</Button>
+  }))
+
   return (
-    <AppLayout children={orderTable} routerPath='order' />
+    <DataTable columns={columns} data={data} pagination />
   );
 };
 
-export default ManageOrderPage;
+export default OrderPage;

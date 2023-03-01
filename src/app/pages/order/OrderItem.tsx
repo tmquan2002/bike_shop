@@ -1,40 +1,52 @@
-import React from 'react';
+import React, { Dispatch, SetStateAction } from 'react';
 import AppLayout from '../../components/app-layout';
 import DataTable, { ColumnType } from '../../components/data-table/index';
-import customerMocks from '../../assets/mocks/customers.json'
+import orderMocks from '../../assets/mocks/orders.json'
 import { usaStateConverter } from '../../utils/helpers';
+import { Button, Icon } from 'semantic-ui-react';
 
-interface Customer {
+interface OrderItem {
   id: number;
-  fullName: string;
-  phone?: string;
-  email: string;
-  address: string;
-  zipCode: string;
+  product: string;
+  quantity: number;
+  listPrice: number;
+  discount: number;
 }
 
-const columns: ColumnType<Customer, keyof Customer>[] = [
-  { key: 'fullName', header: 'Full Name' },
-  { key: 'phone', header: 'Phone' },
-  { key: 'email', header: 'Email' },
-  { key: 'address', header: 'Address' },
-  { key: 'zipCode', header: 'Zipcode' }
+interface OrderItemProps {
+  id: number,
+  setCurrentView: Dispatch<SetStateAction<string>>,
+  setCurrentItemID: Dispatch<SetStateAction<number>>
+}
+
+const columns: ColumnType<OrderItem, keyof OrderItem>[] = [
+  { key: 'product', header: 'Product' },
+  { key: 'quantity', header: 'Quantity' },
+  { key: 'listPrice', header: 'List Price' },
+  { key: 'discount', header: 'Discount' }
 ]
-const data: Customer[] = customerMocks.map((row) => ({
-  id: row.id,
-  fullName: row.firstName + ' ' + row.lastName,
-  phone: row.phone,
-  email: row.email,
-  address: row.street + ', ' + row.city + ', ' + usaStateConverter(row.state),
-  zipCode: row.zipCode
-}))
 
-const customerTable = <DataTable columns={columns} data={data} />
-
-const ManageCustomerPage: React.FC = () => {
+const OrderItem = ({ id, setCurrentView, setCurrentItemID }: OrderItemProps): JSX.Element => {
+  const index = orderMocks.findIndex(item => {
+    return item.id === id;
+  });
+  const data = index !== -1 ? orderMocks[index].detail : []
+  const node = index !== -1 ? <DataTable columns={columns} data={data} /> : <div>Cannot found any order with this ID</div>
+  const backToOrderList = (id: number) => {
+    setCurrentItemID(id)
+    setCurrentView('order')
+  }
   return (
-    <AppLayout children={customerTable} routerPath='customer' />
+    <>
+      <Button animated onClick={() => backToOrderList(1)}>
+        <Button.Content visible>Back</Button.Content>
+        <Button.Content hidden>
+          <Icon name='arrow left' />
+        </Button.Content>
+      </Button>
+      {node}
+    </>
   );
 };
 
-export default ManageCustomerPage;
+export default OrderItem;
