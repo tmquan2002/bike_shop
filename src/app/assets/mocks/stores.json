@@ -1,0 +1,4733 @@
+[
+    {
+        "id": 1,
+        "name": "Santa Cruz Bikes",
+        "phone": "(831) 476-4321",
+        "email": "santacruz@bikes.shop",
+        "street": "3700 Portola Drive",
+        "city": "Santa Cruz",
+        "state": "CA",
+        "zipCode": "95060",
+        "detail": [
+            {
+                "id": 1,
+                "name": "Trek 820 - 2016",
+                "quantity": 27
+            },
+            {
+                "id": 2,
+                "name": "Ritchey Timberwolf Frameset - 2016",
+                "quantity": 5
+            },
+            {
+                "id": 3,
+                "name": "Surly Wednesday Frameset - 2016",
+                "quantity": 6
+            },
+            {
+                "id": 4,
+                "name": "Trek Fuel EX 8 29 - 2016",
+                "quantity": 23
+            },
+            {
+                "id": 5,
+                "name": "Heller Shagamaw Frame - 2016",
+                "quantity": 22
+            },
+            {
+                "id": 6,
+                "name": "Surly Ice Cream Truck Frameset - 2016",
+                "quantity": 0
+            },
+            {
+                "id": 7,
+                "name": "Trek Slash 8 27.5 - 2016",
+                "quantity": 8
+            },
+            {
+                "id": 8,
+                "name": "Trek Remedy 29 Carbon Frameset - 2016",
+                "quantity": 0
+            },
+            {
+                "id": 9,
+                "name": "Trek Conduit+ - 2016",
+                "quantity": 11
+            },
+            {
+                "id": 10,
+                "name": "Surly Straggler - 2016",
+                "quantity": 15
+            },
+            {
+                "id": 11,
+                "name": "Surly Straggler 650b - 2016",
+                "quantity": 8
+            },
+            {
+                "id": 12,
+                "name": "Electra Townie Original 21D - 2016",
+                "quantity": 16
+            },
+            {
+                "id": 13,
+                "name": "Electra Cruiser 1 (24-Inch) - 2016",
+                "quantity": 13
+            },
+            {
+                "id": 14,
+                "name": "Electra Girl's Hawaii 1 (16-inch) - 2015\/2016",
+                "quantity": 8
+            },
+            {
+                "id": 15,
+                "name": "Electra Moto 1 - 2016",
+                "quantity": 3
+            },
+            {
+                "id": 16,
+                "name": "Electra Townie Original 7D EQ - 2016",
+                "quantity": 4
+            },
+            {
+                "id": 17,
+                "name": "Pure Cycles Vine 8-Speed - 2016",
+                "quantity": 2
+            },
+            {
+                "id": 18,
+                "name": "Pure Cycles Western 3-Speed - Women's - 2015\/2016",
+                "quantity": 16
+            },
+            {
+                "id": 19,
+                "name": "Pure Cycles William 3-Speed - 2016",
+                "quantity": 4
+            },
+            {
+                "id": 20,
+                "name": "Electra Townie Original 7D EQ - Women's - 2016",
+                "quantity": 26
+            },
+            {
+                "id": 21,
+                "name": "Electra Cruiser 1 (24-Inch) - 2016",
+                "quantity": 24
+            },
+            {
+                "id": 22,
+                "name": "Electra Girl's Hawaii 1 (16-inch) - 2015\/2016",
+                "quantity": 29
+            },
+            {
+                "id": 23,
+                "name": "Electra Girl's Hawaii 1 (20-inch) - 2015\/2016",
+                "quantity": 9
+            },
+            {
+                "id": 24,
+                "name": "Electra Townie Original 21D - 2016",
+                "quantity": 10
+            },
+            {
+                "id": 25,
+                "name": "Electra Townie Original 7D - 2015\/2016",
+                "quantity": 10
+            },
+            {
+                "id": 26,
+                "name": "Electra Townie Original 7D EQ - 2016",
+                "quantity": 16
+            },
+            {
+                "id": 27,
+                "name": "Surly Big Dummy Frameset - 2017",
+                "quantity": 21
+            },
+            {
+                "id": 28,
+                "name": "Surly Karate Monkey 27.5+ Frameset - 2017",
+                "quantity": 20
+            },
+            {
+                "id": 29,
+                "name": "Trek X-Caliber 8 - 2017",
+                "quantity": 13
+            },
+            {
+                "id": 30,
+                "name": "Surly Ice Cream Truck Frameset - 2017",
+                "quantity": 30
+            },
+            {
+                "id": 31,
+                "name": "Surly Wednesday - 2017",
+                "quantity": 2
+            },
+            {
+                "id": 32,
+                "name": "Trek Farley Alloy Frameset - 2017",
+                "quantity": 0
+            },
+            {
+                "id": 33,
+                "name": "Surly Wednesday Frameset - 2017",
+                "quantity": 10
+            },
+            {
+                "id": 34,
+                "name": "Trek Session DH 27.5 Carbon Frameset - 2017",
+                "quantity": 2
+            },
+            {
+                "id": 35,
+                "name": "Sun Bicycles Spider 3i - 2017",
+                "quantity": 18
+            },
+            {
+                "id": 36,
+                "name": "Surly Troll Frameset - 2017",
+                "quantity": 26
+            },
+            {
+                "id": 37,
+                "name": "Haro Flightline One ST - 2017",
+                "quantity": 12
+            },
+            {
+                "id": 38,
+                "name": "Haro Flightline Two 26 Plus - 2017",
+                "quantity": 13
+            },
+            {
+                "id": 39,
+                "name": "Trek Stache 5 - 2017",
+                "quantity": 2
+            },
+            {
+                "id": 40,
+                "name": "Trek Fuel EX 9.8 29 - 2017",
+                "quantity": 24
+            },
+            {
+                "id": 41,
+                "name": "Haro Shift R3 - 2017",
+                "quantity": 10
+            },
+            {
+                "id": 42,
+                "name": "Trek Fuel EX 5 27.5 Plus - 2017",
+                "quantity": 0
+            },
+            {
+                "id": 43,
+                "name": "Trek Fuel EX 9.8 27.5 Plus - 2017",
+                "quantity": 2
+            },
+            {
+                "id": 44,
+                "name": "Haro SR 1.1 - 2017",
+                "quantity": 1
+            },
+            {
+                "id": 45,
+                "name": "Haro SR 1.2 - 2017",
+                "quantity": 15
+            },
+            {
+                "id": 46,
+                "name": "Haro SR 1.3 - 2017",
+                "quantity": 19
+            },
+            {
+                "id": 47,
+                "name": "Trek Remedy 9.8 - 2017",
+                "quantity": 21
+            },
+            {
+                "id": 48,
+                "name": "Trek Emonda S 4 - 2017",
+                "quantity": 5
+            },
+            {
+                "id": 49,
+                "name": "Trek Domane SL 6 - 2017",
+                "quantity": 8
+            },
+            {
+                "id": 50,
+                "name": "Trek Silque SLR 7 Women's - 2017",
+                "quantity": 29
+            },
+            {
+                "id": 51,
+                "name": "Trek Silque SLR 8 Women's - 2017",
+                "quantity": 2
+            },
+            {
+                "id": 52,
+                "name": "Surly Steamroller - 2017",
+                "quantity": 18
+            },
+            {
+                "id": 53,
+                "name": "Surly Ogre Frameset - 2017",
+                "quantity": 17
+            },
+            {
+                "id": 54,
+                "name": "Trek Domane SL Disc Frameset - 2017",
+                "quantity": 11
+            },
+            {
+                "id": 55,
+                "name": "Trek Domane S 6 - 2017",
+                "quantity": 11
+            },
+            {
+                "id": 56,
+                "name": "Trek Domane SLR 6 Disc - 2017",
+                "quantity": 15
+            },
+            {
+                "id": 57,
+                "name": "Trek Emonda S 5 - 2017",
+                "quantity": 1
+            },
+            {
+                "id": 58,
+                "name": "Trek Madone 9.2 - 2017",
+                "quantity": 1
+            },
+            {
+                "id": 59,
+                "name": "Trek Domane S 5 Disc - 2017",
+                "quantity": 22
+            },
+            {
+                "id": 60,
+                "name": "Sun Bicycles ElectroLite - 2017",
+                "quantity": 19
+            },
+            {
+                "id": 61,
+                "name": "Trek Powerfly 8 FS Plus - 2017",
+                "quantity": 30
+            },
+            {
+                "id": 62,
+                "name": "Trek Boone 7 - 2017",
+                "quantity": 21
+            },
+            {
+                "id": 63,
+                "name": "Trek Boone Race Shop Limited - 2017",
+                "quantity": 4
+            },
+            {
+                "id": 64,
+                "name": "Electra Townie Original 7D - 2017",
+                "quantity": 30
+            },
+            {
+                "id": 65,
+                "name": "Sun Bicycles Lil Bolt Type-R - 2017",
+                "quantity": 10
+            },
+            {
+                "id": 66,
+                "name": "Sun Bicycles Revolutions 24 - 2017",
+                "quantity": 12
+            },
+            {
+                "id": 67,
+                "name": "Sun Bicycles Revolutions 24 - Girl's - 2017",
+                "quantity": 19
+            },
+            {
+                "id": 68,
+                "name": "Sun Bicycles Cruz 3 - 2017",
+                "quantity": 30
+            },
+            {
+                "id": 69,
+                "name": "Sun Bicycles Cruz 7 - 2017",
+                "quantity": 4
+            },
+            {
+                "id": 70,
+                "name": "Electra Amsterdam Original 3i - 2015\/2017",
+                "quantity": 3
+            },
+            {
+                "id": 71,
+                "name": "Sun Bicycles Atlas X-Type - 2017",
+                "quantity": 25
+            },
+            {
+                "id": 72,
+                "name": "Sun Bicycles Biscayne Tandem 7 - 2017",
+                "quantity": 9
+            },
+            {
+                "id": 73,
+                "name": "Sun Bicycles Brickell Tandem 7 - 2017",
+                "quantity": 7
+            },
+            {
+                "id": 74,
+                "name": "Electra Cruiser Lux 1 - 2017",
+                "quantity": 9
+            },
+            {
+                "id": 75,
+                "name": "Electra Cruiser Lux Fat Tire 1 Ladies - 2017",
+                "quantity": 23
+            },
+            {
+                "id": 76,
+                "name": "Electra Girl's Hawaii 1 16\" - 2017",
+                "quantity": 15
+            },
+            {
+                "id": 77,
+                "name": "Electra Glam Punk 3i Ladies' - 2017",
+                "quantity": 16
+            },
+            {
+                "id": 78,
+                "name": "Sun Bicycles Biscayne Tandem CB - 2017",
+                "quantity": 13
+            },
+            {
+                "id": 79,
+                "name": "Sun Bicycles Boardwalk (24-inch Wheels) - 2017",
+                "quantity": 13
+            },
+            {
+                "id": 80,
+                "name": "Sun Bicycles Brickell Tandem CB - 2017",
+                "quantity": 11
+            },
+            {
+                "id": 81,
+                "name": "Electra Amsterdam Fashion 7i Ladies' - 2017",
+                "quantity": 25
+            },
+            {
+                "id": 82,
+                "name": "Electra Amsterdam Original 3i Ladies' - 2017",
+                "quantity": 1
+            },
+            {
+                "id": 83,
+                "name": "Trek Boy's Kickster - 2015\/2017",
+                "quantity": 13
+            },
+            {
+                "id": 84,
+                "name": "Sun Bicycles Lil Kitt'n - 2017",
+                "quantity": 11
+            },
+            {
+                "id": 85,
+                "name": "Haro Downtown 16 - 2017",
+                "quantity": 23
+            },
+            {
+                "id": 86,
+                "name": "Trek Girl's Kickster - 2017",
+                "quantity": 19
+            },
+            {
+                "id": 87,
+                "name": "Trek Precaliber 12 Boys - 2017",
+                "quantity": 27
+            },
+            {
+                "id": 88,
+                "name": "Trek Precaliber 12 Girls - 2017",
+                "quantity": 7
+            },
+            {
+                "id": 89,
+                "name": "Trek Precaliber 16 Boys - 2017",
+                "quantity": 9
+            },
+            {
+                "id": 90,
+                "name": "Trek Precaliber 16 Girls - 2017",
+                "quantity": 4
+            },
+            {
+                "id": 91,
+                "name": "Trek Precaliber 24 (21-Speed) - Girls - 2017",
+                "quantity": 8
+            },
+            {
+                "id": 92,
+                "name": "Haro Shredder 20 - 2017",
+                "quantity": 0
+            },
+            {
+                "id": 93,
+                "name": "Haro Shredder 20 Girls - 2017",
+                "quantity": 22
+            },
+            {
+                "id": 94,
+                "name": "Haro Shredder Pro 20 - 2017",
+                "quantity": 6
+            },
+            {
+                "id": 95,
+                "name": "Electra Girl's Hawaii 1 16\" - 2017",
+                "quantity": 25
+            },
+            {
+                "id": 96,
+                "name": "Electra Moto 3i (20-inch) - Boy's - 2017",
+                "quantity": 20
+            },
+            {
+                "id": 97,
+                "name": "Electra Savannah 3i (20-inch) - Girl's - 2017",
+                "quantity": 20
+            },
+            {
+                "id": 98,
+                "name": "Electra Straight 8 3i (20-inch) - Boy's - 2017",
+                "quantity": 28
+            },
+            {
+                "id": 99,
+                "name": "Electra Sugar Skulls 1 (20-inch) - Girl's - 2017",
+                "quantity": 28
+            },
+            {
+                "id": 100,
+                "name": "Electra Townie 3i EQ (20-inch) - Boys' - 2017",
+                "quantity": 15
+            },
+            {
+                "id": 101,
+                "name": "Electra Townie 7D (20-inch) - Boys' - 2017",
+                "quantity": 17
+            },
+            {
+                "id": 102,
+                "name": "Electra Townie Original 7D - 2017",
+                "quantity": 9
+            },
+            {
+                "id": 103,
+                "name": "Sun Bicycles Streamway 3 - 2017",
+                "quantity": 13
+            },
+            {
+                "id": 104,
+                "name": "Sun Bicycles Streamway - 2017",
+                "quantity": 25
+            },
+            {
+                "id": 105,
+                "name": "Sun Bicycles Streamway 7 - 2017",
+                "quantity": 7
+            },
+            {
+                "id": 106,
+                "name": "Sun Bicycles Cruz 3 - 2017",
+                "quantity": 30
+            },
+            {
+                "id": 107,
+                "name": "Sun Bicycles Cruz 7 - 2017",
+                "quantity": 20
+            },
+            {
+                "id": 108,
+                "name": "Sun Bicycles Cruz 3 - Women's - 2017",
+                "quantity": 15
+            },
+            {
+                "id": 109,
+                "name": "Sun Bicycles Cruz 7 - Women's - 2017",
+                "quantity": 30
+            },
+            {
+                "id": 110,
+                "name": "Sun Bicycles Drifter 7 - 2017",
+                "quantity": 1
+            },
+            {
+                "id": 111,
+                "name": "Sun Bicycles Drifter 7 - Women's - 2017",
+                "quantity": 11
+            },
+            {
+                "id": 112,
+                "name": "Trek 820 - 2018",
+                "quantity": 17
+            },
+            {
+                "id": 113,
+                "name": "Trek Marlin 5 - 2018",
+                "quantity": 24
+            },
+            {
+                "id": 114,
+                "name": "Trek Marlin 6 - 2018",
+                "quantity": 3
+            },
+            {
+                "id": 115,
+                "name": "Trek Fuel EX 8 29 - 2018",
+                "quantity": 10
+            },
+            {
+                "id": 116,
+                "name": "Trek Marlin 7 - 2017\/2018",
+                "quantity": 24
+            },
+            {
+                "id": 117,
+                "name": "Trek Ticket S Frame - 2018",
+                "quantity": 15
+            },
+            {
+                "id": 118,
+                "name": "Trek X-Caliber 8 - 2018",
+                "quantity": 12
+            },
+            {
+                "id": 119,
+                "name": "Trek Kids' Neko - 2018",
+                "quantity": 17
+            },
+            {
+                "id": 120,
+                "name": "Trek Fuel EX 7 29 - 2018",
+                "quantity": 23
+            },
+            {
+                "id": 121,
+                "name": "Surly Krampus Frameset - 2018",
+                "quantity": 19
+            },
+            {
+                "id": 122,
+                "name": "Surly Troll Frameset - 2018",
+                "quantity": 22
+            },
+            {
+                "id": 123,
+                "name": "Trek Farley Carbon Frameset - 2018",
+                "quantity": 8
+            },
+            {
+                "id": 124,
+                "name": "Surly Krampus - 2018",
+                "quantity": 23
+            },
+            {
+                "id": 125,
+                "name": "Trek Kids' Dual Sport - 2018",
+                "quantity": 22
+            },
+            {
+                "id": 126,
+                "name": "Surly Big Fat Dummy Frameset - 2018",
+                "quantity": 28
+            },
+            {
+                "id": 127,
+                "name": "Surly Pack Rat Frameset - 2018",
+                "quantity": 12
+            },
+            {
+                "id": 128,
+                "name": "Surly ECR 27.5 - 2018",
+                "quantity": 11
+            },
+            {
+                "id": 129,
+                "name": "Trek X-Caliber 7 - 2018",
+                "quantity": 21
+            },
+            {
+                "id": 130,
+                "name": "Trek Stache Carbon Frameset - 2018",
+                "quantity": 22
+            },
+            {
+                "id": 131,
+                "name": "Heller Bloodhound Trail - 2018",
+                "quantity": 20
+            },
+            {
+                "id": 132,
+                "name": "Trek Procal AL Frameset - 2018",
+                "quantity": 1
+            },
+            {
+                "id": 133,
+                "name": "Trek Procaliber Frameset - 2018",
+                "quantity": 9
+            },
+            {
+                "id": 134,
+                "name": "Trek Remedy 27.5 C Frameset - 2018",
+                "quantity": 26
+            },
+            {
+                "id": 135,
+                "name": "Trek X-Caliber Frameset - 2018",
+                "quantity": 15
+            },
+            {
+                "id": 136,
+                "name": "Trek Procaliber 6 - 2018",
+                "quantity": 12
+            },
+            {
+                "id": 137,
+                "name": "Heller Shagamaw GX1 - 2018",
+                "quantity": 12
+            },
+            {
+                "id": 138,
+                "name": "Trek Fuel EX 5 Plus - 2018",
+                "quantity": 6
+            },
+            {
+                "id": 139,
+                "name": "Trek Remedy 7 27.5 - 2018",
+                "quantity": 17
+            },
+            {
+                "id": 140,
+                "name": "Trek Remedy 9.8 27.5 - 2018",
+                "quantity": 3
+            },
+            {
+                "id": 141,
+                "name": "Trek Stache 5 - 2018",
+                "quantity": 21
+            },
+            {
+                "id": 142,
+                "name": "Trek Fuel EX 8 29 XT - 2018",
+                "quantity": 22
+            },
+            {
+                "id": 143,
+                "name": "Trek Domane ALR 3 - 2018",
+                "quantity": 19
+            },
+            {
+                "id": 144,
+                "name": "Trek Domane ALR 4 Disc - 2018",
+                "quantity": 7
+            },
+            {
+                "id": 145,
+                "name": "Trek Domane ALR 5 Disc - 2018",
+                "quantity": 5
+            },
+            {
+                "id": 146,
+                "name": "Trek Domane SLR 6 - 2018",
+                "quantity": 6
+            },
+            {
+                "id": 147,
+                "name": "Trek Domane ALR 5 Gravel - 2018",
+                "quantity": 8
+            },
+            {
+                "id": 148,
+                "name": "Trek Domane SL 8 Disc - 2018",
+                "quantity": 6
+            },
+            {
+                "id": 149,
+                "name": "Trek Domane SLR 8 Disc - 2018",
+                "quantity": 1
+            },
+            {
+                "id": 150,
+                "name": "Trek Emonda SL 7 - 2018",
+                "quantity": 22
+            },
+            {
+                "id": 151,
+                "name": "Trek Domane ALR 4 Disc Women's - 2018",
+                "quantity": 24
+            },
+            {
+                "id": 152,
+                "name": "Trek Domane SL 5 Disc Women's - 2018",
+                "quantity": 12
+            },
+            {
+                "id": 153,
+                "name": "Trek Domane SL 7 Women's - 2018",
+                "quantity": 25
+            },
+            {
+                "id": 154,
+                "name": "Trek Domane SLR 6 Disc Women's - 2018",
+                "quantity": 13
+            },
+            {
+                "id": 155,
+                "name": "Trek Domane SLR 9 Disc - 2018",
+                "quantity": 8
+            },
+            {
+                "id": 156,
+                "name": "Trek Domane SL Frameset - 2018",
+                "quantity": 13
+            },
+            {
+                "id": 157,
+                "name": "Trek Domane SL Frameset Women's - 2018",
+                "quantity": 25
+            },
+            {
+                "id": 158,
+                "name": "Trek CrossRip 1 - 2018",
+                "quantity": 11
+            },
+            {
+                "id": 159,
+                "name": "Trek Emonda ALR 6 - 2018",
+                "quantity": 18
+            },
+            {
+                "id": 160,
+                "name": "Trek Emonda SLR 6 - 2018",
+                "quantity": 0
+            },
+            {
+                "id": 161,
+                "name": "Surly ECR - 2018",
+                "quantity": 17
+            },
+            {
+                "id": 162,
+                "name": "Trek Emonda SL 6 Disc - 2018",
+                "quantity": 14
+            },
+            {
+                "id": 163,
+                "name": "Surly Pack Rat - 2018",
+                "quantity": 0
+            },
+            {
+                "id": 164,
+                "name": "Surly Straggler 650b - 2018",
+                "quantity": 15
+            },
+            {
+                "id": 165,
+                "name": "Trek 1120 - 2018",
+                "quantity": 16
+            },
+            {
+                "id": 166,
+                "name": "Trek Domane AL 2 Women's - 2018",
+                "quantity": 23
+            },
+            {
+                "id": 167,
+                "name": "Surly ECR Frameset - 2018",
+                "quantity": 28
+            },
+            {
+                "id": 168,
+                "name": "Surly Straggler - 2018",
+                "quantity": 0
+            },
+            {
+                "id": 169,
+                "name": "Trek Emonda SLR 8 - 2018",
+                "quantity": 25
+            },
+            {
+                "id": 170,
+                "name": "Trek CrossRip 2 - 2018",
+                "quantity": 14
+            },
+            {
+                "id": 171,
+                "name": "Trek Domane SL 6 - 2018",
+                "quantity": 3
+            },
+            {
+                "id": 172,
+                "name": "Trek Domane ALR Disc Frameset - 2018",
+                "quantity": 3
+            },
+            {
+                "id": 173,
+                "name": "Trek Domane ALR Frameset - 2018",
+                "quantity": 2
+            },
+            {
+                "id": 174,
+                "name": "Trek Domane SLR Disc Frameset - 2018",
+                "quantity": 26
+            },
+            {
+                "id": 175,
+                "name": "Trek Domane SLR Frameset - 2018",
+                "quantity": 2
+            },
+            {
+                "id": 176,
+                "name": "Trek Madone 9 Frameset - 2018",
+                "quantity": 11
+            },
+            {
+                "id": 177,
+                "name": "Trek Domane SLR 6 Disc - 2018",
+                "quantity": 19
+            },
+            {
+                "id": 178,
+                "name": "Trek Domane AL 2 - 2018",
+                "quantity": 23
+            },
+            {
+                "id": 179,
+                "name": "Trek Domane AL 3 - 2018",
+                "quantity": 16
+            },
+            {
+                "id": 180,
+                "name": "Trek Domane AL 3 Women's - 2018",
+                "quantity": 5
+            },
+            {
+                "id": 181,
+                "name": "Trek Domane SL 5 - 2018",
+                "quantity": 19
+            },
+            {
+                "id": 182,
+                "name": "Trek Domane SL 5 Disc - 2018",
+                "quantity": 28
+            },
+            {
+                "id": 183,
+                "name": "Trek Domane SL 5 Women's - 2018",
+                "quantity": 11
+            },
+            {
+                "id": 184,
+                "name": "Trek Domane SL 6 Disc - 2018",
+                "quantity": 4
+            },
+            {
+                "id": 185,
+                "name": "Trek Conduit+ - 2018",
+                "quantity": 3
+            },
+            {
+                "id": 186,
+                "name": "Trek CrossRip+ - 2018",
+                "quantity": 1
+            },
+            {
+                "id": 187,
+                "name": "Trek Neko+ - 2018",
+                "quantity": 16
+            },
+            {
+                "id": 188,
+                "name": "Trek XM700+ Lowstep - 2018",
+                "quantity": 30
+            },
+            {
+                "id": 189,
+                "name": "Trek Lift+ Lowstep - 2018",
+                "quantity": 6
+            },
+            {
+                "id": 190,
+                "name": "Trek Dual Sport+ - 2018",
+                "quantity": 21
+            },
+            {
+                "id": 191,
+                "name": "Electra Loft Go! 8i - 2018",
+                "quantity": 21
+            },
+            {
+                "id": 192,
+                "name": "Electra Townie Go! 8i - 2017\/2018",
+                "quantity": 20
+            },
+            {
+                "id": 193,
+                "name": "Trek Lift+ - 2018",
+                "quantity": 30
+            },
+            {
+                "id": 194,
+                "name": "Trek XM700+ - 2018",
+                "quantity": 24
+            },
+            {
+                "id": 195,
+                "name": "Electra Townie Go! 8i Ladies' - 2018",
+                "quantity": 1
+            },
+            {
+                "id": 196,
+                "name": "Trek Verve+ - 2018",
+                "quantity": 26
+            },
+            {
+                "id": 197,
+                "name": "Trek Verve+ Lowstep - 2018",
+                "quantity": 22
+            },
+            {
+                "id": 198,
+                "name": "Electra Townie Commute Go! - 2018",
+                "quantity": 1
+            },
+            {
+                "id": 199,
+                "name": "Electra Townie Commute Go! Ladies' - 2018",
+                "quantity": 2
+            },
+            {
+                "id": 200,
+                "name": "Trek Powerfly 5 - 2018",
+                "quantity": 27
+            },
+            {
+                "id": 201,
+                "name": "Trek Powerfly 5 FS - 2018",
+                "quantity": 16
+            },
+            {
+                "id": 202,
+                "name": "Trek Powerfly 5 Women's - 2018",
+                "quantity": 5
+            },
+            {
+                "id": 203,
+                "name": "Trek Powerfly 7 FS - 2018",
+                "quantity": 4
+            },
+            {
+                "id": 204,
+                "name": "Trek Super Commuter+ 7 - 2018",
+                "quantity": 23
+            },
+            {
+                "id": 205,
+                "name": "Trek Super Commuter+ 8S - 2018",
+                "quantity": 9
+            },
+            {
+                "id": 206,
+                "name": "Trek Boone 5 Disc - 2018",
+                "quantity": 10
+            },
+            {
+                "id": 207,
+                "name": "Trek Boone 7 Disc - 2018",
+                "quantity": 27
+            },
+            {
+                "id": 208,
+                "name": "Trek Crockett 5 Disc - 2018",
+                "quantity": 13
+            },
+            {
+                "id": 209,
+                "name": "Trek Crockett 7 Disc - 2018",
+                "quantity": 22
+            },
+            {
+                "id": 210,
+                "name": "Surly Straggler - 2018",
+                "quantity": 25
+            },
+            {
+                "id": 211,
+                "name": "Surly Straggler 650b - 2018",
+                "quantity": 13
+            },
+            {
+                "id": 212,
+                "name": "Electra Townie Original 21D - 2018",
+                "quantity": 17
+            },
+            {
+                "id": 213,
+                "name": "Electra Cruiser 1 - 2016\/2017\/2018",
+                "quantity": 14
+            },
+            {
+                "id": 214,
+                "name": "Electra Tiger Shark 3i - 2018",
+                "quantity": 4
+            },
+            {
+                "id": 215,
+                "name": "Electra Queen of Hearts 3i - 2018",
+                "quantity": 1
+            },
+            {
+                "id": 216,
+                "name": "Electra Super Moto 8i - 2018",
+                "quantity": 11
+            },
+            {
+                "id": 217,
+                "name": "Electra Straight 8 3i - 2018",
+                "quantity": 11
+            },
+            {
+                "id": 218,
+                "name": "Electra Cruiser 7D - 2016\/2017\/2018",
+                "quantity": 27
+            },
+            {
+                "id": 219,
+                "name": "Electra Moto 3i - 2018",
+                "quantity": 30
+            },
+            {
+                "id": 220,
+                "name": "Electra Cruiser 1 Ladies' - 2018",
+                "quantity": 4
+            },
+            {
+                "id": 221,
+                "name": "Electra Cruiser 7D Ladies' - 2016\/2018",
+                "quantity": 7
+            },
+            {
+                "id": 222,
+                "name": "Electra Cruiser 1 Tall - 2016\/2018",
+                "quantity": 12
+            },
+            {
+                "id": 223,
+                "name": "Electra Cruiser Lux 3i - 2018",
+                "quantity": 3
+            },
+            {
+                "id": 224,
+                "name": "Electra Cruiser Lux 7D - 2018",
+                "quantity": 16
+            },
+            {
+                "id": 225,
+                "name": "Electra Delivery 3i - 2016\/2017\/2018",
+                "quantity": 24
+            },
+            {
+                "id": 226,
+                "name": "Electra Townie Original 21D EQ - 2017\/2018",
+                "quantity": 18
+            },
+            {
+                "id": 227,
+                "name": "Electra Cruiser 7D (24-Inch) Ladies' - 2016\/2018",
+                "quantity": 19
+            },
+            {
+                "id": 228,
+                "name": "Electra Cruiser 7D Tall - 2016\/2018",
+                "quantity": 22
+            },
+            {
+                "id": 229,
+                "name": "Electra Cruiser Lux 1 - 2016\/2018",
+                "quantity": 27
+            },
+            {
+                "id": 230,
+                "name": "Electra Cruiser Lux 1 Ladies' - 2018",
+                "quantity": 7
+            },
+            {
+                "id": 231,
+                "name": "Electra Cruiser Lux 3i Ladies' - 2018",
+                "quantity": 25
+            },
+            {
+                "id": 232,
+                "name": "Electra Cruiser Lux 7D Ladies' - 2018",
+                "quantity": 5
+            },
+            {
+                "id": 233,
+                "name": "Electra Cruiser Lux Fat Tire 7D - 2018",
+                "quantity": 5
+            },
+            {
+                "id": 234,
+                "name": "Electra Daydreamer 3i Ladies' - 2018",
+                "quantity": 13
+            },
+            {
+                "id": 235,
+                "name": "Electra Koa 3i Ladies' - 2018",
+                "quantity": 7
+            },
+            {
+                "id": 236,
+                "name": "Electra Morningstar 3i Ladies' - 2018",
+                "quantity": 18
+            },
+            {
+                "id": 237,
+                "name": "Electra Relic 3i - 2018",
+                "quantity": 26
+            },
+            {
+                "id": 238,
+                "name": "Electra Townie Balloon 8D EQ - 2016\/2017\/2018",
+                "quantity": 20
+            },
+            {
+                "id": 239,
+                "name": "Electra Townie Balloon 8D EQ Ladies' - 2016\/2017\/2018",
+                "quantity": 28
+            },
+            {
+                "id": 240,
+                "name": "Electra Townie Commute 27D Ladies - 2018",
+                "quantity": 17
+            },
+            {
+                "id": 241,
+                "name": "Electra Townie Commute 8D - 2018",
+                "quantity": 17
+            },
+            {
+                "id": 242,
+                "name": "Electra Townie Commute 8D Ladies' - 2018",
+                "quantity": 10
+            },
+            {
+                "id": 243,
+                "name": "Electra Townie Original 21D EQ Ladies' - 2018",
+                "quantity": 11
+            },
+            {
+                "id": 244,
+                "name": "Electra Townie Original 21D Ladies' - 2018",
+                "quantity": 10
+            },
+            {
+                "id": 245,
+                "name": "Electra Townie Original 3i EQ - 2017\/2018",
+                "quantity": 3
+            },
+            {
+                "id": 246,
+                "name": "Electra Townie Original 3i EQ Ladies' - 2018",
+                "quantity": 0
+            },
+            {
+                "id": 247,
+                "name": "Electra Townie Original 7D EQ - 2018",
+                "quantity": 15
+            },
+            {
+                "id": 248,
+                "name": "Electra Townie Original 7D EQ Ladies' - 2017\/2018",
+                "quantity": 14
+            },
+            {
+                "id": 249,
+                "name": "Electra White Water 3i - 2018",
+                "quantity": 27
+            },
+            {
+                "id": 250,
+                "name": "Electra Townie Go! 8i - 2017\/2018",
+                "quantity": 3
+            },
+            {
+                "id": 251,
+                "name": "Electra Townie Commute Go! - 2018",
+                "quantity": 2
+            },
+            {
+                "id": 252,
+                "name": "Electra Townie Commute Go! Ladies' - 2018",
+                "quantity": 28
+            },
+            {
+                "id": 253,
+                "name": "Electra Townie Go! 8i Ladies' - 2018",
+                "quantity": 16
+            },
+            {
+                "id": 254,
+                "name": "Electra Townie Balloon 3i EQ - 2017\/2018",
+                "quantity": 24
+            },
+            {
+                "id": 255,
+                "name": "Electra Townie Balloon 7i EQ Ladies' - 2017\/2018",
+                "quantity": 13
+            },
+            {
+                "id": 256,
+                "name": "Electra Townie Commute 27D - 2018",
+                "quantity": 20
+            },
+            {
+                "id": 257,
+                "name": "Electra Amsterdam Fashion 3i Ladies' - 2017\/2018",
+                "quantity": 17
+            },
+            {
+                "id": 258,
+                "name": "Electra Amsterdam Royal 8i - 2017\/2018",
+                "quantity": 25
+            },
+            {
+                "id": 259,
+                "name": "Electra Amsterdam Royal 8i Ladies - 2018",
+                "quantity": 10
+            },
+            {
+                "id": 260,
+                "name": "Electra Townie Balloon 3i EQ Ladies' - 2018",
+                "quantity": 20
+            },
+            {
+                "id": 261,
+                "name": "Electra Townie Balloon 7i EQ - 2018",
+                "quantity": 3
+            },
+            {
+                "id": 262,
+                "name": "Trek MT 201 - 2018",
+                "quantity": 6
+            },
+            {
+                "id": 263,
+                "name": "Strider Classic 12 Balance Bike - 2018",
+                "quantity": 21
+            },
+            {
+                "id": 264,
+                "name": "Strider Sport 16 - 2018",
+                "quantity": 16
+            },
+            {
+                "id": 265,
+                "name": "Strider Strider 20 Sport - 2018",
+                "quantity": 28
+            },
+            {
+                "id": 266,
+                "name": "Trek Superfly 20 - 2018",
+                "quantity": 1
+            },
+            {
+                "id": 267,
+                "name": "Trek Precaliber 12 Girl's - 2018",
+                "quantity": 27
+            },
+            {
+                "id": 268,
+                "name": "Trek Kickster - 2018",
+                "quantity": 23
+            },
+            {
+                "id": 269,
+                "name": "Trek Precaliber 12 Boy's - 2018",
+                "quantity": 22
+            },
+            {
+                "id": 270,
+                "name": "Trek Precaliber 16 Boy's - 2018",
+                "quantity": 16
+            },
+            {
+                "id": 271,
+                "name": "Trek Precaliber 16 Girl's - 2018",
+                "quantity": 6
+            },
+            {
+                "id": 272,
+                "name": "Trek Precaliber 20 6-speed Boy's - 2018",
+                "quantity": 14
+            },
+            {
+                "id": 273,
+                "name": "Trek Precaliber 20 6-speed Girl's - 2018",
+                "quantity": 20
+            },
+            {
+                "id": 274,
+                "name": "Trek Precaliber 20 Boy's - 2018",
+                "quantity": 19
+            },
+            {
+                "id": 275,
+                "name": "Trek Precaliber 20 Girl's - 2018",
+                "quantity": 28
+            },
+            {
+                "id": 276,
+                "name": "Trek Precaliber 24 (7-Speed) - Boys - 2018",
+                "quantity": 7
+            },
+            {
+                "id": 277,
+                "name": "Trek Precaliber 24 21-speed Boy's - 2018",
+                "quantity": 13
+            },
+            {
+                "id": 278,
+                "name": "Trek Precaliber 24 21-speed Girl's - 2018",
+                "quantity": 17
+            },
+            {
+                "id": 279,
+                "name": "Trek Precaliber 24 7-speed Girl's - 2018",
+                "quantity": 17
+            },
+            {
+                "id": 280,
+                "name": "Trek Superfly 24 - 2017\/2018",
+                "quantity": 23
+            },
+            {
+                "id": 281,
+                "name": "Electra Cruiser 7D (24-Inch) Ladies' - 2016\/2018",
+                "quantity": 11
+            },
+            {
+                "id": 282,
+                "name": "Electra Cyclosaurus 1 (16-inch) - Boy's - 2018",
+                "quantity": 6
+            },
+            {
+                "id": 283,
+                "name": "Electra Heartchya 1 (20-inch) - Girl's - 2018",
+                "quantity": 10
+            },
+            {
+                "id": 284,
+                "name": "Electra Savannah 1 (20-inch) - Girl's - 2018",
+                "quantity": 27
+            },
+            {
+                "id": 285,
+                "name": "Electra Soft Serve 1 (16-inch) - Girl's - 2018",
+                "quantity": 20
+            },
+            {
+                "id": 286,
+                "name": "Electra Starship 1 16\" - 2018",
+                "quantity": 28
+            },
+            {
+                "id": 287,
+                "name": "Electra Straight 8 1 (16-inch) - Boy's - 2018",
+                "quantity": 2
+            },
+            {
+                "id": 288,
+                "name": "Electra Straight 8 1 (20-inch) - Boy's - 2018",
+                "quantity": 9
+            },
+            {
+                "id": 289,
+                "name": "Electra Superbolt 1 20\" - 2018",
+                "quantity": 2
+            },
+            {
+                "id": 290,
+                "name": "Electra Superbolt 3i 20\" - 2018",
+                "quantity": 8
+            },
+            {
+                "id": 291,
+                "name": "Electra Sweet Ride 1 (20-inch) - Girl's - 2018",
+                "quantity": 9
+            },
+            {
+                "id": 292,
+                "name": "Electra Sweet Ride 3i (20-inch) - Girls' - 2018",
+                "quantity": 30
+            },
+            {
+                "id": 293,
+                "name": "Electra Tiger Shark 1 (20-inch) - Boys' - 2018",
+                "quantity": 18
+            },
+            {
+                "id": 294,
+                "name": "Electra Tiger Shark 3i (20-inch) - Boys' - 2018",
+                "quantity": 3
+            },
+            {
+                "id": 295,
+                "name": "Electra Treasure 1 20\" - 2018",
+                "quantity": 24
+            },
+            {
+                "id": 296,
+                "name": "Electra Treasure 3i 20\" - 2018",
+                "quantity": 9
+            },
+            {
+                "id": 297,
+                "name": "Electra Under-The-Sea 1 16\" - 2018",
+                "quantity": 22
+            },
+            {
+                "id": 298,
+                "name": "Electra Water Lily 1 (16-inch) - Girl's - 2018",
+                "quantity": 26
+            },
+            {
+                "id": 299,
+                "name": "Electra Townie Original 21D - 2018",
+                "quantity": 18
+            },
+            {
+                "id": 300,
+                "name": "Electra Townie Balloon 3i EQ Ladies' - 2018",
+                "quantity": 7
+            },
+            {
+                "id": 301,
+                "name": "Electra Townie Balloon 7i EQ - 2018",
+                "quantity": 10
+            },
+            {
+                "id": 302,
+                "name": "Electra Townie Original 1 - 2018",
+                "quantity": 0
+            },
+            {
+                "id": 303,
+                "name": "Electra Townie Go! 8i - 2017\/2018",
+                "quantity": 12
+            },
+            {
+                "id": 304,
+                "name": "Electra Townie Original 21D EQ - 2017\/2018",
+                "quantity": 15
+            },
+            {
+                "id": 305,
+                "name": "Electra Townie Balloon 3i EQ - 2017\/2018",
+                "quantity": 23
+            },
+            {
+                "id": 306,
+                "name": "Electra Townie Balloon 7i EQ Ladies' - 2017\/2018",
+                "quantity": 21
+            },
+            {
+                "id": 307,
+                "name": "Electra Townie Balloon 8D EQ - 2016\/2017\/2018",
+                "quantity": 17
+            },
+            {
+                "id": 308,
+                "name": "Electra Townie Balloon 8D EQ Ladies' - 2016\/2017\/2018",
+                "quantity": 23
+            },
+            {
+                "id": 309,
+                "name": "Electra Townie Commute 27D - 2018",
+                "quantity": 7
+            },
+            {
+                "id": 310,
+                "name": "Electra Townie Commute 27D Ladies - 2018",
+                "quantity": 18
+            },
+            {
+                "id": 311,
+                "name": "Electra Townie Commute 8D - 2018",
+                "quantity": 20
+            },
+            {
+                "id": 312,
+                "name": "Electra Townie Commute 8D Ladies' - 2018",
+                "quantity": 23
+            },
+            {
+                "id": 313,
+                "name": "Electra Townie Original 1 Ladies' - 2018",
+                "quantity": 14
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Baldwin Bikes",
+        "phone": "(516) 379-8888",
+        "email": "baldwin@bikes.shop",
+        "street": "4200 Chestnut Lane",
+        "city": "Baldwin",
+        "state": "NY",
+        "zipCode": "11432",
+        "detail": [
+            {
+                "id": 1,
+                "name": "Trek 820 - 2016",
+                "quantity": 14
+            },
+            {
+                "id": 2,
+                "name": "Ritchey Timberwolf Frameset - 2016",
+                "quantity": 16
+            },
+            {
+                "id": 3,
+                "name": "Surly Wednesday Frameset - 2016",
+                "quantity": 28
+            },
+            {
+                "id": 4,
+                "name": "Trek Fuel EX 8 29 - 2016",
+                "quantity": 2
+            },
+            {
+                "id": 5,
+                "name": "Heller Shagamaw Frame - 2016",
+                "quantity": 1
+            },
+            {
+                "id": 6,
+                "name": "Surly Ice Cream Truck Frameset - 2016",
+                "quantity": 11
+            },
+            {
+                "id": 7,
+                "name": "Trek Slash 8 27.5 - 2016",
+                "quantity": 8
+            },
+            {
+                "id": 8,
+                "name": "Trek Remedy 29 Carbon Frameset - 2016",
+                "quantity": 1
+            },
+            {
+                "id": 9,
+                "name": "Trek Conduit+ - 2016",
+                "quantity": 17
+            },
+            {
+                "id": 10,
+                "name": "Surly Straggler - 2016",
+                "quantity": 13
+            },
+            {
+                "id": 11,
+                "name": "Surly Straggler 650b - 2016",
+                "quantity": 21
+            },
+            {
+                "id": 12,
+                "name": "Electra Townie Original 21D - 2016",
+                "quantity": 2
+            },
+            {
+                "id": 13,
+                "name": "Electra Cruiser 1 (24-Inch) - 2016",
+                "quantity": 1
+            },
+            {
+                "id": 14,
+                "name": "Electra Girl's Hawaii 1 (16-inch) - 2015\/2016",
+                "quantity": 18
+            },
+            {
+                "id": 15,
+                "name": "Electra Moto 1 - 2016",
+                "quantity": 6
+            },
+            {
+                "id": 16,
+                "name": "Electra Townie Original 7D EQ - 2016",
+                "quantity": 20
+            },
+            {
+                "id": 17,
+                "name": "Pure Cycles Vine 8-Speed - 2016",
+                "quantity": 3
+            },
+            {
+                "id": 18,
+                "name": "Pure Cycles Western 3-Speed - Women's - 2015\/2016",
+                "quantity": 13
+            },
+            {
+                "id": 19,
+                "name": "Pure Cycles William 3-Speed - 2016",
+                "quantity": 15
+            },
+            {
+                "id": 20,
+                "name": "Electra Townie Original 7D EQ - Women's - 2016",
+                "quantity": 20
+            },
+            {
+                "id": 21,
+                "name": "Electra Cruiser 1 (24-Inch) - 2016",
+                "quantity": 16
+            },
+            {
+                "id": 22,
+                "name": "Electra Girl's Hawaii 1 (16-inch) - 2015\/2016",
+                "quantity": 0
+            },
+            {
+                "id": 23,
+                "name": "Electra Girl's Hawaii 1 (20-inch) - 2015\/2016",
+                "quantity": 12
+            },
+            {
+                "id": 24,
+                "name": "Electra Townie Original 21D - 2016",
+                "quantity": 16
+            },
+            {
+                "id": 25,
+                "name": "Electra Townie Original 7D - 2015\/2016",
+                "quantity": 18
+            },
+            {
+                "id": 26,
+                "name": "Electra Townie Original 7D EQ - 2016",
+                "quantity": 2
+            },
+            {
+                "id": 27,
+                "name": "Surly Big Dummy Frameset - 2017",
+                "quantity": 10
+            },
+            {
+                "id": 28,
+                "name": "Surly Karate Monkey 27.5+ Frameset - 2017",
+                "quantity": 25
+            },
+            {
+                "id": 29,
+                "name": "Trek X-Caliber 8 - 2017",
+                "quantity": 29
+            },
+            {
+                "id": 30,
+                "name": "Surly Ice Cream Truck Frameset - 2017",
+                "quantity": 17
+            },
+            {
+                "id": 31,
+                "name": "Surly Wednesday - 2017",
+                "quantity": 10
+            },
+            {
+                "id": 32,
+                "name": "Trek Farley Alloy Frameset - 2017",
+                "quantity": 13
+            },
+            {
+                "id": 33,
+                "name": "Surly Wednesday Frameset - 2017",
+                "quantity": 8
+            },
+            {
+                "id": 34,
+                "name": "Trek Session DH 27.5 Carbon Frameset - 2017",
+                "quantity": 24
+            },
+            {
+                "id": 35,
+                "name": "Sun Bicycles Spider 3i - 2017",
+                "quantity": 25
+            },
+            {
+                "id": 36,
+                "name": "Surly Troll Frameset - 2017",
+                "quantity": 15
+            },
+            {
+                "id": 37,
+                "name": "Haro Flightline One ST - 2017",
+                "quantity": 5
+            },
+            {
+                "id": 38,
+                "name": "Haro Flightline Two 26 Plus - 2017",
+                "quantity": 18
+            },
+            {
+                "id": 39,
+                "name": "Trek Stache 5 - 2017",
+                "quantity": 28
+            },
+            {
+                "id": 40,
+                "name": "Trek Fuel EX 9.8 29 - 2017",
+                "quantity": 15
+            },
+            {
+                "id": 41,
+                "name": "Haro Shift R3 - 2017",
+                "quantity": 6
+            },
+            {
+                "id": 42,
+                "name": "Trek Fuel EX 5 27.5 Plus - 2017",
+                "quantity": 16
+            },
+            {
+                "id": 43,
+                "name": "Trek Fuel EX 9.8 27.5 Plus - 2017",
+                "quantity": 2
+            },
+            {
+                "id": 44,
+                "name": "Haro SR 1.1 - 2017",
+                "quantity": 24
+            },
+            {
+                "id": 45,
+                "name": "Haro SR 1.2 - 2017",
+                "quantity": 13
+            },
+            {
+                "id": 46,
+                "name": "Haro SR 1.3 - 2017",
+                "quantity": 18
+            },
+            {
+                "id": 47,
+                "name": "Trek Remedy 9.8 - 2017",
+                "quantity": 0
+            },
+            {
+                "id": 48,
+                "name": "Trek Emonda S 4 - 2017",
+                "quantity": 20
+            },
+            {
+                "id": 49,
+                "name": "Trek Domane SL 6 - 2017",
+                "quantity": 4
+            },
+            {
+                "id": 50,
+                "name": "Trek Silque SLR 7 Women's - 2017",
+                "quantity": 7
+            },
+            {
+                "id": 51,
+                "name": "Trek Silque SLR 8 Women's - 2017",
+                "quantity": 8
+            },
+            {
+                "id": 52,
+                "name": "Surly Steamroller - 2017",
+                "quantity": 23
+            },
+            {
+                "id": 53,
+                "name": "Surly Ogre Frameset - 2017",
+                "quantity": 19
+            },
+            {
+                "id": 54,
+                "name": "Trek Domane SL Disc Frameset - 2017",
+                "quantity": 6
+            },
+            {
+                "id": 55,
+                "name": "Trek Domane S 6 - 2017",
+                "quantity": 5
+            },
+            {
+                "id": 56,
+                "name": "Trek Domane SLR 6 Disc - 2017",
+                "quantity": 20
+            },
+            {
+                "id": 57,
+                "name": "Trek Emonda S 5 - 2017",
+                "quantity": 27
+            },
+            {
+                "id": 58,
+                "name": "Trek Madone 9.2 - 2017",
+                "quantity": 15
+            },
+            {
+                "id": 59,
+                "name": "Trek Domane S 5 Disc - 2017",
+                "quantity": 17
+            },
+            {
+                "id": 60,
+                "name": "Sun Bicycles ElectroLite - 2017",
+                "quantity": 1
+            },
+            {
+                "id": 61,
+                "name": "Trek Powerfly 8 FS Plus - 2017",
+                "quantity": 20
+            },
+            {
+                "id": 62,
+                "name": "Trek Boone 7 - 2017",
+                "quantity": 4
+            },
+            {
+                "id": 63,
+                "name": "Trek Boone Race Shop Limited - 2017",
+                "quantity": 5
+            },
+            {
+                "id": 64,
+                "name": "Electra Townie Original 7D - 2017",
+                "quantity": 30
+            },
+            {
+                "id": 65,
+                "name": "Sun Bicycles Lil Bolt Type-R - 2017",
+                "quantity": 16
+            },
+            {
+                "id": 66,
+                "name": "Sun Bicycles Revolutions 24 - 2017",
+                "quantity": 22
+            },
+            {
+                "id": 67,
+                "name": "Sun Bicycles Revolutions 24 - Girl's - 2017",
+                "quantity": 8
+            },
+            {
+                "id": 68,
+                "name": "Sun Bicycles Cruz 3 - 2017",
+                "quantity": 23
+            },
+            {
+                "id": 69,
+                "name": "Sun Bicycles Cruz 7 - 2017",
+                "quantity": 22
+            },
+            {
+                "id": 70,
+                "name": "Electra Amsterdam Original 3i - 2015\/2017",
+                "quantity": 6
+            },
+            {
+                "id": 71,
+                "name": "Sun Bicycles Atlas X-Type - 2017",
+                "quantity": 30
+            },
+            {
+                "id": 72,
+                "name": "Sun Bicycles Biscayne Tandem 7 - 2017",
+                "quantity": 1
+            },
+            {
+                "id": 73,
+                "name": "Sun Bicycles Brickell Tandem 7 - 2017",
+                "quantity": 20
+            },
+            {
+                "id": 74,
+                "name": "Electra Cruiser Lux 1 - 2017",
+                "quantity": 23
+            },
+            {
+                "id": 75,
+                "name": "Electra Cruiser Lux Fat Tire 1 Ladies - 2017",
+                "quantity": 11
+            },
+            {
+                "id": 76,
+                "name": "Electra Girl's Hawaii 1 16\" - 2017",
+                "quantity": 20
+            },
+            {
+                "id": 77,
+                "name": "Electra Glam Punk 3i Ladies' - 2017",
+                "quantity": 25
+            },
+            {
+                "id": 78,
+                "name": "Sun Bicycles Biscayne Tandem CB - 2017",
+                "quantity": 4
+            },
+            {
+                "id": 79,
+                "name": "Sun Bicycles Boardwalk (24-inch Wheels) - 2017",
+                "quantity": 29
+            },
+            {
+                "id": 80,
+                "name": "Sun Bicycles Brickell Tandem CB - 2017",
+                "quantity": 27
+            },
+            {
+                "id": 81,
+                "name": "Electra Amsterdam Fashion 7i Ladies' - 2017",
+                "quantity": 19
+            },
+            {
+                "id": 82,
+                "name": "Electra Amsterdam Original 3i Ladies' - 2017",
+                "quantity": 4
+            },
+            {
+                "id": 83,
+                "name": "Trek Boy's Kickster - 2015\/2017",
+                "quantity": 21
+            },
+            {
+                "id": 84,
+                "name": "Sun Bicycles Lil Kitt'n - 2017",
+                "quantity": 22
+            },
+            {
+                "id": 85,
+                "name": "Haro Downtown 16 - 2017",
+                "quantity": 6
+            },
+            {
+                "id": 86,
+                "name": "Trek Girl's Kickster - 2017",
+                "quantity": 24
+            },
+            {
+                "id": 87,
+                "name": "Trek Precaliber 12 Boys - 2017",
+                "quantity": 14
+            },
+            {
+                "id": 88,
+                "name": "Trek Precaliber 12 Girls - 2017",
+                "quantity": 8
+            },
+            {
+                "id": 89,
+                "name": "Trek Precaliber 16 Boys - 2017",
+                "quantity": 8
+            },
+            {
+                "id": 90,
+                "name": "Trek Precaliber 16 Girls - 2017",
+                "quantity": 26
+            },
+            {
+                "id": 91,
+                "name": "Trek Precaliber 24 (21-Speed) - Girls - 2017",
+                "quantity": 0
+            },
+            {
+                "id": 92,
+                "name": "Haro Shredder 20 - 2017",
+                "quantity": 22
+            },
+            {
+                "id": 93,
+                "name": "Haro Shredder 20 Girls - 2017",
+                "quantity": 22
+            },
+            {
+                "id": 94,
+                "name": "Haro Shredder Pro 20 - 2017",
+                "quantity": 2
+            },
+            {
+                "id": 95,
+                "name": "Electra Girl's Hawaii 1 16\" - 2017",
+                "quantity": 10
+            },
+            {
+                "id": 96,
+                "name": "Electra Moto 3i (20-inch) - Boy's - 2017",
+                "quantity": 22
+            },
+            {
+                "id": 97,
+                "name": "Electra Savannah 3i (20-inch) - Girl's - 2017",
+                "quantity": 15
+            },
+            {
+                "id": 98,
+                "name": "Electra Straight 8 3i (20-inch) - Boy's - 2017",
+                "quantity": 14
+            },
+            {
+                "id": 99,
+                "name": "Electra Sugar Skulls 1 (20-inch) - Girl's - 2017",
+                "quantity": 24
+            },
+            {
+                "id": 100,
+                "name": "Electra Townie 3i EQ (20-inch) - Boys' - 2017",
+                "quantity": 12
+            },
+            {
+                "id": 101,
+                "name": "Electra Townie 7D (20-inch) - Boys' - 2017",
+                "quantity": 4
+            },
+            {
+                "id": 102,
+                "name": "Electra Townie Original 7D - 2017",
+                "quantity": 12
+            },
+            {
+                "id": 103,
+                "name": "Sun Bicycles Streamway 3 - 2017",
+                "quantity": 1
+            },
+            {
+                "id": 104,
+                "name": "Sun Bicycles Streamway - 2017",
+                "quantity": 26
+            },
+            {
+                "id": 105,
+                "name": "Sun Bicycles Streamway 7 - 2017",
+                "quantity": 3
+            },
+            {
+                "id": 106,
+                "name": "Sun Bicycles Cruz 3 - 2017",
+                "quantity": 7
+            },
+            {
+                "id": 107,
+                "name": "Sun Bicycles Cruz 7 - 2017",
+                "quantity": 29
+            },
+            {
+                "id": 108,
+                "name": "Sun Bicycles Cruz 3 - Women's - 2017",
+                "quantity": 29
+            },
+            {
+                "id": 109,
+                "name": "Sun Bicycles Cruz 7 - Women's - 2017",
+                "quantity": 25
+            },
+            {
+                "id": 110,
+                "name": "Sun Bicycles Drifter 7 - 2017",
+                "quantity": 7
+            },
+            {
+                "id": 111,
+                "name": "Sun Bicycles Drifter 7 - Women's - 2017",
+                "quantity": 6
+            },
+            {
+                "id": 112,
+                "name": "Trek 820 - 2018",
+                "quantity": 1
+            },
+            {
+                "id": 113,
+                "name": "Trek Marlin 5 - 2018",
+                "quantity": 7
+            },
+            {
+                "id": 114,
+                "name": "Trek Marlin 6 - 2018",
+                "quantity": 12
+            },
+            {
+                "id": 115,
+                "name": "Trek Fuel EX 8 29 - 2018",
+                "quantity": 19
+            },
+            {
+                "id": 116,
+                "name": "Trek Marlin 7 - 2017\/2018",
+                "quantity": 17
+            },
+            {
+                "id": 117,
+                "name": "Trek Ticket S Frame - 2018",
+                "quantity": 18
+            },
+            {
+                "id": 118,
+                "name": "Trek X-Caliber 8 - 2018",
+                "quantity": 25
+            },
+            {
+                "id": 119,
+                "name": "Trek Kids' Neko - 2018",
+                "quantity": 23
+            },
+            {
+                "id": 120,
+                "name": "Trek Fuel EX 7 29 - 2018",
+                "quantity": 16
+            },
+            {
+                "id": 121,
+                "name": "Surly Krampus Frameset - 2018",
+                "quantity": 3
+            },
+            {
+                "id": 122,
+                "name": "Surly Troll Frameset - 2018",
+                "quantity": 11
+            },
+            {
+                "id": 123,
+                "name": "Trek Farley Carbon Frameset - 2018",
+                "quantity": 18
+            },
+            {
+                "id": 124,
+                "name": "Surly Krampus - 2018",
+                "quantity": 4
+            },
+            {
+                "id": 125,
+                "name": "Trek Kids' Dual Sport - 2018",
+                "quantity": 10
+            },
+            {
+                "id": 126,
+                "name": "Surly Big Fat Dummy Frameset - 2018",
+                "quantity": 13
+            },
+            {
+                "id": 127,
+                "name": "Surly Pack Rat Frameset - 2018",
+                "quantity": 12
+            },
+            {
+                "id": 128,
+                "name": "Surly ECR 27.5 - 2018",
+                "quantity": 28
+            },
+            {
+                "id": 129,
+                "name": "Trek X-Caliber 7 - 2018",
+                "quantity": 21
+            },
+            {
+                "id": 130,
+                "name": "Trek Stache Carbon Frameset - 2018",
+                "quantity": 17
+            },
+            {
+                "id": 131,
+                "name": "Heller Bloodhound Trail - 2018",
+                "quantity": 9
+            },
+            {
+                "id": 132,
+                "name": "Trek Procal AL Frameset - 2018",
+                "quantity": 6
+            },
+            {
+                "id": 133,
+                "name": "Trek Procaliber Frameset - 2018",
+                "quantity": 28
+            },
+            {
+                "id": 134,
+                "name": "Trek Remedy 27.5 C Frameset - 2018",
+                "quantity": 13
+            },
+            {
+                "id": 135,
+                "name": "Trek X-Caliber Frameset - 2018",
+                "quantity": 30
+            },
+            {
+                "id": 136,
+                "name": "Trek Procaliber 6 - 2018",
+                "quantity": 8
+            },
+            {
+                "id": 137,
+                "name": "Heller Shagamaw GX1 - 2018",
+                "quantity": 1
+            },
+            {
+                "id": 138,
+                "name": "Trek Fuel EX 5 Plus - 2018",
+                "quantity": 16
+            },
+            {
+                "id": 139,
+                "name": "Trek Remedy 7 27.5 - 2018",
+                "quantity": 24
+            },
+            {
+                "id": 140,
+                "name": "Trek Remedy 9.8 27.5 - 2018",
+                "quantity": 13
+            },
+            {
+                "id": 141,
+                "name": "Trek Stache 5 - 2018",
+                "quantity": 28
+            },
+            {
+                "id": 142,
+                "name": "Trek Fuel EX 8 29 XT - 2018",
+                "quantity": 24
+            },
+            {
+                "id": 143,
+                "name": "Trek Domane ALR 3 - 2018",
+                "quantity": 12
+            },
+            {
+                "id": 144,
+                "name": "Trek Domane ALR 4 Disc - 2018",
+                "quantity": 4
+            },
+            {
+                "id": 145,
+                "name": "Trek Domane ALR 5 Disc - 2018",
+                "quantity": 23
+            },
+            {
+                "id": 146,
+                "name": "Trek Domane SLR 6 - 2018",
+                "quantity": 3
+            },
+            {
+                "id": 147,
+                "name": "Trek Domane ALR 5 Gravel - 2018",
+                "quantity": 13
+            },
+            {
+                "id": 148,
+                "name": "Trek Domane SL 8 Disc - 2018",
+                "quantity": 27
+            },
+            {
+                "id": 149,
+                "name": "Trek Domane SLR 8 Disc - 2018",
+                "quantity": 22
+            },
+            {
+                "id": 150,
+                "name": "Trek Emonda SL 7 - 2018",
+                "quantity": 7
+            },
+            {
+                "id": 151,
+                "name": "Trek Domane ALR 4 Disc Women's - 2018",
+                "quantity": 2
+            },
+            {
+                "id": 152,
+                "name": "Trek Domane SL 5 Disc Women's - 2018",
+                "quantity": 21
+            },
+            {
+                "id": 153,
+                "name": "Trek Domane SL 7 Women's - 2018",
+                "quantity": 21
+            },
+            {
+                "id": 154,
+                "name": "Trek Domane SLR 6 Disc Women's - 2018",
+                "quantity": 9
+            },
+            {
+                "id": 155,
+                "name": "Trek Domane SLR 9 Disc - 2018",
+                "quantity": 21
+            },
+            {
+                "id": 156,
+                "name": "Trek Domane SL Frameset - 2018",
+                "quantity": 8
+            },
+            {
+                "id": 157,
+                "name": "Trek Domane SL Frameset Women's - 2018",
+                "quantity": 28
+            },
+            {
+                "id": 158,
+                "name": "Trek CrossRip 1 - 2018",
+                "quantity": 0
+            },
+            {
+                "id": 159,
+                "name": "Trek Emonda ALR 6 - 2018",
+                "quantity": 30
+            },
+            {
+                "id": 160,
+                "name": "Trek Emonda SLR 6 - 2018",
+                "quantity": 4
+            },
+            {
+                "id": 161,
+                "name": "Surly ECR - 2018",
+                "quantity": 9
+            },
+            {
+                "id": 162,
+                "name": "Trek Emonda SL 6 Disc - 2018",
+                "quantity": 18
+            },
+            {
+                "id": 163,
+                "name": "Surly Pack Rat - 2018",
+                "quantity": 30
+            },
+            {
+                "id": 164,
+                "name": "Surly Straggler 650b - 2018",
+                "quantity": 9
+            },
+            {
+                "id": 165,
+                "name": "Trek 1120 - 2018",
+                "quantity": 6
+            },
+            {
+                "id": 166,
+                "name": "Trek Domane AL 2 Women's - 2018",
+                "quantity": 27
+            },
+            {
+                "id": 167,
+                "name": "Surly ECR Frameset - 2018",
+                "quantity": 1
+            },
+            {
+                "id": 168,
+                "name": "Surly Straggler - 2018",
+                "quantity": 29
+            },
+            {
+                "id": 169,
+                "name": "Trek Emonda SLR 8 - 2018",
+                "quantity": 1
+            },
+            {
+                "id": 170,
+                "name": "Trek CrossRip 2 - 2018",
+                "quantity": 2
+            },
+            {
+                "id": 171,
+                "name": "Trek Domane SL 6 - 2018",
+                "quantity": 28
+            },
+            {
+                "id": 172,
+                "name": "Trek Domane ALR Disc Frameset - 2018",
+                "quantity": 16
+            },
+            {
+                "id": 173,
+                "name": "Trek Domane ALR Frameset - 2018",
+                "quantity": 17
+            },
+            {
+                "id": 174,
+                "name": "Trek Domane SLR Disc Frameset - 2018",
+                "quantity": 8
+            },
+            {
+                "id": 175,
+                "name": "Trek Domane SLR Frameset - 2018",
+                "quantity": 0
+            },
+            {
+                "id": 176,
+                "name": "Trek Madone 9 Frameset - 2018",
+                "quantity": 26
+            },
+            {
+                "id": 177,
+                "name": "Trek Domane SLR 6 Disc - 2018",
+                "quantity": 9
+            },
+            {
+                "id": 178,
+                "name": "Trek Domane AL 2 - 2018",
+                "quantity": 1
+            },
+            {
+                "id": 179,
+                "name": "Trek Domane AL 3 - 2018",
+                "quantity": 16
+            },
+            {
+                "id": 180,
+                "name": "Trek Domane AL 3 Women's - 2018",
+                "quantity": 3
+            },
+            {
+                "id": 181,
+                "name": "Trek Domane SL 5 - 2018",
+                "quantity": 29
+            },
+            {
+                "id": 182,
+                "name": "Trek Domane SL 5 Disc - 2018",
+                "quantity": 21
+            },
+            {
+                "id": 183,
+                "name": "Trek Domane SL 5 Women's - 2018",
+                "quantity": 26
+            },
+            {
+                "id": 184,
+                "name": "Trek Domane SL 6 Disc - 2018",
+                "quantity": 0
+            },
+            {
+                "id": 185,
+                "name": "Trek Conduit+ - 2018",
+                "quantity": 4
+            },
+            {
+                "id": 186,
+                "name": "Trek CrossRip+ - 2018",
+                "quantity": 16
+            },
+            {
+                "id": 187,
+                "name": "Trek Neko+ - 2018",
+                "quantity": 10
+            },
+            {
+                "id": 188,
+                "name": "Trek XM700+ Lowstep - 2018",
+                "quantity": 27
+            },
+            {
+                "id": 189,
+                "name": "Trek Lift+ Lowstep - 2018",
+                "quantity": 13
+            },
+            {
+                "id": 190,
+                "name": "Trek Dual Sport+ - 2018",
+                "quantity": 18
+            },
+            {
+                "id": 191,
+                "name": "Electra Loft Go! 8i - 2018",
+                "quantity": 15
+            },
+            {
+                "id": 192,
+                "name": "Electra Townie Go! 8i - 2017\/2018",
+                "quantity": 0
+            },
+            {
+                "id": 193,
+                "name": "Trek Lift+ - 2018",
+                "quantity": 21
+            },
+            {
+                "id": 194,
+                "name": "Trek XM700+ - 2018",
+                "quantity": 15
+            },
+            {
+                "id": 195,
+                "name": "Electra Townie Go! 8i Ladies' - 2018",
+                "quantity": 19
+            },
+            {
+                "id": 196,
+                "name": "Trek Verve+ - 2018",
+                "quantity": 28
+            },
+            {
+                "id": 197,
+                "name": "Trek Verve+ Lowstep - 2018",
+                "quantity": 10
+            },
+            {
+                "id": 198,
+                "name": "Electra Townie Commute Go! - 2018",
+                "quantity": 0
+            },
+            {
+                "id": 199,
+                "name": "Electra Townie Commute Go! Ladies' - 2018",
+                "quantity": 13
+            },
+            {
+                "id": 200,
+                "name": "Trek Powerfly 5 - 2018",
+                "quantity": 11
+            },
+            {
+                "id": 201,
+                "name": "Trek Powerfly 5 FS - 2018",
+                "quantity": 24
+            },
+            {
+                "id": 202,
+                "name": "Trek Powerfly 5 Women's - 2018",
+                "quantity": 1
+            },
+            {
+                "id": 203,
+                "name": "Trek Powerfly 7 FS - 2018",
+                "quantity": 7
+            },
+            {
+                "id": 204,
+                "name": "Trek Super Commuter+ 7 - 2018",
+                "quantity": 25
+            },
+            {
+                "id": 205,
+                "name": "Trek Super Commuter+ 8S - 2018",
+                "quantity": 13
+            },
+            {
+                "id": 206,
+                "name": "Trek Boone 5 Disc - 2018",
+                "quantity": 9
+            },
+            {
+                "id": 207,
+                "name": "Trek Boone 7 Disc - 2018",
+                "quantity": 8
+            },
+            {
+                "id": 208,
+                "name": "Trek Crockett 5 Disc - 2018",
+                "quantity": 12
+            },
+            {
+                "id": 209,
+                "name": "Trek Crockett 7 Disc - 2018",
+                "quantity": 11
+            },
+            {
+                "id": 210,
+                "name": "Surly Straggler - 2018",
+                "quantity": 10
+            },
+            {
+                "id": 211,
+                "name": "Surly Straggler 650b - 2018",
+                "quantity": 4
+            },
+            {
+                "id": 212,
+                "name": "Electra Townie Original 21D - 2018",
+                "quantity": 22
+            },
+            {
+                "id": 213,
+                "name": "Electra Cruiser 1 - 2016\/2017\/2018",
+                "quantity": 10
+            },
+            {
+                "id": 214,
+                "name": "Electra Tiger Shark 3i - 2018",
+                "quantity": 7
+            },
+            {
+                "id": 215,
+                "name": "Electra Queen of Hearts 3i - 2018",
+                "quantity": 11
+            },
+            {
+                "id": 216,
+                "name": "Electra Super Moto 8i - 2018",
+                "quantity": 19
+            },
+            {
+                "id": 217,
+                "name": "Electra Straight 8 3i - 2018",
+                "quantity": 22
+            },
+            {
+                "id": 218,
+                "name": "Electra Cruiser 7D - 2016\/2017\/2018",
+                "quantity": 26
+            },
+            {
+                "id": 219,
+                "name": "Electra Moto 3i - 2018",
+                "quantity": 16
+            },
+            {
+                "id": 220,
+                "name": "Electra Cruiser 1 Ladies' - 2018",
+                "quantity": 6
+            },
+            {
+                "id": 221,
+                "name": "Electra Cruiser 7D Ladies' - 2016\/2018",
+                "quantity": 12
+            },
+            {
+                "id": 222,
+                "name": "Electra Cruiser 1 Tall - 2016\/2018",
+                "quantity": 30
+            },
+            {
+                "id": 223,
+                "name": "Electra Cruiser Lux 3i - 2018",
+                "quantity": 7
+            },
+            {
+                "id": 224,
+                "name": "Electra Cruiser Lux 7D - 2018",
+                "quantity": 4
+            },
+            {
+                "id": 225,
+                "name": "Electra Delivery 3i - 2016\/2017\/2018",
+                "quantity": 11
+            },
+            {
+                "id": 226,
+                "name": "Electra Townie Original 21D EQ - 2017\/2018",
+                "quantity": 5
+            },
+            {
+                "id": 227,
+                "name": "Electra Cruiser 7D (24-Inch) Ladies' - 2016\/2018",
+                "quantity": 12
+            },
+            {
+                "id": 228,
+                "name": "Electra Cruiser 7D Tall - 2016\/2018",
+                "quantity": 7
+            },
+            {
+                "id": 229,
+                "name": "Electra Cruiser Lux 1 - 2016\/2018",
+                "quantity": 29
+            },
+            {
+                "id": 230,
+                "name": "Electra Cruiser Lux 1 Ladies' - 2018",
+                "quantity": 25
+            },
+            {
+                "id": 231,
+                "name": "Electra Cruiser Lux 3i Ladies' - 2018",
+                "quantity": 8
+            },
+            {
+                "id": 232,
+                "name": "Electra Cruiser Lux 7D Ladies' - 2018",
+                "quantity": 11
+            },
+            {
+                "id": 233,
+                "name": "Electra Cruiser Lux Fat Tire 7D - 2018",
+                "quantity": 25
+            },
+            {
+                "id": 234,
+                "name": "Electra Daydreamer 3i Ladies' - 2018",
+                "quantity": 12
+            },
+            {
+                "id": 235,
+                "name": "Electra Koa 3i Ladies' - 2018",
+                "quantity": 4
+            },
+            {
+                "id": 236,
+                "name": "Electra Morningstar 3i Ladies' - 2018",
+                "quantity": 7
+            },
+            {
+                "id": 237,
+                "name": "Electra Relic 3i - 2018",
+                "quantity": 30
+            },
+            {
+                "id": 238,
+                "name": "Electra Townie Balloon 8D EQ - 2016\/2017\/2018",
+                "quantity": 6
+            },
+            {
+                "id": 239,
+                "name": "Electra Townie Balloon 8D EQ Ladies' - 2016\/2017\/2018",
+                "quantity": 17
+            },
+            {
+                "id": 240,
+                "name": "Electra Townie Commute 27D Ladies - 2018",
+                "quantity": 19
+            },
+            {
+                "id": 241,
+                "name": "Electra Townie Commute 8D - 2018",
+                "quantity": 24
+            },
+            {
+                "id": 242,
+                "name": "Electra Townie Commute 8D Ladies' - 2018",
+                "quantity": 2
+            },
+            {
+                "id": 243,
+                "name": "Electra Townie Original 21D EQ Ladies' - 2018",
+                "quantity": 18
+            },
+            {
+                "id": 244,
+                "name": "Electra Townie Original 21D Ladies' - 2018",
+                "quantity": 1
+            },
+            {
+                "id": 245,
+                "name": "Electra Townie Original 3i EQ - 2017\/2018",
+                "quantity": 18
+            },
+            {
+                "id": 246,
+                "name": "Electra Townie Original 3i EQ Ladies' - 2018",
+                "quantity": 10
+            },
+            {
+                "id": 247,
+                "name": "Electra Townie Original 7D EQ - 2018",
+                "quantity": 16
+            },
+            {
+                "id": 248,
+                "name": "Electra Townie Original 7D EQ Ladies' - 2017\/2018",
+                "quantity": 26
+            },
+            {
+                "id": 249,
+                "name": "Electra White Water 3i - 2018",
+                "quantity": 10
+            },
+            {
+                "id": 250,
+                "name": "Electra Townie Go! 8i - 2017\/2018",
+                "quantity": 23
+            },
+            {
+                "id": 251,
+                "name": "Electra Townie Commute Go! - 2018",
+                "quantity": 0
+            },
+            {
+                "id": 252,
+                "name": "Electra Townie Commute Go! Ladies' - 2018",
+                "quantity": 20
+            },
+            {
+                "id": 253,
+                "name": "Electra Townie Go! 8i Ladies' - 2018",
+                "quantity": 29
+            },
+            {
+                "id": 254,
+                "name": "Electra Townie Balloon 3i EQ - 2017\/2018",
+                "quantity": 7
+            },
+            {
+                "id": 255,
+                "name": "Electra Townie Balloon 7i EQ Ladies' - 2017\/2018",
+                "quantity": 12
+            },
+            {
+                "id": 256,
+                "name": "Electra Townie Commute 27D - 2018",
+                "quantity": 8
+            },
+            {
+                "id": 257,
+                "name": "Electra Amsterdam Fashion 3i Ladies' - 2017\/2018",
+                "quantity": 5
+            },
+            {
+                "id": 258,
+                "name": "Electra Amsterdam Royal 8i - 2017\/2018",
+                "quantity": 10
+            },
+            {
+                "id": 259,
+                "name": "Electra Amsterdam Royal 8i Ladies - 2018",
+                "quantity": 16
+            },
+            {
+                "id": 260,
+                "name": "Electra Townie Balloon 3i EQ Ladies' - 2018",
+                "quantity": 20
+            },
+            {
+                "id": 261,
+                "name": "Electra Townie Balloon 7i EQ - 2018",
+                "quantity": 4
+            },
+            {
+                "id": 262,
+                "name": "Trek MT 201 - 2018",
+                "quantity": 8
+            },
+            {
+                "id": 263,
+                "name": "Strider Classic 12 Balance Bike - 2018",
+                "quantity": 4
+            },
+            {
+                "id": 264,
+                "name": "Strider Sport 16 - 2018",
+                "quantity": 13
+            },
+            {
+                "id": 265,
+                "name": "Strider Strider 20 Sport - 2018",
+                "quantity": 4
+            },
+            {
+                "id": 266,
+                "name": "Trek Superfly 20 - 2018",
+                "quantity": 18
+            },
+            {
+                "id": 267,
+                "name": "Trek Precaliber 12 Girl's - 2018",
+                "quantity": 21
+            },
+            {
+                "id": 268,
+                "name": "Trek Kickster - 2018",
+                "quantity": 3
+            },
+            {
+                "id": 269,
+                "name": "Trek Precaliber 12 Boy's - 2018",
+                "quantity": 4
+            },
+            {
+                "id": 270,
+                "name": "Trek Precaliber 16 Boy's - 2018",
+                "quantity": 15
+            },
+            {
+                "id": 271,
+                "name": "Trek Precaliber 16 Girl's - 2018",
+                "quantity": 26
+            },
+            {
+                "id": 272,
+                "name": "Trek Precaliber 20 6-speed Boy's - 2018",
+                "quantity": 1
+            },
+            {
+                "id": 273,
+                "name": "Trek Precaliber 20 6-speed Girl's - 2018",
+                "quantity": 28
+            },
+            {
+                "id": 274,
+                "name": "Trek Precaliber 20 Boy's - 2018",
+                "quantity": 15
+            },
+            {
+                "id": 275,
+                "name": "Trek Precaliber 20 Girl's - 2018",
+                "quantity": 3
+            },
+            {
+                "id": 276,
+                "name": "Trek Precaliber 24 (7-Speed) - Boys - 2018",
+                "quantity": 9
+            },
+            {
+                "id": 277,
+                "name": "Trek Precaliber 24 21-speed Boy's - 2018",
+                "quantity": 4
+            },
+            {
+                "id": 278,
+                "name": "Trek Precaliber 24 21-speed Girl's - 2018",
+                "quantity": 8
+            },
+            {
+                "id": 279,
+                "name": "Trek Precaliber 24 7-speed Girl's - 2018",
+                "quantity": 18
+            },
+            {
+                "id": 280,
+                "name": "Trek Superfly 24 - 2017\/2018",
+                "quantity": 11
+            },
+            {
+                "id": 281,
+                "name": "Electra Cruiser 7D (24-Inch) Ladies' - 2016\/2018",
+                "quantity": 3
+            },
+            {
+                "id": 282,
+                "name": "Electra Cyclosaurus 1 (16-inch) - Boy's - 2018",
+                "quantity": 8
+            },
+            {
+                "id": 283,
+                "name": "Electra Heartchya 1 (20-inch) - Girl's - 2018",
+                "quantity": 28
+            },
+            {
+                "id": 284,
+                "name": "Electra Savannah 1 (20-inch) - Girl's - 2018",
+                "quantity": 6
+            },
+            {
+                "id": 285,
+                "name": "Electra Soft Serve 1 (16-inch) - Girl's - 2018",
+                "quantity": 22
+            },
+            {
+                "id": 286,
+                "name": "Electra Starship 1 16\" - 2018",
+                "quantity": 3
+            },
+            {
+                "id": 287,
+                "name": "Electra Straight 8 1 (16-inch) - Boy's - 2018",
+                "quantity": 15
+            },
+            {
+                "id": 288,
+                "name": "Electra Straight 8 1 (20-inch) - Boy's - 2018",
+                "quantity": 13
+            },
+            {
+                "id": 289,
+                "name": "Electra Superbolt 1 20\" - 2018",
+                "quantity": 5
+            },
+            {
+                "id": 290,
+                "name": "Electra Superbolt 3i 20\" - 2018",
+                "quantity": 29
+            },
+            {
+                "id": 291,
+                "name": "Electra Sweet Ride 1 (20-inch) - Girl's - 2018",
+                "quantity": 22
+            },
+            {
+                "id": 292,
+                "name": "Electra Sweet Ride 3i (20-inch) - Girls' - 2018",
+                "quantity": 22
+            },
+            {
+                "id": 293,
+                "name": "Electra Tiger Shark 1 (20-inch) - Boys' - 2018",
+                "quantity": 12
+            },
+            {
+                "id": 294,
+                "name": "Electra Tiger Shark 3i (20-inch) - Boys' - 2018",
+                "quantity": 7
+            },
+            {
+                "id": 295,
+                "name": "Electra Treasure 1 20\" - 2018",
+                "quantity": 15
+            },
+            {
+                "id": 296,
+                "name": "Electra Treasure 3i 20\" - 2018",
+                "quantity": 8
+            },
+            {
+                "id": 297,
+                "name": "Electra Under-The-Sea 1 16\" - 2018",
+                "quantity": 7
+            },
+            {
+                "id": 298,
+                "name": "Electra Water Lily 1 (16-inch) - Girl's - 2018",
+                "quantity": 27
+            },
+            {
+                "id": 299,
+                "name": "Electra Townie Original 21D - 2018",
+                "quantity": 0
+            },
+            {
+                "id": 300,
+                "name": "Electra Townie Balloon 3i EQ Ladies' - 2018",
+                "quantity": 13
+            },
+            {
+                "id": 301,
+                "name": "Electra Townie Balloon 7i EQ - 2018",
+                "quantity": 26
+            },
+            {
+                "id": 302,
+                "name": "Electra Townie Original 1 - 2018",
+                "quantity": 6
+            },
+            {
+                "id": 303,
+                "name": "Electra Townie Go! 8i - 2017\/2018",
+                "quantity": 23
+            },
+            {
+                "id": 304,
+                "name": "Electra Townie Original 21D EQ - 2017\/2018",
+                "quantity": 6
+            },
+            {
+                "id": 305,
+                "name": "Electra Townie Balloon 3i EQ - 2017\/2018",
+                "quantity": 21
+            },
+            {
+                "id": 306,
+                "name": "Electra Townie Balloon 7i EQ Ladies' - 2017\/2018",
+                "quantity": 17
+            },
+            {
+                "id": 307,
+                "name": "Electra Townie Balloon 8D EQ - 2016\/2017\/2018",
+                "quantity": 18
+            },
+            {
+                "id": 308,
+                "name": "Electra Townie Balloon 8D EQ Ladies' - 2016\/2017\/2018",
+                "quantity": 15
+            },
+            {
+                "id": 309,
+                "name": "Electra Townie Commute 27D - 2018",
+                "quantity": 9
+            },
+            {
+                "id": 310,
+                "name": "Electra Townie Commute 27D Ladies - 2018",
+                "quantity": 5
+            },
+            {
+                "id": 311,
+                "name": "Electra Townie Commute 8D - 2018",
+                "quantity": 27
+            },
+            {
+                "id": 312,
+                "name": "Electra Townie Commute 8D Ladies' - 2018",
+                "quantity": 2
+            },
+            {
+                "id": 313,
+                "name": "Electra Townie Original 1 Ladies' - 2018",
+                "quantity": 24
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Rowlett Bikes",
+        "phone": "(972) 530-5555",
+        "email": "rowlett@bikes.shop",
+        "street": "8000 Fairway Avenue",
+        "city": "Rowlett",
+        "state": "TX",
+        "zipCode": "75088",
+        "detail": [
+            {
+                "id": 1,
+                "name": "Trek 820 - 2016",
+                "quantity": 14
+            },
+            {
+                "id": 2,
+                "name": "Ritchey Timberwolf Frameset - 2016",
+                "quantity": 24
+            },
+            {
+                "id": 3,
+                "name": "Surly Wednesday Frameset - 2016",
+                "quantity": 0
+            },
+            {
+                "id": 4,
+                "name": "Trek Fuel EX 8 29 - 2016",
+                "quantity": 11
+            },
+            {
+                "id": 5,
+                "name": "Heller Shagamaw Frame - 2016",
+                "quantity": 3
+            },
+            {
+                "id": 6,
+                "name": "Surly Ice Cream Truck Frameset - 2016",
+                "quantity": 27
+            },
+            {
+                "id": 7,
+                "name": "Trek Slash 8 27.5 - 2016",
+                "quantity": 12
+            },
+            {
+                "id": 8,
+                "name": "Trek Remedy 29 Carbon Frameset - 2016",
+                "quantity": 12
+            },
+            {
+                "id": 9,
+                "name": "Trek Conduit+ - 2016",
+                "quantity": 23
+            },
+            {
+                "id": 10,
+                "name": "Surly Straggler - 2016",
+                "quantity": 21
+            },
+            {
+                "id": 11,
+                "name": "Surly Straggler 650b - 2016",
+                "quantity": 30
+            },
+            {
+                "id": 12,
+                "name": "Electra Townie Original 21D - 2016",
+                "quantity": 30
+            },
+            {
+                "id": 13,
+                "name": "Electra Cruiser 1 (24-Inch) - 2016",
+                "quantity": 19
+            },
+            {
+                "id": 14,
+                "name": "Electra Girl's Hawaii 1 (16-inch) - 2015\/2016",
+                "quantity": 4
+            },
+            {
+                "id": 15,
+                "name": "Electra Moto 1 - 2016",
+                "quantity": 22
+            },
+            {
+                "id": 16,
+                "name": "Electra Townie Original 7D EQ - 2016",
+                "quantity": 19
+            },
+            {
+                "id": 17,
+                "name": "Pure Cycles Vine 8-Speed - 2016",
+                "quantity": 22
+            },
+            {
+                "id": 18,
+                "name": "Pure Cycles Western 3-Speed - Women's - 2015\/2016",
+                "quantity": 5
+            },
+            {
+                "id": 19,
+                "name": "Pure Cycles William 3-Speed - 2016",
+                "quantity": 24
+            },
+            {
+                "id": 20,
+                "name": "Electra Townie Original 7D EQ - Women's - 2016",
+                "quantity": 19
+            },
+            {
+                "id": 21,
+                "name": "Electra Cruiser 1 (24-Inch) - 2016",
+                "quantity": 8
+            },
+            {
+                "id": 22,
+                "name": "Electra Girl's Hawaii 1 (16-inch) - 2015\/2016",
+                "quantity": 20
+            },
+            {
+                "id": 23,
+                "name": "Electra Girl's Hawaii 1 (20-inch) - 2015\/2016",
+                "quantity": 8
+            },
+            {
+                "id": 24,
+                "name": "Electra Townie Original 21D - 2016",
+                "quantity": 18
+            },
+            {
+                "id": 25,
+                "name": "Electra Townie Original 7D - 2015\/2016",
+                "quantity": 15
+            },
+            {
+                "id": 26,
+                "name": "Electra Townie Original 7D EQ - 2016",
+                "quantity": 27
+            },
+            {
+                "id": 27,
+                "name": "Surly Big Dummy Frameset - 2017",
+                "quantity": 21
+            },
+            {
+                "id": 28,
+                "name": "Surly Karate Monkey 27.5+ Frameset - 2017",
+                "quantity": 20
+            },
+            {
+                "id": 29,
+                "name": "Trek X-Caliber 8 - 2017",
+                "quantity": 11
+            },
+            {
+                "id": 30,
+                "name": "Surly Ice Cream Truck Frameset - 2017",
+                "quantity": 23
+            },
+            {
+                "id": 31,
+                "name": "Surly Wednesday - 2017",
+                "quantity": 10
+            },
+            {
+                "id": 32,
+                "name": "Trek Farley Alloy Frameset - 2017",
+                "quantity": 14
+            },
+            {
+                "id": 33,
+                "name": "Surly Wednesday Frameset - 2017",
+                "quantity": 14
+            },
+            {
+                "id": 34,
+                "name": "Trek Session DH 27.5 Carbon Frameset - 2017",
+                "quantity": 6
+            },
+            {
+                "id": 35,
+                "name": "Sun Bicycles Spider 3i - 2017",
+                "quantity": 3
+            },
+            {
+                "id": 36,
+                "name": "Surly Troll Frameset - 2017",
+                "quantity": 28
+            },
+            {
+                "id": 37,
+                "name": "Haro Flightline One ST - 2017",
+                "quantity": 30
+            },
+            {
+                "id": 38,
+                "name": "Haro Flightline Two 26 Plus - 2017",
+                "quantity": 23
+            },
+            {
+                "id": 39,
+                "name": "Trek Stache 5 - 2017",
+                "quantity": 22
+            },
+            {
+                "id": 40,
+                "name": "Trek Fuel EX 9.8 29 - 2017",
+                "quantity": 2
+            },
+            {
+                "id": 41,
+                "name": "Haro Shift R3 - 2017",
+                "quantity": 25
+            },
+            {
+                "id": 42,
+                "name": "Trek Fuel EX 5 27.5 Plus - 2017",
+                "quantity": 9
+            },
+            {
+                "id": 43,
+                "name": "Trek Fuel EX 9.8 27.5 Plus - 2017",
+                "quantity": 26
+            },
+            {
+                "id": 44,
+                "name": "Haro SR 1.1 - 2017",
+                "quantity": 26
+            },
+            {
+                "id": 45,
+                "name": "Haro SR 1.2 - 2017",
+                "quantity": 1
+            },
+            {
+                "id": 46,
+                "name": "Haro SR 1.3 - 2017",
+                "quantity": 16
+            },
+            {
+                "id": 47,
+                "name": "Trek Remedy 9.8 - 2017",
+                "quantity": 14
+            },
+            {
+                "id": 48,
+                "name": "Trek Emonda S 4 - 2017",
+                "quantity": 2
+            },
+            {
+                "id": 49,
+                "name": "Trek Domane SL 6 - 2017",
+                "quantity": 4
+            },
+            {
+                "id": 50,
+                "name": "Trek Silque SLR 7 Women's - 2017",
+                "quantity": 25
+            },
+            {
+                "id": 51,
+                "name": "Trek Silque SLR 8 Women's - 2017",
+                "quantity": 2
+            },
+            {
+                "id": 52,
+                "name": "Surly Steamroller - 2017",
+                "quantity": 8
+            },
+            {
+                "id": 53,
+                "name": "Surly Ogre Frameset - 2017",
+                "quantity": 6
+            },
+            {
+                "id": 54,
+                "name": "Trek Domane SL Disc Frameset - 2017",
+                "quantity": 13
+            },
+            {
+                "id": 55,
+                "name": "Trek Domane S 6 - 2017",
+                "quantity": 5
+            },
+            {
+                "id": 56,
+                "name": "Trek Domane SLR 6 Disc - 2017",
+                "quantity": 19
+            },
+            {
+                "id": 57,
+                "name": "Trek Emonda S 5 - 2017",
+                "quantity": 9
+            },
+            {
+                "id": 58,
+                "name": "Trek Madone 9.2 - 2017",
+                "quantity": 27
+            },
+            {
+                "id": 59,
+                "name": "Trek Domane S 5 Disc - 2017",
+                "quantity": 0
+            },
+            {
+                "id": 60,
+                "name": "Sun Bicycles ElectroLite - 2017",
+                "quantity": 7
+            },
+            {
+                "id": 61,
+                "name": "Trek Powerfly 8 FS Plus - 2017",
+                "quantity": 28
+            },
+            {
+                "id": 62,
+                "name": "Trek Boone 7 - 2017",
+                "quantity": 4
+            },
+            {
+                "id": 63,
+                "name": "Trek Boone Race Shop Limited - 2017",
+                "quantity": 8
+            },
+            {
+                "id": 64,
+                "name": "Electra Townie Original 7D - 2017",
+                "quantity": 22
+            },
+            {
+                "id": 65,
+                "name": "Sun Bicycles Lil Bolt Type-R - 2017",
+                "quantity": 1
+            },
+            {
+                "id": 66,
+                "name": "Sun Bicycles Revolutions 24 - 2017",
+                "quantity": 3
+            },
+            {
+                "id": 67,
+                "name": "Sun Bicycles Revolutions 24 - Girl's - 2017",
+                "quantity": 6
+            },
+            {
+                "id": 68,
+                "name": "Sun Bicycles Cruz 3 - 2017",
+                "quantity": 18
+            },
+            {
+                "id": 69,
+                "name": "Sun Bicycles Cruz 7 - 2017",
+                "quantity": 29
+            },
+            {
+                "id": 70,
+                "name": "Electra Amsterdam Original 3i - 2015\/2017",
+                "quantity": 2
+            },
+            {
+                "id": 71,
+                "name": "Sun Bicycles Atlas X-Type - 2017",
+                "quantity": 13
+            },
+            {
+                "id": 72,
+                "name": "Sun Bicycles Biscayne Tandem 7 - 2017",
+                "quantity": 6
+            },
+            {
+                "id": 73,
+                "name": "Sun Bicycles Brickell Tandem 7 - 2017",
+                "quantity": 3
+            },
+            {
+                "id": 74,
+                "name": "Electra Cruiser Lux 1 - 2017",
+                "quantity": 17
+            },
+            {
+                "id": 75,
+                "name": "Electra Cruiser Lux Fat Tire 1 Ladies - 2017",
+                "quantity": 29
+            },
+            {
+                "id": 76,
+                "name": "Electra Girl's Hawaii 1 16\" - 2017",
+                "quantity": 23
+            },
+            {
+                "id": 77,
+                "name": "Electra Glam Punk 3i Ladies' - 2017",
+                "quantity": 23
+            },
+            {
+                "id": 78,
+                "name": "Sun Bicycles Biscayne Tandem CB - 2017",
+                "quantity": 19
+            },
+            {
+                "id": 79,
+                "name": "Sun Bicycles Boardwalk (24-inch Wheels) - 2017",
+                "quantity": 29
+            },
+            {
+                "id": 80,
+                "name": "Sun Bicycles Brickell Tandem CB - 2017",
+                "quantity": 22
+            },
+            {
+                "id": 81,
+                "name": "Electra Amsterdam Fashion 7i Ladies' - 2017",
+                "quantity": 18
+            },
+            {
+                "id": 82,
+                "name": "Electra Amsterdam Original 3i Ladies' - 2017",
+                "quantity": 7
+            },
+            {
+                "id": 83,
+                "name": "Trek Boy's Kickster - 2015\/2017",
+                "quantity": 23
+            },
+            {
+                "id": 84,
+                "name": "Sun Bicycles Lil Kitt'n - 2017",
+                "quantity": 15
+            },
+            {
+                "id": 85,
+                "name": "Haro Downtown 16 - 2017",
+                "quantity": 15
+            },
+            {
+                "id": 86,
+                "name": "Trek Girl's Kickster - 2017",
+                "quantity": 27
+            },
+            {
+                "id": 87,
+                "name": "Trek Precaliber 12 Boys - 2017",
+                "quantity": 16
+            },
+            {
+                "id": 88,
+                "name": "Trek Precaliber 12 Girls - 2017",
+                "quantity": 28
+            },
+            {
+                "id": 89,
+                "name": "Trek Precaliber 16 Boys - 2017",
+                "quantity": 22
+            },
+            {
+                "id": 90,
+                "name": "Trek Precaliber 16 Girls - 2017",
+                "quantity": 9
+            },
+            {
+                "id": 91,
+                "name": "Trek Precaliber 24 (21-Speed) - Girls - 2017",
+                "quantity": 8
+            },
+            {
+                "id": 92,
+                "name": "Haro Shredder 20 - 2017",
+                "quantity": 28
+            },
+            {
+                "id": 93,
+                "name": "Haro Shredder 20 Girls - 2017",
+                "quantity": 18
+            },
+            {
+                "id": 94,
+                "name": "Haro Shredder Pro 20 - 2017",
+                "quantity": 15
+            },
+            {
+                "id": 95,
+                "name": "Electra Girl's Hawaii 1 16\" - 2017",
+                "quantity": 14
+            },
+            {
+                "id": 96,
+                "name": "Electra Moto 3i (20-inch) - Boy's - 2017",
+                "quantity": 1
+            },
+            {
+                "id": 97,
+                "name": "Electra Savannah 3i (20-inch) - Girl's - 2017",
+                "quantity": 28
+            },
+            {
+                "id": 98,
+                "name": "Electra Straight 8 3i (20-inch) - Boy's - 2017",
+                "quantity": 5
+            },
+            {
+                "id": 99,
+                "name": "Electra Sugar Skulls 1 (20-inch) - Girl's - 2017",
+                "quantity": 19
+            },
+            {
+                "id": 100,
+                "name": "Electra Townie 3i EQ (20-inch) - Boys' - 2017",
+                "quantity": 28
+            },
+            {
+                "id": 101,
+                "name": "Electra Townie 7D (20-inch) - Boys' - 2017",
+                "quantity": 17
+            },
+            {
+                "id": 102,
+                "name": "Electra Townie Original 7D - 2017",
+                "quantity": 22
+            },
+            {
+                "id": 103,
+                "name": "Sun Bicycles Streamway 3 - 2017",
+                "quantity": 10
+            },
+            {
+                "id": 104,
+                "name": "Sun Bicycles Streamway - 2017",
+                "quantity": 22
+            },
+            {
+                "id": 105,
+                "name": "Sun Bicycles Streamway 7 - 2017",
+                "quantity": 1
+            },
+            {
+                "id": 106,
+                "name": "Sun Bicycles Cruz 3 - 2017",
+                "quantity": 1
+            },
+            {
+                "id": 107,
+                "name": "Sun Bicycles Cruz 7 - 2017",
+                "quantity": 11
+            },
+            {
+                "id": 108,
+                "name": "Sun Bicycles Cruz 3 - Women's - 2017",
+                "quantity": 23
+            },
+            {
+                "id": 109,
+                "name": "Sun Bicycles Cruz 7 - Women's - 2017",
+                "quantity": 24
+            },
+            {
+                "id": 110,
+                "name": "Sun Bicycles Drifter 7 - 2017",
+                "quantity": 11
+            },
+            {
+                "id": 111,
+                "name": "Sun Bicycles Drifter 7 - Women's - 2017",
+                "quantity": 29
+            },
+            {
+                "id": 112,
+                "name": "Trek 820 - 2018",
+                "quantity": 24
+            },
+            {
+                "id": 113,
+                "name": "Trek Marlin 5 - 2018",
+                "quantity": 23
+            },
+            {
+                "id": 114,
+                "name": "Trek Marlin 6 - 2018",
+                "quantity": 12
+            },
+            {
+                "id": 115,
+                "name": "Trek Fuel EX 8 29 - 2018",
+                "quantity": 25
+            },
+            {
+                "id": 116,
+                "name": "Trek Marlin 7 - 2017\/2018",
+                "quantity": 30
+            },
+            {
+                "id": 117,
+                "name": "Trek Ticket S Frame - 2018",
+                "quantity": 23
+            },
+            {
+                "id": 118,
+                "name": "Trek X-Caliber 8 - 2018",
+                "quantity": 9
+            },
+            {
+                "id": 119,
+                "name": "Trek Kids' Neko - 2018",
+                "quantity": 29
+            },
+            {
+                "id": 120,
+                "name": "Trek Fuel EX 7 29 - 2018",
+                "quantity": 25
+            },
+            {
+                "id": 121,
+                "name": "Surly Krampus Frameset - 2018",
+                "quantity": 4
+            },
+            {
+                "id": 122,
+                "name": "Surly Troll Frameset - 2018",
+                "quantity": 8
+            },
+            {
+                "id": 123,
+                "name": "Trek Farley Carbon Frameset - 2018",
+                "quantity": 15
+            },
+            {
+                "id": 124,
+                "name": "Surly Krampus - 2018",
+                "quantity": 11
+            },
+            {
+                "id": 125,
+                "name": "Trek Kids' Dual Sport - 2018",
+                "quantity": 2
+            },
+            {
+                "id": 126,
+                "name": "Surly Big Fat Dummy Frameset - 2018",
+                "quantity": 5
+            },
+            {
+                "id": 127,
+                "name": "Surly Pack Rat Frameset - 2018",
+                "quantity": 4
+            },
+            {
+                "id": 128,
+                "name": "Surly ECR 27.5 - 2018",
+                "quantity": 20
+            },
+            {
+                "id": 129,
+                "name": "Trek X-Caliber 7 - 2018",
+                "quantity": 10
+            },
+            {
+                "id": 130,
+                "name": "Trek Stache Carbon Frameset - 2018",
+                "quantity": 20
+            },
+            {
+                "id": 131,
+                "name": "Heller Bloodhound Trail - 2018",
+                "quantity": 23
+            },
+            {
+                "id": 132,
+                "name": "Trek Procal AL Frameset - 2018",
+                "quantity": 16
+            },
+            {
+                "id": 133,
+                "name": "Trek Procaliber Frameset - 2018",
+                "quantity": 16
+            },
+            {
+                "id": 134,
+                "name": "Trek Remedy 27.5 C Frameset - 2018",
+                "quantity": 17
+            },
+            {
+                "id": 135,
+                "name": "Trek X-Caliber Frameset - 2018",
+                "quantity": 15
+            },
+            {
+                "id": 136,
+                "name": "Trek Procaliber 6 - 2018",
+                "quantity": 4
+            },
+            {
+                "id": 137,
+                "name": "Heller Shagamaw GX1 - 2018",
+                "quantity": 17
+            },
+            {
+                "id": 138,
+                "name": "Trek Fuel EX 5 Plus - 2018",
+                "quantity": 17
+            },
+            {
+                "id": 139,
+                "name": "Trek Remedy 7 27.5 - 2018",
+                "quantity": 21
+            },
+            {
+                "id": 140,
+                "name": "Trek Remedy 9.8 27.5 - 2018",
+                "quantity": 3
+            },
+            {
+                "id": 141,
+                "name": "Trek Stache 5 - 2018",
+                "quantity": 4
+            },
+            {
+                "id": 142,
+                "name": "Trek Fuel EX 8 29 XT - 2018",
+                "quantity": 29
+            },
+            {
+                "id": 143,
+                "name": "Trek Domane ALR 3 - 2018",
+                "quantity": 9
+            },
+            {
+                "id": 144,
+                "name": "Trek Domane ALR 4 Disc - 2018",
+                "quantity": 9
+            },
+            {
+                "id": 145,
+                "name": "Trek Domane ALR 5 Disc - 2018",
+                "quantity": 11
+            },
+            {
+                "id": 146,
+                "name": "Trek Domane SLR 6 - 2018",
+                "quantity": 9
+            },
+            {
+                "id": 147,
+                "name": "Trek Domane ALR 5 Gravel - 2018",
+                "quantity": 3
+            },
+            {
+                "id": 148,
+                "name": "Trek Domane SL 8 Disc - 2018",
+                "quantity": 6
+            },
+            {
+                "id": 149,
+                "name": "Trek Domane SLR 8 Disc - 2018",
+                "quantity": 1
+            },
+            {
+                "id": 150,
+                "name": "Trek Emonda SL 7 - 2018",
+                "quantity": 21
+            },
+            {
+                "id": 151,
+                "name": "Trek Domane ALR 4 Disc Women's - 2018",
+                "quantity": 1
+            },
+            {
+                "id": 152,
+                "name": "Trek Domane SL 5 Disc Women's - 2018",
+                "quantity": 1
+            },
+            {
+                "id": 153,
+                "name": "Trek Domane SL 7 Women's - 2018",
+                "quantity": 7
+            },
+            {
+                "id": 154,
+                "name": "Trek Domane SLR 6 Disc Women's - 2018",
+                "quantity": 22
+            },
+            {
+                "id": 155,
+                "name": "Trek Domane SLR 9 Disc - 2018",
+                "quantity": 25
+            },
+            {
+                "id": 156,
+                "name": "Trek Domane SL Frameset - 2018",
+                "quantity": 14
+            },
+            {
+                "id": 157,
+                "name": "Trek Domane SL Frameset Women's - 2018",
+                "quantity": 12
+            },
+            {
+                "id": 158,
+                "name": "Trek CrossRip 1 - 2018",
+                "quantity": 17
+            },
+            {
+                "id": 159,
+                "name": "Trek Emonda ALR 6 - 2018",
+                "quantity": 6
+            },
+            {
+                "id": 160,
+                "name": "Trek Emonda SLR 6 - 2018",
+                "quantity": 27
+            },
+            {
+                "id": 161,
+                "name": "Surly ECR - 2018",
+                "quantity": 11
+            },
+            {
+                "id": 162,
+                "name": "Trek Emonda SL 6 Disc - 2018",
+                "quantity": 11
+            },
+            {
+                "id": 163,
+                "name": "Surly Pack Rat - 2018",
+                "quantity": 11
+            },
+            {
+                "id": 164,
+                "name": "Surly Straggler 650b - 2018",
+                "quantity": 18
+            },
+            {
+                "id": 165,
+                "name": "Trek 1120 - 2018",
+                "quantity": 19
+            },
+            {
+                "id": 166,
+                "name": "Trek Domane AL 2 Women's - 2018",
+                "quantity": 27
+            },
+            {
+                "id": 167,
+                "name": "Surly ECR Frameset - 2018",
+                "quantity": 8
+            },
+            {
+                "id": 168,
+                "name": "Surly Straggler - 2018",
+                "quantity": 23
+            },
+            {
+                "id": 169,
+                "name": "Trek Emonda SLR 8 - 2018",
+                "quantity": 3
+            },
+            {
+                "id": 170,
+                "name": "Trek CrossRip 2 - 2018",
+                "quantity": 13
+            },
+            {
+                "id": 171,
+                "name": "Trek Domane SL 6 - 2018",
+                "quantity": 11
+            },
+            {
+                "id": 172,
+                "name": "Trek Domane ALR Disc Frameset - 2018",
+                "quantity": 22
+            },
+            {
+                "id": 173,
+                "name": "Trek Domane ALR Frameset - 2018",
+                "quantity": 15
+            },
+            {
+                "id": 174,
+                "name": "Trek Domane SLR Disc Frameset - 2018",
+                "quantity": 1
+            },
+            {
+                "id": 175,
+                "name": "Trek Domane SLR Frameset - 2018",
+                "quantity": 3
+            },
+            {
+                "id": 176,
+                "name": "Trek Madone 9 Frameset - 2018",
+                "quantity": 6
+            },
+            {
+                "id": 177,
+                "name": "Trek Domane SLR 6 Disc - 2018",
+                "quantity": 2
+            },
+            {
+                "id": 178,
+                "name": "Trek Domane AL 2 - 2018",
+                "quantity": 12
+            },
+            {
+                "id": 179,
+                "name": "Trek Domane AL 3 - 2018",
+                "quantity": 20
+            },
+            {
+                "id": 180,
+                "name": "Trek Domane AL 3 Women's - 2018",
+                "quantity": 6
+            },
+            {
+                "id": 181,
+                "name": "Trek Domane SL 5 - 2018",
+                "quantity": 8
+            },
+            {
+                "id": 182,
+                "name": "Trek Domane SL 5 Disc - 2018",
+                "quantity": 28
+            },
+            {
+                "id": 183,
+                "name": "Trek Domane SL 5 Women's - 2018",
+                "quantity": 26
+            },
+            {
+                "id": 184,
+                "name": "Trek Domane SL 6 Disc - 2018",
+                "quantity": 21
+            },
+            {
+                "id": 185,
+                "name": "Trek Conduit+ - 2018",
+                "quantity": 15
+            },
+            {
+                "id": 186,
+                "name": "Trek CrossRip+ - 2018",
+                "quantity": 30
+            },
+            {
+                "id": 187,
+                "name": "Trek Neko+ - 2018",
+                "quantity": 2
+            },
+            {
+                "id": 188,
+                "name": "Trek XM700+ Lowstep - 2018",
+                "quantity": 29
+            },
+            {
+                "id": 189,
+                "name": "Trek Lift+ Lowstep - 2018",
+                "quantity": 20
+            },
+            {
+                "id": 190,
+                "name": "Trek Dual Sport+ - 2018",
+                "quantity": 20
+            },
+            {
+                "id": 191,
+                "name": "Electra Loft Go! 8i - 2018",
+                "quantity": 23
+            },
+            {
+                "id": 192,
+                "name": "Electra Townie Go! 8i - 2017\/2018",
+                "quantity": 10
+            },
+            {
+                "id": 193,
+                "name": "Trek Lift+ - 2018",
+                "quantity": 5
+            },
+            {
+                "id": 194,
+                "name": "Trek XM700+ - 2018",
+                "quantity": 20
+            },
+            {
+                "id": 195,
+                "name": "Electra Townie Go! 8i Ladies' - 2018",
+                "quantity": 20
+            },
+            {
+                "id": 196,
+                "name": "Trek Verve+ - 2018",
+                "quantity": 25
+            },
+            {
+                "id": 197,
+                "name": "Trek Verve+ Lowstep - 2018",
+                "quantity": 8
+            },
+            {
+                "id": 198,
+                "name": "Electra Townie Commute Go! - 2018",
+                "quantity": 27
+            },
+            {
+                "id": 199,
+                "name": "Electra Townie Commute Go! Ladies' - 2018",
+                "quantity": 5
+            },
+            {
+                "id": 200,
+                "name": "Trek Powerfly 5 - 2018",
+                "quantity": 29
+            },
+            {
+                "id": 201,
+                "name": "Trek Powerfly 5 FS - 2018",
+                "quantity": 30
+            },
+            {
+                "id": 202,
+                "name": "Trek Powerfly 5 Women's - 2018",
+                "quantity": 11
+            },
+            {
+                "id": 203,
+                "name": "Trek Powerfly 7 FS - 2018",
+                "quantity": 6
+            },
+            {
+                "id": 204,
+                "name": "Trek Super Commuter+ 7 - 2018",
+                "quantity": 16
+            },
+            {
+                "id": 205,
+                "name": "Trek Super Commuter+ 8S - 2018",
+                "quantity": 3
+            },
+            {
+                "id": 206,
+                "name": "Trek Boone 5 Disc - 2018",
+                "quantity": 29
+            },
+            {
+                "id": 207,
+                "name": "Trek Boone 7 Disc - 2018",
+                "quantity": 29
+            },
+            {
+                "id": 208,
+                "name": "Trek Crockett 5 Disc - 2018",
+                "quantity": 12
+            },
+            {
+                "id": 209,
+                "name": "Trek Crockett 7 Disc - 2018",
+                "quantity": 1
+            },
+            {
+                "id": 210,
+                "name": "Surly Straggler - 2018",
+                "quantity": 22
+            },
+            {
+                "id": 211,
+                "name": "Surly Straggler 650b - 2018",
+                "quantity": 3
+            },
+            {
+                "id": 212,
+                "name": "Electra Townie Original 21D - 2018",
+                "quantity": 23
+            },
+            {
+                "id": 213,
+                "name": "Electra Cruiser 1 - 2016\/2017\/2018",
+                "quantity": 10
+            },
+            {
+                "id": 214,
+                "name": "Electra Tiger Shark 3i - 2018",
+                "quantity": 30
+            },
+            {
+                "id": 215,
+                "name": "Electra Queen of Hearts 3i - 2018",
+                "quantity": 12
+            },
+            {
+                "id": 216,
+                "name": "Electra Super Moto 8i - 2018",
+                "quantity": 5
+            },
+            {
+                "id": 217,
+                "name": "Electra Straight 8 3i - 2018",
+                "quantity": 4
+            },
+            {
+                "id": 218,
+                "name": "Electra Cruiser 7D - 2016\/2017\/2018",
+                "quantity": 21
+            },
+            {
+                "id": 219,
+                "name": "Electra Moto 3i - 2018",
+                "quantity": 29
+            },
+            {
+                "id": 220,
+                "name": "Electra Cruiser 1 Ladies' - 2018",
+                "quantity": 0
+            },
+            {
+                "id": 221,
+                "name": "Electra Cruiser 7D Ladies' - 2016\/2018",
+                "quantity": 25
+            },
+            {
+                "id": 222,
+                "name": "Electra Cruiser 1 Tall - 2016\/2018",
+                "quantity": 12
+            },
+            {
+                "id": 223,
+                "name": "Electra Cruiser Lux 3i - 2018",
+                "quantity": 29
+            },
+            {
+                "id": 224,
+                "name": "Electra Cruiser Lux 7D - 2018",
+                "quantity": 23
+            },
+            {
+                "id": 225,
+                "name": "Electra Delivery 3i - 2016\/2017\/2018",
+                "quantity": 12
+            },
+            {
+                "id": 226,
+                "name": "Electra Townie Original 21D EQ - 2017\/2018",
+                "quantity": 14
+            },
+            {
+                "id": 227,
+                "name": "Electra Cruiser 7D (24-Inch) Ladies' - 2016\/2018",
+                "quantity": 22
+            },
+            {
+                "id": 228,
+                "name": "Electra Cruiser 7D Tall - 2016\/2018",
+                "quantity": 29
+            },
+            {
+                "id": 229,
+                "name": "Electra Cruiser Lux 1 - 2016\/2018",
+                "quantity": 7
+            },
+            {
+                "id": 230,
+                "name": "Electra Cruiser Lux 1 Ladies' - 2018",
+                "quantity": 29
+            },
+            {
+                "id": 231,
+                "name": "Electra Cruiser Lux 3i Ladies' - 2018",
+                "quantity": 6
+            },
+            {
+                "id": 232,
+                "name": "Electra Cruiser Lux 7D Ladies' - 2018",
+                "quantity": 16
+            },
+            {
+                "id": 233,
+                "name": "Electra Cruiser Lux Fat Tire 7D - 2018",
+                "quantity": 9
+            },
+            {
+                "id": 234,
+                "name": "Electra Daydreamer 3i Ladies' - 2018",
+                "quantity": 24
+            },
+            {
+                "id": 235,
+                "name": "Electra Koa 3i Ladies' - 2018",
+                "quantity": 1
+            },
+            {
+                "id": 236,
+                "name": "Electra Morningstar 3i Ladies' - 2018",
+                "quantity": 3
+            },
+            {
+                "id": 237,
+                "name": "Electra Relic 3i - 2018",
+                "quantity": 16
+            },
+            {
+                "id": 238,
+                "name": "Electra Townie Balloon 8D EQ - 2016\/2017\/2018",
+                "quantity": 12
+            },
+            {
+                "id": 239,
+                "name": "Electra Townie Balloon 8D EQ Ladies' - 2016\/2017\/2018",
+                "quantity": 29
+            },
+            {
+                "id": 240,
+                "name": "Electra Townie Commute 27D Ladies - 2018",
+                "quantity": 26
+            },
+            {
+                "id": 241,
+                "name": "Electra Townie Commute 8D - 2018",
+                "quantity": 8
+            },
+            {
+                "id": 242,
+                "name": "Electra Townie Commute 8D Ladies' - 2018",
+                "quantity": 5
+            },
+            {
+                "id": 243,
+                "name": "Electra Townie Original 21D EQ Ladies' - 2018",
+                "quantity": 7
+            },
+            {
+                "id": 244,
+                "name": "Electra Townie Original 21D Ladies' - 2018",
+                "quantity": 5
+            },
+            {
+                "id": 245,
+                "name": "Electra Townie Original 3i EQ - 2017\/2018",
+                "quantity": 10
+            },
+            {
+                "id": 246,
+                "name": "Electra Townie Original 3i EQ Ladies' - 2018",
+                "quantity": 7
+            },
+            {
+                "id": 247,
+                "name": "Electra Townie Original 7D EQ - 2018",
+                "quantity": 3
+            },
+            {
+                "id": 248,
+                "name": "Electra Townie Original 7D EQ Ladies' - 2017\/2018",
+                "quantity": 11
+            },
+            {
+                "id": 249,
+                "name": "Electra White Water 3i - 2018",
+                "quantity": 6
+            },
+            {
+                "id": 250,
+                "name": "Electra Townie Go! 8i - 2017\/2018",
+                "quantity": 16
+            },
+            {
+                "id": 251,
+                "name": "Electra Townie Commute Go! - 2018",
+                "quantity": 10
+            },
+            {
+                "id": 252,
+                "name": "Electra Townie Commute Go! Ladies' - 2018",
+                "quantity": 27
+            },
+            {
+                "id": 253,
+                "name": "Electra Townie Go! 8i Ladies' - 2018",
+                "quantity": 15
+            },
+            {
+                "id": 254,
+                "name": "Electra Townie Balloon 3i EQ - 2017\/2018",
+                "quantity": 4
+            },
+            {
+                "id": 255,
+                "name": "Electra Townie Balloon 7i EQ Ladies' - 2017\/2018",
+                "quantity": 17
+            },
+            {
+                "id": 256,
+                "name": "Electra Townie Commute 27D - 2018",
+                "quantity": 1
+            },
+            {
+                "id": 257,
+                "name": "Electra Amsterdam Fashion 3i Ladies' - 2017\/2018",
+                "quantity": 25
+            },
+            {
+                "id": 258,
+                "name": "Electra Amsterdam Royal 8i - 2017\/2018",
+                "quantity": 10
+            },
+            {
+                "id": 259,
+                "name": "Electra Amsterdam Royal 8i Ladies - 2018",
+                "quantity": 0
+            },
+            {
+                "id": 260,
+                "name": "Electra Townie Balloon 3i EQ Ladies' - 2018",
+                "quantity": 5
+            },
+            {
+                "id": 261,
+                "name": "Electra Townie Balloon 7i EQ - 2018",
+                "quantity": 24
+            },
+            {
+                "id": 262,
+                "name": "Trek MT 201 - 2018",
+                "quantity": 29
+            },
+            {
+                "id": 263,
+                "name": "Strider Classic 12 Balance Bike - 2018",
+                "quantity": 21
+            },
+            {
+                "id": 264,
+                "name": "Strider Sport 16 - 2018",
+                "quantity": 7
+            },
+            {
+                "id": 265,
+                "name": "Strider Strider 20 Sport - 2018",
+                "quantity": 22
+            },
+            {
+                "id": 266,
+                "name": "Trek Superfly 20 - 2018",
+                "quantity": 18
+            },
+            {
+                "id": 267,
+                "name": "Trek Precaliber 12 Girl's - 2018",
+                "quantity": 12
+            },
+            {
+                "id": 268,
+                "name": "Trek Kickster - 2018",
+                "quantity": 17
+            },
+            {
+                "id": 269,
+                "name": "Trek Precaliber 12 Boy's - 2018",
+                "quantity": 26
+            },
+            {
+                "id": 270,
+                "name": "Trek Precaliber 16 Boy's - 2018",
+                "quantity": 6
+            },
+            {
+                "id": 271,
+                "name": "Trek Precaliber 16 Girl's - 2018",
+                "quantity": 23
+            },
+            {
+                "id": 272,
+                "name": "Trek Precaliber 20 6-speed Boy's - 2018",
+                "quantity": 12
+            },
+            {
+                "id": 273,
+                "name": "Trek Precaliber 20 6-speed Girl's - 2018",
+                "quantity": 19
+            },
+            {
+                "id": 274,
+                "name": "Trek Precaliber 20 Boy's - 2018",
+                "quantity": 7
+            },
+            {
+                "id": 275,
+                "name": "Trek Precaliber 20 Girl's - 2018",
+                "quantity": 23
+            },
+            {
+                "id": 276,
+                "name": "Trek Precaliber 24 (7-Speed) - Boys - 2018",
+                "quantity": 14
+            },
+            {
+                "id": 277,
+                "name": "Trek Precaliber 24 21-speed Boy's - 2018",
+                "quantity": 26
+            },
+            {
+                "id": 278,
+                "name": "Trek Precaliber 24 21-speed Girl's - 2018",
+                "quantity": 15
+            },
+            {
+                "id": 279,
+                "name": "Trek Precaliber 24 7-speed Girl's - 2018",
+                "quantity": 15
+            },
+            {
+                "id": 280,
+                "name": "Trek Superfly 24 - 2017\/2018",
+                "quantity": 1
+            },
+            {
+                "id": 281,
+                "name": "Electra Cruiser 7D (24-Inch) Ladies' - 2016\/2018",
+                "quantity": 2
+            },
+            {
+                "id": 282,
+                "name": "Electra Cyclosaurus 1 (16-inch) - Boy's - 2018",
+                "quantity": 18
+            },
+            {
+                "id": 283,
+                "name": "Electra Heartchya 1 (20-inch) - Girl's - 2018",
+                "quantity": 1
+            },
+            {
+                "id": 284,
+                "name": "Electra Savannah 1 (20-inch) - Girl's - 2018",
+                "quantity": 26
+            },
+            {
+                "id": 285,
+                "name": "Electra Soft Serve 1 (16-inch) - Girl's - 2018",
+                "quantity": 2
+            },
+            {
+                "id": 286,
+                "name": "Electra Starship 1 16\" - 2018",
+                "quantity": 7
+            },
+            {
+                "id": 287,
+                "name": "Electra Straight 8 1 (16-inch) - Boy's - 2018",
+                "quantity": 26
+            },
+            {
+                "id": 288,
+                "name": "Electra Straight 8 1 (20-inch) - Boy's - 2018",
+                "quantity": 2
+            },
+            {
+                "id": 289,
+                "name": "Electra Superbolt 1 20\" - 2018",
+                "quantity": 2
+            },
+            {
+                "id": 290,
+                "name": "Electra Superbolt 3i 20\" - 2018",
+                "quantity": 6
+            },
+            {
+                "id": 291,
+                "name": "Electra Sweet Ride 1 (20-inch) - Girl's - 2018",
+                "quantity": 10
+            },
+            {
+                "id": 292,
+                "name": "Electra Sweet Ride 3i (20-inch) - Girls' - 2018",
+                "quantity": 16
+            },
+            {
+                "id": 293,
+                "name": "Electra Tiger Shark 1 (20-inch) - Boys' - 2018",
+                "quantity": 14
+            },
+            {
+                "id": 294,
+                "name": "Electra Tiger Shark 3i (20-inch) - Boys' - 2018",
+                "quantity": 13
+            },
+            {
+                "id": 295,
+                "name": "Electra Treasure 1 20\" - 2018",
+                "quantity": 9
+            },
+            {
+                "id": 296,
+                "name": "Electra Treasure 3i 20\" - 2018",
+                "quantity": 12
+            },
+            {
+                "id": 297,
+                "name": "Electra Under-The-Sea 1 16\" - 2018",
+                "quantity": 22
+            },
+            {
+                "id": 298,
+                "name": "Electra Water Lily 1 (16-inch) - Girl's - 2018",
+                "quantity": 14
+            },
+            {
+                "id": 299,
+                "name": "Electra Townie Original 21D - 2018",
+                "quantity": 29
+            },
+            {
+                "id": 300,
+                "name": "Electra Townie Balloon 3i EQ Ladies' - 2018",
+                "quantity": 3
+            },
+            {
+                "id": 301,
+                "name": "Electra Townie Balloon 7i EQ - 2018",
+                "quantity": 29
+            },
+            {
+                "id": 302,
+                "name": "Electra Townie Original 1 - 2018",
+                "quantity": 6
+            },
+            {
+                "id": 303,
+                "name": "Electra Townie Go! 8i - 2017\/2018",
+                "quantity": 13
+            },
+            {
+                "id": 304,
+                "name": "Electra Townie Original 21D EQ - 2017\/2018",
+                "quantity": 23
+            },
+            {
+                "id": 305,
+                "name": "Electra Townie Balloon 3i EQ - 2017\/2018",
+                "quantity": 11
+            },
+            {
+                "id": 306,
+                "name": "Electra Townie Balloon 7i EQ Ladies' - 2017\/2018",
+                "quantity": 7
+            },
+            {
+                "id": 307,
+                "name": "Electra Townie Balloon 8D EQ - 2016\/2017\/2018",
+                "quantity": 17
+            },
+            {
+                "id": 308,
+                "name": "Electra Townie Balloon 8D EQ Ladies' - 2016\/2017\/2018",
+                "quantity": 9
+            },
+            {
+                "id": 309,
+                "name": "Electra Townie Commute 27D - 2018",
+                "quantity": 30
+            },
+            {
+                "id": 310,
+                "name": "Electra Townie Commute 27D Ladies - 2018",
+                "quantity": 8
+            },
+            {
+                "id": 311,
+                "name": "Electra Townie Commute 8D - 2018",
+                "quantity": 23
+            },
+            {
+                "id": 312,
+                "name": "Electra Townie Commute 8D Ladies' - 2018",
+                "quantity": 18
+            },
+            {
+                "id": 313,
+                "name": "Electra Townie Original 1 Ladies' - 2018",
+                "quantity": 0
+            }
+        ]
+    }
+]

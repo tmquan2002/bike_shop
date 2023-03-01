@@ -1,8 +1,7 @@
-import DataTable, { ColumnType } from '../components/data-table/index';
+import DataTable, { ColumnType } from '../../components/data-table/index';
 import React from 'react';
-import AppLayout from '../components/app-layout';
-import staffMocks from '../assets/mocks/staffs.json'
-import { staffState } from '../../app/utils/enum';
+import staffMocks from '../../assets/mocks/staffs.json'
+import { staffState } from '../../utils/enum';
 
 interface Staff {
   id: number;
@@ -32,11 +31,10 @@ const data: Staff[] = staffMocks.map((row) => ({
   manager: row.manager !== undefined ? row.manager?.firstName + ' ' + row.manager?.lastName : undefined
 }))
 
-const staffTable = <DataTable columns={columns} data={data} />
-const ManageStaffPage: React.FC = () => {
+const StaffTable: React.FC = () => {
   return (
-    <AppLayout children={staffTable} routerPath='staff' />
+    <DataTable columns={columns} data={data} />
   );
 };
 
-export default ManageStaffPage;
+export default StaffTable;

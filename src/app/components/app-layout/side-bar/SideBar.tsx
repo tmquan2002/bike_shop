@@ -21,9 +21,9 @@ const SideBar: React.FC = () => {
             Icon={<CustomerIcon />}
           />
           <NeumoButton
-            shade={location === '/staff' ? 'light' : 'dark'}
+            shade={location === '/store' ? 'light' : 'dark'}
             raised
-            navLink={location === '/staff' ? undefined : '/staff'}
+            navLink={location === '/store' ? undefined : '/store'}
             Icon={<BikeStoreIcon />}
           />
           <NeumoButton
