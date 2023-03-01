@@ -1,4 +1,4 @@
-import { Menu, MenuItemProps, Segment } from 'semantic-ui-react';
+import { Menu, MenuItemProps } from 'semantic-ui-react';
 import { useState } from "react";
 import AppLayout from '../../components/app-layout';
 import ProductTable from './ProductTable';

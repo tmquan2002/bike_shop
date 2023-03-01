@@ -3,54 +3,126 @@
         "id": 1,
         "firstName": "Fabiola",
         "lastName": "Jackson",
-        "email": "fabiola.jackson@bikes.shop",
         "phone": "(831) 555-5554",
+        "email": "fabiola.jackson@bikes.shop",
         "active": 1,
-        "store": {
-            "id": 1,
-            "name": "Santa Cruz Bikes",
-            "phone": "(831) 476-4321",
-            "email": "santacruz@bikes.shop",
-            "street": "3700 Portola Drive",
-            "city": "Santa Cruz",
-            "state": "CA",
-            "zipCode": "95060"
-        }
+        "store": "Santa Cruz Bikes"
     },
     {
         "id": 2,
         "firstName": "Mireya",
         "lastName": "Copeland",
-        "email": "mireya.copeland@bikes.shop",
         "phone": "(831) 555-5555",
+        "email": "mireya.copeland@bikes.shop",
         "active": 1,
-        "store": {
-            "id": 1,
-            "name": "Santa Cruz Bikes",
-            "phone": "(831) 476-4321",
-            "email": "santacruz@bikes.shop",
-            "street": "3700 Portola Drive",
-            "city": "Santa Cruz",
-            "state": "CA",
-            "zipCode": "95060"
-        },
+        "store": "Santa Cruz Bikes",
         "manager": {
-            "id": 1,
             "firstName": "Fabiola",
-            "lastName": "Jackson",
-            "email": "fabiola.jackson@bikes.shop",
-            "phone": "(831) 555-5554",
-            "active": 1,
-            "store": {
-                "id": 1,
-                "name": "Santa Cruz Bikes",
-                "phone": "(831) 476-4321",
-                "email": "santacruz@bikes.shop",
-                "street": "3700 Portola Drive",
-                "city": "Santa Cruz",
-                "state": "CA",
-                "zipCode": "95060"
-            }
+            "lastName": "Jackson"
+        }
+    },
+    {
+        "id": 3,
+        "firstName": "Genna",
+        "lastName": "Serrano",
+        "phone": "(831) 555-5556",
+        "email": "genna.serrano@bikes.shop",
+        "active": 1,
+        "store": "Santa Cruz Bikes",
+        "manager": {
+            "firstName": "Mireya",
+            "lastName": "Copeland"
+        }
+    },
+    {
+        "id": 4,
+        "firstName": "Virgie",
+        "lastName": "Wiggins",
+        "phone": "(831) 555-5557",
+        "email": "virgie.wiggins@bikes.shop",
+        "active": 1,
+        "store": "Santa Cruz Bikes",
+        "manager": {
+            "firstName": "Mireya",
+            "lastName": "Copeland"
+        }
+    },
+    {
+        "id": 5,
+        "firstName": "Jannette",
+        "lastName": "David",
+        "phone": "(516) 379-4444",
+        "email": "jannette.david@bikes.shop",
+        "active": 1,
+        "store": "Baldwin Bikes",
+        "manager": {
+            "firstName": "Fabiola",
+            "lastName": "Jackson"
+        }
+    },
+    {
+        "id": 6,
+        "firstName": "Marcelene",
+        "lastName": "Boyer",
+        "phone": "(516) 379-4445",
+        "email": "marcelene.boyer@bikes.shop",
+        "active": 1,
+        "store": "Baldwin Bikes",
+        "manager": {
+            "firstName": "Jannette",
+            "lastName": "David"
+        }
+    },
+    {
+        "id": 7,
+        "firstName": "Venita",
+        "lastName": "Daniel",
+        "phone": "(516) 379-4446",
+        "email": "venita.daniel@bikes.shop",
+        "active": 1,
+        "store": "Baldwin Bikes",
+        "manager": {
+            "firstName": "Jannette",
+            "lastName": "David"
+        }
+    },
+    {
+        "id": 8,
+        "firstName": "Kali",
+        "lastName": "Vargas",
+        "phone": "(972) 530-5555",
+        "email": "kali.vargas@bikes.shop",
+        "active": 1,
+        "store": "Rowlett Bikes",
+        "manager": {
+            "firstName": "Fabiola",
+            "lastName": "Jackson"
+        }
+    },
+    {
+        "id": 9,
+        "firstName": "Layla",
+        "lastName": "Terrell",
+        "phone": "(972) 530-5556",
+        "email": "layla.terrell@bikes.shop",
+        "active": 1,
+        "store": "Rowlett Bikes",
+        "manager": {
+            "firstName": "Venita",
+            "lastName": "Daniel"
+        }
+    },
+    {
+        "id": 10,
+        "firstName": "Bernardine",
+        "lastName": "Houston",
+        "phone": "(972) 530-5557",
+        "email": "bernardine.houston@bikes.shop",
+        "active": 1,
+        "store": "Rowlett Bikes",
+        "manager": {
+            "firstName": "Venita",
+            "lastName": "Daniel"
         }
     }
 ]

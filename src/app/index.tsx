@@ -5,6 +5,7 @@ import ManageCustomerPage from './pages/ManageCustomerPage';
 import ManageProductPage from './pages/product/index';
 import ManageStaffPage from './pages/ManageStaffPage';
 import PageNotFound from './pages/PageNotFound';
+import ManageOrderPage from './pages/order/OrderPage';
 
 const App: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const App: React.FC = () => {
         <Route path="/customer" element={<ManageCustomerPage />} />
         <Route path="/staff" element={<ManageStaffPage />} />
         <Route path="/product" element={<ManageProductPage />} />
+        <Route path="/order" element={<ManageOrderPage />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </BrowserRouter>

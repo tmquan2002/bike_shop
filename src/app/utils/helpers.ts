@@ -1,4 +1,7 @@
 /* eslint-disable no-useless-escape */
+
+import { OrderStatus } from "./enum";
+
 /* eslint-disable import/prefer-default-export */
 export const deburr = (s: string): string => {
   let result = s ?? '';
@@ -99,5 +102,16 @@ export const usaStateConverter = (s: string): string => {
     case "WI": return "Wisconsin";
     case "WY": return "Wyoming";
     default: return "";
+  }
+}
+
+export const orderStateConverter = (state: number): OrderStatus => {
+  let result = state;
+  switch (result) {
+    case 1: return OrderStatus.PENDING;
+    case 2: return OrderStatus.PROCESSING;
+    case 3: return OrderStatus.REJECTED;
+    case 4: return OrderStatus.COMPLETED;
+    default: return OrderStatus.REJECTED;
   }
 }

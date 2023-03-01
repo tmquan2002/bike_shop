@@ -30,7 +30,7 @@ const DataTable = <T, K extends keyof T>({ data, columns, pagination }: TablePro
 
     useEffect(() => {
         setPageData(pagination ? data.slice(startIndex, endIndex) : data);
-    }, [currentPage, data, pagination]);
+    }, [currentPage, data, pagination, endIndex, startIndex]);
 
     return (
         <>
