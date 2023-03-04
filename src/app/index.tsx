@@ -6,16 +6,19 @@ import ManageProductPage from './pages/product/index';
 import PageNotFound from './pages/PageNotFound';
 import ManageStorePage from './pages/store';
 import ManageOrderPage from './pages/order';
+import AppLayout from './components/app-layout/index';
 
 const App: React.FC = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/customer" element={<ManageCustomerPage />} />
-        <Route path="/store" element={<ManageStorePage />} />
-        <Route path="/product" element={<ManageProductPage />} />
-        <Route path="/order" element={<ManageOrderPage />} />
+        <Route element={<AppLayout />}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/customer" element={<ManageCustomerPage />} />
+          <Route path="/store" element={<ManageStorePage />} />
+          <Route path="/product" element={<ManageProductPage />} />
+          <Route path="/order" element={<ManageOrderPage />} />
+        </Route>
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </BrowserRouter>

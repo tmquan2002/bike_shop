@@ -1,4 +1,3 @@
-import AppLayout from '../../components/app-layout';
 import ProductTable from './ProductTable';
 import BrandTable from './BrandTable';
 import CategoryTable from './CategoryTable';
@@ -12,7 +11,7 @@ const menuItems: CustomMenuObject[] = [
 
 const ManageProductPage: React.FC = () => {
     return (
-        <AppLayout children={<CustomMenu menuItems={menuItems}/>} routerPath='product' />
+        <CustomMenu menuItems={menuItems}/>
     );
 };
 

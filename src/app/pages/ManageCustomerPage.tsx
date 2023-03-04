@@ -1,5 +1,4 @@
 import React from 'react';
-import AppLayout from '../components/app-layout';
 import DataTable, { ColumnType } from '../components/data-table/index';
 import customerMocks from '../assets/mocks/customers.json'
 import { usaStateConverter } from '../../app/utils/helpers';
@@ -33,7 +32,7 @@ const customerTable = <DataTable columns={columns} data={data} pagination/>
 
 const ManageCustomerPage: React.FC = () => {
   return (
-    <AppLayout children={customerTable} routerPath='customer' />
+    <>{customerTable}</>
   );
 };
 
