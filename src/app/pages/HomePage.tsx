@@ -53,7 +53,7 @@ const HomePage: React.FC = () => {
       <Form.Select options={brandOptions} label="Brand" defaultValue={brandsMock[0].name} name='brand' onChange={handleChangeSelect} />
       <Form.Select options={categoryOptions} label="Category" defaultValue={categoriesMock[0].name} name='category' onChange={handleChangeSelect} />
       <Form.Input fluid type="number" label='List Price (USD)' placeholder='344.29' min={0} step={0.01} name='listPrice' onChange={handleChange} />
-      <Button type='submit'>Submit</Button>
+      <Button type='submit' size='large'>Submit</Button>
     </Form>
   );
 };
