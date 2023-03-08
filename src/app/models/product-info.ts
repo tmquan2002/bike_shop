@@ -9,3 +9,11 @@ export interface ProductInfo {
     modelYear: number;
     listPrice: number;
 }
+
+export interface ProductForm {
+    productName: string;
+    brand: string;
+    category: string;
+    modelYear: number;
+    listPrice: number;
+}

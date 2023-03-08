@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, MenuItemProps } from "semantic-ui-react";
+import { Button, Menu, MenuItemProps } from "semantic-ui-react";
 
 export interface CustomMenuObject {
     name: string;
