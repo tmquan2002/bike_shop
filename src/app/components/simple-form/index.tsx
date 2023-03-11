@@ -1,4 +1,4 @@
-import React, { useEffect, useCallback, PropsWithChildren } from 'react';
+import React, { useEffect, useCallback } from 'react';
 import { Form, Select, DropdownItemProps, Checkbox, Button } from 'semantic-ui-react';
 import { useForm, Controller, FieldValues, SubmitHandler, Path } from 'react-hook-form';
 
@@ -16,9 +16,10 @@ interface FormProps<T extends FieldValues, K extends keyof T> {
 }
 
 const SimpleForm = <T extends FieldValues, K extends keyof T>({ formFields, onSubmit, defaultValues }: FormProps<T, K>): JSX.Element => {
-  const { handleSubmit, formState: { errors }, register } = useForm<T>(defaultValues)
+  const { handleSubmit, formState: { errors }, register, control } = useForm<T>(defaultValues)
   type InputType = FormField<T, K>['inputType'];
 
+  // Normal input
   const input = useCallback(
     (
       key: K,
@@ -29,7 +30,7 @@ const SimpleForm = <T extends FieldValues, K extends keyof T>({ formFields, onSu
       inputType?: InputType,
       required?: boolean,
     ) => (
-      <Form.Field>
+      <Form.Field key={name}>
         <label>{label}</label>
         <input placeholder={placeholder} type={inputType} required={required}
           {...register(name as Path<T>)}
@@ -38,10 +39,55 @@ const SimpleForm = <T extends FieldValues, K extends keyof T>({ formFields, onSu
     ),
     [register, errors],
   );
+
+  //Select field
+  const select = useCallback(
+    (
+      key: K,
+      name: string,
+      options: DropdownItemProps[],
+      label?: string,
+      hidden?: boolean,
+      required?: boolean,
+    ) => (
+      <Controller
+        key={String(name)}
+        control={control}
+        name={name as Path<T>}
+        render={({ field }): React.ReactElement => {
+          return (
+            <div key={name}>
+              <label htmlFor={name}><strong>{label}</strong></label>
+              <Select
+                fluid
+                search
+                deburr
+                options={options}
+                value={field.value}
+                onChange={(e, d): void => field.onChange(d.value)}
+                onBlur={field.onBlur}
+              />
+            </div>
+          );
+        }}
+      />
+    ),
+    [control, errors],
+  );
+
   return (
     <Form onSubmit={handleSubmit(onSubmit)}>
       {formFields.map((f) => {
         switch (f.type) {
+          case 'select':
+            return select(
+              f.key,
+              f.name,
+              f.options ?? [],
+              f.label,
+              f.hidden,
+              f.required,
+            );
           case 'input':
           default:
             return input(
