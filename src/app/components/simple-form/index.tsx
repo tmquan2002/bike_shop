@@ -1,28 +1,63 @@
-import { useForm, SubmitHandler } from "react-hook-form";
+import React, { useEffect, useCallback, PropsWithChildren } from 'react';
+import { Form, Select, DropdownItemProps, Checkbox, Button } from 'semantic-ui-react';
+import { useForm, Controller, FieldValues, SubmitHandler, Path } from 'react-hook-form';
 
-type Inputs = {
-  example: string,
-  exampleRequired: string,
+import { FormField } from '../../models/form-field';
+
+interface FormProps<T extends FieldValues, K extends keyof T> {
+  formFields: FormField<T, K>[];
+  onSubmit: SubmitHandler<T>;
+  defaultValues?: T;
+  loading?: boolean;
+  confirmButtonLabel?: string;
+  errors?: {
+    [k: string]: string | string[];
+  };
+}
+
+const SimpleForm = <T extends FieldValues, K extends keyof T>({ formFields, onSubmit, defaultValues }: FormProps<T, K>): JSX.Element => {
+  const { handleSubmit, formState: { errors }, register } = useForm<T>(defaultValues)
+  type InputType = FormField<T, K>['inputType'];
+
+  const input = useCallback(
+    (
+      key: K,
+      name: string,
+      label?: string,
+      placeholder?: string,
+      hidden?: boolean,
+      inputType?: InputType,
+      required?: boolean,
+    ) => (
+      <Form.Field>
+        <label>{label}</label>
+        <input placeholder={placeholder} type={inputType} required={required}
+          {...register(name as Path<T>)}
+        />
+      </Form.Field>
+    ),
+    [register, errors],
+  );
+  return (
+    <Form onSubmit={handleSubmit(onSubmit)}>
+      {formFields.map((f) => {
+        switch (f.type) {
+          case 'input':
+          default:
+            return input(
+              f.key,
+              f.name,
+              f.label,
+              f.placeholder,
+              f.hidden,
+              f.inputType,
+              f.required,
+            );
+        }
+      })}
+      <Button type='submit' size='large' color='grey'>Submit</Button>
+    </Form>
+  )
 };
 
-export default function App() {
-  const { register, handleSubmit, watch, formState: { errors } } = useForm<Inputs>();
-  const onSubmit: SubmitHandler<Inputs> = data => console.log(data);
-
-  console.log(watch("example")) // watch input value by passing the name of it
-
-  return (
-    /* "handleSubmit" will validate your inputs before invoking "onSubmit" */
-    <form onSubmit={handleSubmit(onSubmit)}>
-      {/* register your input into the hook by invoking the "register" function */}
-      <input defaultValue="test" {...register("example")} />
-      
-      {/* include validation with required or other standard HTML validation rules */}
-      <input {...register("exampleRequired", { required: true })} />
-      {/* errors will return when field validation fails  */}
-      {errors.exampleRequired && <span>This field is required</span>}
-      
-      <input type="submit" />
-    </form>
-  );
-}
+export default SimpleForm;

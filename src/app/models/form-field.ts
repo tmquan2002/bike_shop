@@ -1,8 +1,9 @@
 import { DropdownItemProps } from 'semantic-ui-react';
 
-export interface FormField<T> {
-  name: keyof Partial<T>;
-  type?: 'input' | 'textarea' | 'select' | 'checkbox' | 'radio' | 'location';
+export interface FormField<T, K extends keyof T> {
+  key: K
+  name: string;
+  type?: 'input' | 'textarea' | 'select' | 'checkbox' | 'radio' ;
   label?: string;
   placeholder?: string;
   hidden?: boolean; // use for id field, select field, etc...
@@ -16,6 +17,7 @@ export interface FormField<T> {
   minLength?: number;
   max?: number;
   min?: number;
+  step?: number;
   pattern?: RegExp;
   validate?: Function | object;
 }
