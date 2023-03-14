@@ -1,10 +1,10 @@
 import { SubmitHandler } from "react-hook-form";
 import React from 'react';
-import brandsMock from '../assets/mocks/brands.json'
-import categoriesMock from '../assets/mocks/categories.json'
-import { ProductForm } from "../models/product-info";
-import { FormField } from "../models/form-field";
-import SimpleForm from "../components/simple-form/index";
+import brandsMock from '../../../assets/mocks/brands.json'
+import categoriesMock from '../../../assets/mocks/categories.json'
+import { ProductForm } from "../../../models/product-info";
+import { FormField } from "../../../models/form-field";
+import SimpleForm from "../../../components/simple-form/index";
 
 const brandOptions = brandsMock.map((item) => ({
   key: item.id, text: item.name, value: item.name
@@ -30,7 +30,7 @@ const defaultValues = {
   listPrice: 0,
 }
 
-const HomePage: React.FC = () => {
+const AddProduct: React.FC = () => {
   const onSubmit: SubmitHandler<ProductForm> = (data) => {
     alert(JSON.stringify({ data }))
   };
@@ -39,4 +39,4 @@ const HomePage: React.FC = () => {
   );
 };
 
-export default HomePage;
+export default AddProduct;

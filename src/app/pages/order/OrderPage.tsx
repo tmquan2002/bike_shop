@@ -1,9 +1,9 @@
-import React, { Dispatch, SetStateAction } from 'react';
+import React, { Dispatch, SetStateAction, useState, useEffect } from 'react';
 import DataTable, { ColumnType } from '../../components/data-table/index';
 import orderMocks from '../../assets/mocks/orders.json'
 import { orderStateConverter } from '../../../app/utils/helpers';
 import { OrderStatus } from 'app/utils/enum';
-import { Button } from 'semantic-ui-react';
+import { Button, Dimmer, Loader, Segment } from 'semantic-ui-react';
 
 interface Order {
   id: number;
@@ -22,25 +22,32 @@ interface OrderPageProps {
   setCurrentItemID: Dispatch<SetStateAction<number>>
 }
 
-const columns: ColumnType<Order, keyof Order>[] = [
-  { key: 'customer', header: 'Customer' },
-  { key: 'status', header: 'Status' },
-  { key: 'orderDate', header: 'Order Date' },
-  { key: 'requiredDate', header: 'Required Date' },
-  { key: 'shippedDate', header: 'Shipped Date' },
-  { key: 'store', header: 'Store' },
-  { key: 'staff', header: 'Staff' },
-  { key: 'detail', header: '' }
-]
-
 const OrderPage = ({ setCurrentView, setCurrentItemID }: OrderPageProps): JSX.Element => {
+
+  const [loading, setLoading] = useState(true)
+  const [loadedData, setLoadedData] = useState<Order[]>([])
+
+  useEffect(() => {
+
+  }, [])
 
   const handleDetail = (id: number) => {
     setCurrentItemID(id)
     setCurrentView('items')
   }
 
-  const data: Order[] = orderMocks.map((row) => ({
+  const columns: ColumnType<Order, keyof Order>[] = [
+    { key: 'customer', header: 'Customer' },
+    { key: 'status', header: 'Status' },
+    { key: 'orderDate', header: 'Order Date' },
+    { key: 'requiredDate', header: 'Required Date' },
+    { key: 'shippedDate', header: 'Shipped Date' },
+    { key: 'store', header: 'Store' },
+    { key: 'staff', header: 'Staff' },
+    { key: 'detail', header: '' }
+  ]
+
+  const data = orderMocks.map((row) => ({
     id: row.id,
     customer: row.customer,
     status: orderStateConverter(row.status),

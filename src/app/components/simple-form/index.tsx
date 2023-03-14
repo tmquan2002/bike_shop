@@ -49,6 +49,7 @@ const SimpleForm = <T extends FieldValues, K extends keyof T>({ formFields, onSu
       label?: string,
       hidden?: boolean,
       required?: boolean,
+      placeholder?: string,
     ) => (
       <Controller
         key={String(name)}
@@ -62,6 +63,7 @@ const SimpleForm = <T extends FieldValues, K extends keyof T>({ formFields, onSu
                 fluid
                 search
                 deburr
+                placeholder={placeholder}
                 options={options}
                 value={field.value}
                 onChange={(e, d): void => field.onChange(d.value)}
@@ -87,6 +89,7 @@ const SimpleForm = <T extends FieldValues, K extends keyof T>({ formFields, onSu
               f.label,
               f.hidden,
               f.required,
+              f.placeholder,
             );
           case 'input':
           default:

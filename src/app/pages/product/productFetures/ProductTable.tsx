@@ -1,6 +1,6 @@
-import DataTable, { ColumnType } from '../../components/data-table/index';
+import DataTable, { ColumnType } from '../../../components/data-table/index';
 import React from 'react';
-import productMocks from '../../assets/mocks/products.json'
+import productMocks from '../../../assets/mocks/products.json'
 
 interface Product {
   id: number;
