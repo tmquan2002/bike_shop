@@ -3,7 +3,7 @@ import DataTable, { ColumnType } from '../../components/data-table/index';
 import orderMocks from '../../assets/mocks/orders.json'
 import { orderStateConverter } from '../../../app/utils/helpers';
 import { OrderStatus } from 'app/utils/enum';
-import { Button, Dimmer, Loader, Segment } from 'semantic-ui-react';
+import { Button } from 'semantic-ui-react';
 
 interface Order {
   id: number;
@@ -60,7 +60,7 @@ const OrderPage = ({ setCurrentView, setCurrentItemID }: OrderPageProps): JSX.El
   }))
 
   return (
-    <DataTable columns={columns} data={data} pagination />
+    <DataTable columns={columns} data={data} pagination={8} />
   );
 };
 

@@ -10,13 +10,13 @@ export interface ColumnType<T, K extends keyof T> {
 interface TableProps<T, K extends keyof T> {
     data: Array<T>;
     columns: Array<ColumnType<T, K>>;
-    pagination?: boolean;
+    pagination?: boolean | number;
 }
 
 const DataTable = <T, K extends keyof T>({ data, columns, pagination }: TableProps<T, K>): JSX.Element => {
     const [currentPage, setCurrentPage] = useState<number>(1);
     const [pageData, setPageData] = useState(data)
-    const pageSize = 10;
+    const pageSize = typeof pagination === "number" ? pagination : 10;
 
     const totalItems = data.length;
     const totalPages = Math.ceil(totalItems / pageSize)
@@ -39,7 +39,9 @@ const DataTable = <T, K extends keyof T>({ data, columns, pagination }: TablePro
                     <Table.Row>
                         <Table.HeaderCell>#</Table.HeaderCell>
                         {columns.map((c, index) => (
-                            <Table.HeaderCell key={index}>{c.header}</Table.HeaderCell>
+                            <Table.HeaderCell key={index} textAlign={index === columns.length - 1 ? 'right' : 'left'}>
+                                {c.header}
+                            </Table.HeaderCell>
                         ))}
                     </Table.Row>
                 </Table.Header>
@@ -48,7 +50,9 @@ const DataTable = <T, K extends keyof T>({ data, columns, pagination }: TablePro
                         <Table.Row key={index}>
                             <Table.Cell>{index + startIndex + 1}</Table.Cell>
                             {columns.map((c, index2) => (
-                                <Table.Cell key={index2}>{d[c.key] as React.ReactNode}</Table.Cell>
+                                <Table.Cell key={index2} textAlign={index2 === columns.length - 1 ? 'right' : 'left'}>
+                                    {d[c.key] as React.ReactNode}
+                                </Table.Cell>
                             ))}
                         </Table.Row>
                     ))}

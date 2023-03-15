@@ -43,11 +43,8 @@ const Stocks = ({ id, setCurrentView, setCurrentStoreID }: OrderItemProps): JSX.
   }
   return (
     <>
-      <Button animated onClick={() => backToStoreList(1)}>
-        <Button.Content visible>Back</Button.Content>
-        <Button.Content hidden>
-          <Icon name='arrow left' />
-        </Button.Content>
+      <Button color='grey' onClick={() => backToStoreList(1)}>
+          <Icon name='arrow left' inverted/>Back
       </Button>
       {node}
     </>

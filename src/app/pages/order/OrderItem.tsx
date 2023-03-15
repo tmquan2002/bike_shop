@@ -36,11 +36,8 @@ const OrderItem = ({ id, setCurrentView, setCurrentItemID }: OrderItemProps): JS
   }
   return (
     <>
-      <Button animated onClick={() => backToOrderList(1)}>
-        <Button.Content visible>Back</Button.Content>
-        <Button.Content hidden>
-          <Icon name='arrow left' />
-        </Button.Content>
+      <Button color='grey' onClick={() => backToOrderList(1)}>
+          <Icon name='arrow left' inverted/>Back
       </Button>
       {node}
     </>
