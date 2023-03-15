@@ -69,6 +69,7 @@ const SimpleForm = <T extends FieldValues, K extends keyof T>({ formFields, onSu
                 onChange={(e, d): void => field.onChange(d.value)}
                 onBlur={field.onBlur}
               />
+              <br></br>
             </div>
           );
         }}

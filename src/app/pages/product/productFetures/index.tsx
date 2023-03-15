@@ -16,11 +16,8 @@ const ProductFeature: React.FC = () => {
                     </div>
                 </> :
                 <>
-                    <Button animated onClick={() => setFeature('show')}>
-                        <Button.Content visible>Back</Button.Content>
-                        <Button.Content hidden>
-                            <Icon name='arrow left' />
-                        </Button.Content>
+                    <Button color='grey' onClick={() => setFeature('show')}>
+                        <Icon name='arrow left' inverted />Back
                     </Button>
                     <AddProduct />
                 </>}

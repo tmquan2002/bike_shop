@@ -19,7 +19,7 @@ const formfields: FormField<ProductForm, keyof ProductForm>[] = [
   { key: 'modelYear', name: 'modelYear', type: 'input', inputType: 'number', label: 'Model Year', placeholder: '2011', min: 1900, max: new Date().getFullYear(), step: 1, required: true },
   { key: 'brand', name: 'brand', type: 'select', label: 'Brand', placeholder: 'Choose a brand', options: brandOptions, required: true },
   { key: 'category', name: 'category', type: 'select', label: 'Category', placeholder: 'Choose a category', options: categoryOptions, required: true },
-  { key: 'listPrice', name: 'listPrice', type: 'input', inputType: 'number', label: 'List Price (USD)', placeholder: '344.29', min: 0, step: 0.01, required: true },
+  { key: 'listPrice', name: 'listPrice', type: 'input', inputType: 'number', label: 'List Price', placeholder: '344.29', min: 0, step: 0.01, required: true },
 ]
 
 const defaultValues = {
