@@ -16,7 +16,7 @@ interface FormProps<T extends FieldValues, K extends keyof T> {
 }
 
 const SimpleForm = <T extends FieldValues, K extends keyof T>({ formFields, onSubmit, defaultValues }: FormProps<T, K>): JSX.Element => {
-  const { handleSubmit, formState: { errors }, register, control } = useForm<T>(defaultValues)
+  const { handleSubmit, formState: { errors }, register, control, getValues } = useForm<T>(defaultValues)
   type InputType = FormField<T, K>['inputType'];
 
   // Normal input
@@ -30,12 +30,19 @@ const SimpleForm = <T extends FieldValues, K extends keyof T>({ formFields, onSu
       inputType?: InputType,
       required?: boolean,
     ) => (
-      <Form.Field key={name}>
-        <label>{label}</label>
-        <input placeholder={placeholder} type={inputType} required={required}
-          {...register(name as Path<T>)}
-        />
-      </Form.Field>
+      <Controller
+        key={String(name)}
+        control={control}
+        name={name as Path<T>}
+        render={({ field }): React.ReactElement => (
+          <Form.Field key={name}>
+            <label htmlFor={name}>{label}</label>
+            <input placeholder={placeholder} type={inputType} required={required} value={field.value}
+              onChange={field.onChange}
+            />
+          </Form.Field>
+        )}
+      />
     ),
     [register, errors],
   );
