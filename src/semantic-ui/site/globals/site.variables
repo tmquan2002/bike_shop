@@ -9,3 +9,4 @@
 @emSize: 18px;
 @fontSize: 18px;
 @importGoogleFonts: true;
+@invertedBackgroundColor: #F0F2F5;

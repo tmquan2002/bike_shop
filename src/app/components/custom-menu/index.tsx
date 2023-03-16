@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, Menu, MenuItemProps } from "semantic-ui-react";
+import { Menu, MenuItemProps } from "semantic-ui-react";
 
 export interface CustomMenuObject {
     name: string;
@@ -7,6 +7,11 @@ export interface CustomMenuObject {
 }
 
 interface MenuProps {
+    /**
+     * An array of menu item objects, should include 2 params:
+     * @param {string} name A name for each menu item
+     * @param {React.ReactNode} content A react content inside each menu item
+     */
     menuItems: CustomMenuObject[]
 }
 
