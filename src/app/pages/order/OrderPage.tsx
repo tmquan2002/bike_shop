@@ -22,13 +22,35 @@ interface OrderPageProps {
   setCurrentItemID: Dispatch<SetStateAction<number>>
 }
 
+const columns: ColumnType<Order, keyof Order>[] = [
+  { key: 'customer', header: 'Customer' },
+  { key: 'status', header: 'Status' },
+  { key: 'orderDate', header: 'Order Date' },
+  { key: 'requiredDate', header: 'Required Date' },
+  { key: 'shippedDate', header: 'Shipped Date' },
+  { key: 'store', header: 'Store' },
+  { key: 'staff', header: 'Staff' },
+  { key: 'detail', header: '' }
+]
+
 const OrderPage = ({ setCurrentView, setCurrentItemID }: OrderPageProps): JSX.Element => {
 
-  const [loading, setLoading] = useState(true)
-  const [loadedData, setLoadedData] = useState<Order[]>([])
+  const [data, setData] = useState<Order[]>([])
+  const [loading, setLoading] = useState<boolean>(true)
 
   useEffect(() => {
-
+    setData(orderMocks.map((row) => ({
+      id: row.id,
+      customer: row.customer,
+      status: orderStateConverter(row.status),
+      orderDate: row.orderDate,
+      requiredDate: row.requiredDate,
+      shippedDate: row.shippedDate,
+      store: row.store,
+      staff: row.staff,
+      detail: <Button color='grey' onClick={() => handleDetail(row.id)}>Detail</Button>
+    })))
+    setLoading(false)
   }, [])
 
   const handleDetail = (id: number) => {
@@ -36,31 +58,8 @@ const OrderPage = ({ setCurrentView, setCurrentItemID }: OrderPageProps): JSX.El
     setCurrentView('items')
   }
 
-  const columns: ColumnType<Order, keyof Order>[] = [
-    { key: 'customer', header: 'Customer' },
-    { key: 'status', header: 'Status' },
-    { key: 'orderDate', header: 'Order Date' },
-    { key: 'requiredDate', header: 'Required Date' },
-    { key: 'shippedDate', header: 'Shipped Date' },
-    { key: 'store', header: 'Store' },
-    { key: 'staff', header: 'Staff' },
-    { key: 'detail', header: '' }
-  ]
-
-  const data = orderMocks.map((row) => ({
-    id: row.id,
-    customer: row.customer,
-    status: orderStateConverter(row.status),
-    orderDate: row.orderDate,
-    requiredDate: row.requiredDate,
-    shippedDate: row.shippedDate,
-    store: row.store,
-    staff: row.staff,
-    detail: <Button color='grey' onClick={() => handleDetail(row.id)}>Detail</Button>
-  }))
-
   return (
-    <DataTable columns={columns} data={data} pagination={8} />
+    <DataTable columns={columns} data={data} pagination={8} loading={loading} />
   );
 };
 

@@ -33,9 +33,10 @@ const ManageCustomerPage: React.FC = () => {
       address: row.street + ', ' + row.city + ', ' + usaStateConverter(row.state),
       zipCode: row.zipCode
     })))
-    setTimeout(() => {
-      setLoading(false)
-    }, 1000)
+    setLoading(false)
+    // setTimeout(() => {
+    //   setLoading(false)
+    // }, 1000)
   }, [])
 
   return (

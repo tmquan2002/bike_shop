@@ -46,7 +46,7 @@ const StoreTable: React.FC = () => {
   return (
     <>
       {currentView === 'store' ? <DataTable columns={columns} data={data} /> :
-        <Stocks id={currentStoreID} setCurrentStoreID={setCurrentStoreID} setCurrentView={setCurrentView} />}
+        <Stocks id={currentStoreID} setCurrentView={setCurrentView} />}
     </>
   );
 };
