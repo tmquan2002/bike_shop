@@ -1,120 +1,46 @@
-import React, { useEffect, useCallback } from 'react';
-import { Form, Select, DropdownItemProps, Checkbox, Button } from 'semantic-ui-react';
-import { useForm, Controller, FieldValues, SubmitHandler, Path } from 'react-hook-form';
+import { FormProvider, useForm } from 'react-hook-form'
+import { Button, Form } from 'semantic-ui-react'
+import { InputProps } from '../../models/form-field'
+import { CustomInput } from './CustomInput'
+import { CustomSelect } from './CustomSelect'
 
-import { FormField } from '../../models/form-field';
+interface Props {
+  onSubmit: (data: unknown) => void
+  labelButtonSubmit?: string
+  titleForm?: string
 
-interface FormProps<T extends FieldValues, K extends keyof T> {
-  formFields: FormField<T, K>[];
-  onSubmit: SubmitHandler<T>;
-  defaultValues?: T;
-  loading?: boolean;
-  confirmButtonLabel?: string;
-  errors?: {
-    [k: string]: string | string[];
-  };
+  initialValues: unknown
+  inputs: InputProps[]
 }
 
-const SimpleForm = <T extends FieldValues, K extends keyof T>({ formFields, onSubmit, defaultValues }: FormProps<T, K>): JSX.Element => {
-  const { handleSubmit, formState: { errors }, register, control, getValues } = useForm<T>(defaultValues)
-  type InputType = FormField<T, K>['inputType'];
+export const SimpleForm = ({ ...props }: Props) => {
+  const {
+    initialValues,
+    inputs,
+    onSubmit,
+    labelButtonSubmit = 'Submit'
+  } = props
 
-  // Normal input
-  const input = useCallback(
-    (
-      key: K,
-      name: string,
-      label?: string,
-      placeholder?: string,
-      hidden?: boolean,
-      inputType?: InputType,
-      required?: boolean,
-    ) => (
-      <Controller
-        key={String(name)}
-        control={control}
-        name={name as Path<T>}
-        render={({ field }): React.ReactElement => (
-          <Form.Field key={name}>
-            <label htmlFor={name}>{label}</label>
-            <input placeholder={placeholder} type={inputType} required={required} value={field.value}
-              onChange={field.onChange}
-            />
-          </Form.Field>
-        )}
-      />
-    ),
-    [register, errors],
-  );
+  const formMethods = useForm({
+    defaultValues: { ...(initialValues as any) }
+  })
 
-  //Select field
-  const select = useCallback(
-    (
-      key: K,
-      name: string,
-      options: DropdownItemProps[],
-      label?: string,
-      hidden?: boolean,
-      required?: boolean,
-      placeholder?: string,
-    ) => (
-      <Controller
-        key={String(name)}
-        control={control}
-        name={name as Path<T>}
-        render={({ field }): React.ReactElement => {
-          return (
-            <div key={name}>
-              <label htmlFor={name}><strong>{label}</strong></label>
-              <Select
-                fluid
-                search
-                deburr
-                placeholder={placeholder}
-                options={options}
-                value={field.value}
-                onChange={(e, d): void => field.onChange(d.value)}
-                onBlur={field.onBlur}
-              />
-              <br></br>
-            </div>
-          );
-        }}
-      />
-    ),
-    [control, errors],
-  );
+  const createInputs = () =>
+    inputs.map(({ validations, typeValue, value, ...inputProps }) => {
+      switch (inputProps.type) {
+        case 'select':
+          return <CustomSelect {...inputProps} key={inputProps.name} />
+        default:
+          return <CustomInput {...inputProps} key={inputProps.name} />
+      }
+    })
 
   return (
-    <Form onSubmit={handleSubmit(onSubmit)}>
-      {formFields.map((f) => {
-        switch (f.type) {
-          case 'select':
-            return select(
-              f.key,
-              f.name,
-              f.options ?? [],
-              f.label,
-              f.hidden,
-              f.required,
-              f.placeholder,
-            );
-          case 'input':
-          default:
-            return input(
-              f.key,
-              f.name,
-              f.label,
-              f.placeholder,
-              f.hidden,
-              f.inputType,
-              f.required,
-            );
-        }
-      })}
-      <Button type='submit' size='large' color='grey'>Submit</Button>
-    </Form>
+    <FormProvider {...formMethods}>
+      <Form onSubmit={formMethods.handleSubmit(onSubmit)}      >
+        {createInputs()}
+        <Button type='submit' size='large' color='grey'>{labelButtonSubmit ?? 'Submit'}</Button>
+      </Form>
+    </FormProvider>
   )
-};
-
-export default SimpleForm;
+}

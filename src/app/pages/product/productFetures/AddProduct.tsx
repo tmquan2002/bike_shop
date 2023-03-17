@@ -1,15 +1,14 @@
-import { SubmitHandler } from "react-hook-form";
 import React from 'react';
-import { ProductForm } from "../../../models/product-info";
-import SimpleForm from "../../../components/simple-form/index";
-import { formFields, defaultValues } from "./FormFields";
+import { SimpleForm } from "../../../components/simple-form/index";
+import { defaultValues } from "./productItems";
+import { formFields } from './productItems';
 
 const AddProduct: React.FC = () => {
-  const onSubmit: SubmitHandler<ProductForm> = (data) => {
+  const onSubmit = (data: unknown) => {
     alert(JSON.stringify({ data }))
   };
   return (
-    <SimpleForm formFields={formFields} onSubmit={onSubmit} defaultValues={defaultValues} />
+    <SimpleForm inputs={formFields} onSubmit={onSubmit} initialValues={defaultValues} />
   );
 };
 
