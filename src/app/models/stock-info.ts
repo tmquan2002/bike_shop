@@ -6,3 +6,8 @@ export interface StockInfo {
     product: ProductInfo;
     quantity: number;
 }
+
+export interface StockForm {
+    name: string;
+    quantity: number;
+}

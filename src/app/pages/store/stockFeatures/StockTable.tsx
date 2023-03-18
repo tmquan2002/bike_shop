@@ -1,6 +1,6 @@
 import { Dispatch, SetStateAction } from 'react';
-import DataTable, { ColumnType } from '../../components/data-table/index';
-import storeMocks from '../../assets/mocks/stores.json'
+import DataTable, { ColumnType } from '../../../components/data-table/index';
+import storeMocks from '../../../assets/mocks/stores.json'
 import { Button, Header, Icon, Input, Modal, Segment } from 'semantic-ui-react';
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
@@ -12,7 +12,7 @@ interface StoreStock {
   detail: React.ReactNode;
 }
 
-interface OrderItemProps {
+interface StockItemProps {
   /**Id of the order */
   id: number,
   /**Current feature hook */
@@ -34,7 +34,7 @@ const emptyList = <>
 </>
 
 //Main component
-const StocksTable = ({ id, setCurrentView }: OrderItemProps): JSX.Element => {
+const StocksTable = ({ id, setCurrentView }: StockItemProps): JSX.Element => {
 
   const [data, setData] = useState<StoreStock[]>([])
   const [loading, setLoading] = useState<boolean>(true)
@@ -62,10 +62,6 @@ const StocksTable = ({ id, setCurrentView }: OrderItemProps): JSX.Element => {
   const node = index === -1 ? <div>Store Not Found</div> : data.length === 0 ? emptyList :
     <DataTable columns={columns} data={data} pagination={6} loading={loading} />
 
-  const backToStoreList = (id: number) => {
-    setCurrentView('store')
-  }
-
   useEffect(() => {
     setData(temp.map((row) => ({
       id: row.id,
@@ -78,9 +74,6 @@ const StocksTable = ({ id, setCurrentView }: OrderItemProps): JSX.Element => {
 
   return (
     <>
-      <Button color='black' onClick={() => backToStoreList(1)}>
-        <Icon name='arrow left' inverted />Back
-      </Button>
 
       <div style={{ textAlign: 'right' }}>
         <Modal

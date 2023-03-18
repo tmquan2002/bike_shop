@@ -1,7 +1,5 @@
 import { BrandInfo } from "./brand-info";
 import { CategoryInfo } from "./category-info";
-import brandsMock from '../assets/mocks/brands.json'
-import categoriesMock from '../assets/mocks/categories.json'
 
 export interface ProductInfo {
     id: number;

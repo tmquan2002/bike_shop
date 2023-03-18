@@ -1,8 +1,8 @@
 import React from 'react';
 import { SimpleForm } from "../../../components/simple-form/index";
-import { defaultValues, formFields } from "./productItems";
+import { defaultValues, formFields } from "./stockItems";
 
-const AddProduct: React.FC = () => {
+const AddToStock: React.FC = () => {
   const onSubmit = (data: unknown) => {
     alert(JSON.stringify({ data }))
   };
@@ -11,4 +11,4 @@ const AddProduct: React.FC = () => {
   );
 };
 
-export default AddProduct;
+export default AddToStock;
