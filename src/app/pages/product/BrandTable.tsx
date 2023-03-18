@@ -18,26 +18,26 @@ const data: Brand[] = brandMocks.map((row) => ({
 }))
 
 const BrandTable: React.FC = () => {
-  const [modelAddOpen, setModelAddOpen] = useState(false)
+  const [modalAddOpen, setModalAddOpen] = useState(false)
   const { register, getValues } = useForm()
 
   const handleAdd = () => {
     alert(getValues('brandName'))
-    setModelAddOpen(false)
+    setModalAddOpen(false)
   }
 
   return (
     <>
       <Modal
-        onClose={() => setModelAddOpen(false)} onOpen={() => setModelAddOpen(true)}
-        open={modelAddOpen} trigger={<Button color='grey'>Add</Button>} size='mini'
+        onClose={() => setModalAddOpen(false)} onOpen={() => setModalAddOpen(true)}
+        open={modalAddOpen} trigger={<Button color='grey'>Add</Button>} size='mini'
       >
         <Modal.Content>
           <Header>New brand</Header>
           <Input><input placeholder='Enter a brand' {...register('brandName')} /></Input>
         </Modal.Content>
         <Modal.Actions>
-          <Button color='black' onClick={() => setModelAddOpen(false)}>Cancel</Button>
+          <Button color='black' onClick={() => setModalAddOpen(false)}>Cancel</Button>
           <Button content="Add" onClick={handleAdd} color='grey' />
         </Modal.Actions>
       </Modal>

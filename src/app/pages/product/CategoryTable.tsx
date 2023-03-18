@@ -18,25 +18,25 @@ const data: Category[] = categoryMocks.map((row) => ({
 }))
 
 const CategoryTable: React.FC = () => {
-  const [modelAddOpen, setModelAddOpen] = useState(false)
+  const [modalAddOpen, setModalAddOpen] = useState(false)
   const { register, getValues } = useForm()
 
   const handleAdd = () => {
     alert(getValues('cateName'))
-    setModelAddOpen(false)
+    setModalAddOpen(false)
   }
   return (
     <>
       <Modal
-        onClose={() => setModelAddOpen(false)} onOpen={() => setModelAddOpen(true)}
-        open={modelAddOpen} trigger={<Button color='grey'>Add</Button>} size='mini'
+        onClose={() => setModalAddOpen(false)} onOpen={() => setModalAddOpen(true)}
+        open={modalAddOpen} trigger={<Button color='grey'>Add</Button>} size='mini'
       >
         <Modal.Content>
           <Header>New Category</Header>
           <Input><input placeholder='Enter a brand' {...register('cateName')} /></Input>
         </Modal.Content>
         <Modal.Actions>
-          <Button color='black' onClick={() => setModelAddOpen(false)}>Cancel</Button>
+          <Button color='black' onClick={() => setModalAddOpen(false)}>Cancel</Button>
           <Button content="Add" onClick={handleAdd} color='grey' />
         </Modal.Actions>
       </Modal>

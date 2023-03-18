@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import storeMocks from '../../assets/mocks/stores.json'
 import { usaStateConverter } from '../../../app/utils/helpers';
 import { Button } from 'semantic-ui-react';
-import Stocks from './Stocks';
+import StocksTable from './StocksTable';
 
 interface Staff {
   id: number;
@@ -46,7 +46,7 @@ const StoreTable: React.FC = () => {
   return (
     <>
       {currentView === 'store' ? <DataTable columns={columns} data={data} /> :
-        <Stocks id={currentStoreID} setCurrentView={setCurrentView} />}
+        <StocksTable id={currentStoreID} setCurrentView={setCurrentView} />}
     </>
   );
 };
