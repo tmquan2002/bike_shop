@@ -13,14 +13,14 @@ export const CustomSelect = ({ name, label, options, ...props }: CustomInputProp
 		<Form.Field>
 			<label htmlFor={id}>{label}</label>
 			<select {...register(name)} {...props} id={id}>
-					<option value=''>{props.placeholder}</option>
-					{options &&
-						options.map(({ desc, value }) => (
-							<option key={value} value={value}>
-								{desc}
-							</option>
-						))}
-				</select>
+				<option value=''>{props.placeholder}</option>
+				{options &&
+					options.map(({ key, value, text }) => (
+						<option key={key} value={value}>
+							{text}
+						</option>
+					))}
+			</select>
 		</Form.Field>
 	)
 }

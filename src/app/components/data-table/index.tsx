@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Dimmer, Loader, Pagination, PaginationProps, Table } from "semantic-ui-react";
+import './DataTable.css'
 
 export interface ColumnType<T, K extends keyof T> {
     key: K;
@@ -12,17 +13,27 @@ interface TableProps<T, K extends keyof T> {
     data: Array<T>;
     /**An array list of your table headers */
     columns: Array<ColumnType<T, K>>;
+    /**Title of the table */
+    title?: string;
     /**Show pagiantion under the table, assign a number to show numbers of items each pages (default is 10)*/
     pagination?: boolean | number;
     /**Show table with placeholder if data is still loading */
     loading?: boolean;
 }
 
-const DataTable = <T, K extends keyof T>({ data, columns, pagination, loading }: TableProps<T, K>): JSX.Element => {
+const DataTable = <T, K extends keyof T>({
+    data,
+    columns,
+    pagination,
+    loading,
+    title
+}: TableProps<T, K>): JSX.Element => {
+
+
+    //Pagination
     const [currentPage, setCurrentPage] = useState<number>(1);
     const [pageData, setPageData] = useState(data)
     const pageSize = typeof pagination === "number" ? pagination : 10;
-
     const totalItems = data.length;
     const totalPages = Math.ceil(totalItems / pageSize)
 
@@ -34,7 +45,7 @@ const DataTable = <T, K extends keyof T>({ data, columns, pagination, loading }:
     const endIndex = startIndex + pageSize;
 
     useEffect(() => {
-        setPageData(pagination ? data.slice(startIndex, endIndex) : data);
+        setPageData(pagination ? data.slice(startIndex, endIndex) : data)
     }, [currentPage, data, pagination, endIndex, startIndex]);
 
     return (
@@ -42,6 +53,8 @@ const DataTable = <T, K extends keyof T>({ data, columns, pagination, loading }:
             <Dimmer active={loading} inverted>
                 <Loader inverted>Loading</Loader>
             </Dimmer>
+            {title && <div className='table-title'>{title}</div>}
+            {/* {searchNode} */}
             <Table basic='very'>
                 <Table.Header>
                     <Table.Row>
@@ -81,6 +94,7 @@ const DataTable = <T, K extends keyof T>({ data, columns, pagination, loading }:
                     }
                 </Table.Body>
             </Table>
+
             {pagination && totalPages !== 1 &&
                 <Pagination totalPages={totalPages} activePage={currentPage} onPageChange={handlePageChange} pointing secondary />
             }

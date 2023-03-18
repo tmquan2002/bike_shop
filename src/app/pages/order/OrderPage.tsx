@@ -59,7 +59,7 @@ const OrderPage = ({ setCurrentView, setCurrentItemID }: OrderPageProps): JSX.El
   }
 
   return (
-    <DataTable columns={columns} data={data} pagination={8} loading={loading} />
+    <DataTable columns={columns} data={data} pagination={8} loading={loading} title='Orders'/>
   );
 };
 

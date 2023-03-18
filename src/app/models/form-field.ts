@@ -37,8 +37,9 @@ export interface InputProps {
 }
 
 export interface Opt {
+  key: string
   value: string | number
-  desc: string
+  text: string
 }
 
 export interface Validation {

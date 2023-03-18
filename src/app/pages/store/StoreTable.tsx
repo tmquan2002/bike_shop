@@ -5,7 +5,7 @@ import { usaStateConverter } from '../../../app/utils/helpers';
 import { Button } from 'semantic-ui-react';
 import StockFeature from './stockFeatures';
 
-interface Staff {
+interface Store {
   id: number;
   name: string;
   phone?: string;
@@ -15,13 +15,13 @@ interface Staff {
   stock: React.ReactNode;
 }
 
-const columns: ColumnType<Staff, keyof Staff>[] = [
+const columns: ColumnType<Store, keyof Store>[] = [
   { key: 'name', header: 'Name' },
   { key: 'phone', header: 'Phone' },
   { key: 'email', header: 'Email' },
   { key: 'address', header: 'Address' },
   { key: 'zipCode', header: 'Zipcode' },
-  { key: 'stock', header: 'View Stock' }
+  { key: 'stock', header: '' }
 ]
 
 const StoreTable: React.FC = () => {
@@ -33,7 +33,7 @@ const StoreTable: React.FC = () => {
     setCurrentView('stock')
   }
 
-  const data: Staff[] = storeMocks.map((row) => ({
+  const data: Store[] = storeMocks.map((row) => ({
     id: row.id,
     name: row.name,
     phone: row.phone,

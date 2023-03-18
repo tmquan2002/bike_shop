@@ -4,7 +4,7 @@ import CustomMenu, { CustomMenuObject } from '../../components/custom-menu';
 import ProductFeature from './productFetures';
 
 const menuItems: CustomMenuObject[] = [
-    { name: 'product', content: <ProductFeature /> },
+    { name: 'products', content: <ProductFeature /> },
     { name: 'categories', content: <CategoryTable /> },
     { name: 'brands', content: <BrandTable /> }
 ]

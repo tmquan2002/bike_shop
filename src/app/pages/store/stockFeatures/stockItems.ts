@@ -3,7 +3,7 @@ import { InputProps } from "../../../models/form-field";
 import { StockForm } from 'app/models/stock-info';
 
 export const productOptions = productsMock.map((item) => ({
-    desc: item.name, value: item.name
+    text: item.name, key: item.name, value: item.name
 }))
 
 export const formFields: InputProps[] = [
