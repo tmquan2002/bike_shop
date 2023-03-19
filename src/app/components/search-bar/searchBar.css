@@ -1,0 +1,9 @@
+.search-bar-container-right {
+    width: 30%;
+    margin: 20px 0 0 auto;
+}
+
+.search-bar-container-left {
+    width: 30%;
+    margin: 20px auto 0 0;
+}

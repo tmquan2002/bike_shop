@@ -2,6 +2,8 @@ import DataTable, { ColumnType } from '@components/data-table/index';
 import React, { useEffect, useState } from 'react';
 import staffMocks from '@assets/mocks/staffs.json'
 import { staffState } from '@app/utils/enum';
+import SearchBar from '@app/components/search-bar/SearchBar';
+import { useRef } from 'react';
 
 interface Staff {
   id: number;
@@ -23,11 +25,17 @@ const columns: ColumnType<Staff, keyof Staff>[] = [
 ]
 
 const StaffTable: React.FC = () => {
+  const fullData = useRef<Staff[]>([])
   const [data, setData] = useState<Staff[]>([])
   const [loading, setLoading] = useState<boolean>(true)
 
+  const handleSearch = (searchValue: string) => {
+    let temp = fullData.current.filter((value) => value.fullName.toLowerCase().includes(searchValue))
+    setData(temp)
+  }
+
   useEffect(() => {
-    setData(staffMocks.map((row) => ({
+    fullData.current = staffMocks.map((row) => ({
       id: row.id,
       fullName: row.firstName + ' ' + row.lastName,
       phone: row.phone,
@@ -35,12 +43,16 @@ const StaffTable: React.FC = () => {
       active: row.active === 0 ? staffState.NOT_ACTIVE : staffState.ACTIVE,
       store: row.store,
       manager: row.manager !== undefined ? row.manager?.firstName + ' ' + row.manager?.lastName : undefined
-    })))
+    }))
+    setData(fullData.current)
     setLoading(false)
   }, [])
 
   return (
-    <DataTable columns={columns} data={data} loading={loading} />
+    <>
+      <SearchBar onChange={handleSearch} placeholder="Search name..."/>
+      <DataTable columns={columns} data={data} pagination loading={loading} />
+    </>
   );
 };
 

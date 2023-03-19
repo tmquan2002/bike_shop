@@ -2,6 +2,8 @@ import DataTable, { ColumnType } from '@components/data-table/index';
 import React, { useState, useEffect, Dispatch, SetStateAction, useCallback } from 'react';
 import productMocks from '@assets/mocks/products.json'
 import { Button, Icon } from 'semantic-ui-react';
+import { useRef } from 'react';
+import SearchBar from '@app/components/search-bar/SearchBar';
 
 interface Product {
   id: number;
@@ -28,6 +30,7 @@ const columns: ColumnType<Product, keyof Product>[] = [
 ]
 
 const ProductTable = ({ setCurrentProductID, setFeature }: Props): JSX.Element => {
+  const fullData = useRef<Product[]>([])
   const [data, setData] = useState<Product[]>([])
   const [loading, setLoading] = useState<boolean>(true)
 
@@ -36,8 +39,13 @@ const ProductTable = ({ setCurrentProductID, setFeature }: Props): JSX.Element =
     setFeature('update')
   }, []);
 
+  const handleSearch = (searchValue: string) => {
+    let temp = fullData.current.filter((value) => value.name.toLowerCase().includes(searchValue))
+    setData(temp)
+  }
+
   useEffect(() => {
-    setData(productMocks.map((row) => ({
+    fullData.current = productMocks.map((row) => ({
       id: row.id,
       name: row.name,
       brand: row.brand,
@@ -45,12 +53,16 @@ const ProductTable = ({ setCurrentProductID, setFeature }: Props): JSX.Element =
       modelYear: row.modelYear,
       listPrice: row.listPrice,
       detail: <Button color='grey' onClick={() => handleUpdate(row.id)}><Icon inverted name='edit' />Edit</Button>
-    })))
+    }))
+    setData(fullData.current)
     setLoading(false)
   }, [setCurrentProductID])
 
   return (
-    <DataTable columns={columns} data={data} pagination={8} loading={loading} />
+    <>
+      <SearchBar onChange={handleSearch} align='left'/>
+      <DataTable columns={columns} data={data} pagination={7} loading={loading} />
+    </>
   );
 };
 

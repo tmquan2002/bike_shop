@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import DataTable, { ColumnType } from '@components/data-table/index';
 import customerMocks from '@assets/mocks/customers.json'
-import SearchBar from '@components/SearchBar';
+import SearchBar from '@app/components/search-bar/SearchBar';
 import { usaStateConverter } from '@app/utils/helpers';
 
 interface Customer {
@@ -49,7 +49,7 @@ const ManageCustomerPage: React.FC = () => {
 
   return (
     <>
-      <SearchBar onChange={handleSearch}/>
+      <SearchBar onChange={handleSearch} placeholder="Search name..."/>
       <DataTable columns={columns} data={data} pagination loading={loading} />
     </>
   );

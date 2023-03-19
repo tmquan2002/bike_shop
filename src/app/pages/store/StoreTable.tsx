@@ -4,7 +4,7 @@ import storeMocks from '@assets/mocks/stores.json'
 import { usaStateConverter } from '@app/utils/helpers';
 import { Button } from 'semantic-ui-react';
 import StockFeature from './stockFeatures';
-import SearchBar from '@components/SearchBar';
+import SearchBar from '@app/components/search-bar/SearchBar';
 
 interface Store {
   id: number;

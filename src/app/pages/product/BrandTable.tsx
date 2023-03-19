@@ -3,6 +3,9 @@ import React, { useState } from 'react';
 import brandMocks from '@assets/mocks/brands.json'
 import { Button, Header, Input, Modal } from 'semantic-ui-react';
 import { useForm } from 'react-hook-form';
+import SearchBar from '@app/components/search-bar/SearchBar';
+import { useRef } from 'react';
+import { useEffect } from 'react';
 
 interface Brand {
   id: number;
@@ -12,12 +15,11 @@ interface Brand {
 const columns: ColumnType<Brand, keyof Brand>[] = [
   { key: 'name', header: 'Name' },
 ]
-const data: Brand[] = brandMocks.map((row) => ({
-  id: row.id,
-  name: row.name,
-}))
 
 const BrandTable: React.FC = () => {
+  const fullData = useRef<Brand[]>([])
+  const [data, setData] = useState<Brand[]>([])
+  const [loading, setLoading] = useState<boolean>(true)
   const [modalAddOpen, setModalAddOpen] = useState(false)
   const { register, getValues } = useForm()
 
@@ -25,6 +27,20 @@ const BrandTable: React.FC = () => {
     alert(getValues('brandName'))
     setModalAddOpen(false)
   }
+
+  const handleSearch = (searchValue: string) => {
+    let temp = fullData.current.filter((value) => value.name.toLowerCase().includes(searchValue))
+    setData(temp)
+  }
+
+  useEffect(() => {
+    fullData.current = brandMocks.map((row) => ({
+      id: row.id,
+      name: row.name,
+    }))
+    setData(fullData.current)
+    setLoading(false)
+  }, [])
 
   return (
     <>
@@ -41,8 +57,10 @@ const BrandTable: React.FC = () => {
           <Button content="Add" onClick={handleAdd} color='grey' />
         </Modal.Actions>
       </Modal>
-
-      <DataTable columns={columns} data={data} pagination />
+      <div style={{ width: '50%', margin: '0 auto 0 auto' }}>
+        <SearchBar onChange={handleSearch} align='left' />
+        <DataTable columns={columns} data={data} pagination />
+      </div>
     </>
   );
 };

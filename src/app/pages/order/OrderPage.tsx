@@ -4,6 +4,8 @@ import orderMocks from '@assets/mocks/orders.json'
 import { orderStateConverter } from '@app/utils/helpers';
 import { OrderStatus } from '@app/utils/enum';
 import { Button } from 'semantic-ui-react';
+import SearchBar from '@app/components/search-bar/SearchBar';
+import { useRef } from 'react';
 
 interface Order {
   id: number;
@@ -34,12 +36,18 @@ const columns: ColumnType<Order, keyof Order>[] = [
 ]
 
 const OrderPage = ({ setCurrentView, setCurrentItemID }: OrderPageProps): JSX.Element => {
-
+  const fullData = useRef<Order[]>([])
   const [data, setData] = useState<Order[]>([])
   const [loading, setLoading] = useState<boolean>(true)
 
+  const handleSearch = (searchValue: string) => {
+    let temp = fullData.current.filter((value) => value.customer?.toLowerCase().includes(searchValue))
+    setData(temp)
+  }
+
   useEffect(() => {
-    setData(orderMocks.map((row) => ({
+    setLoading(false)
+    fullData.current = orderMocks.map((row) => ({
       id: row.id,
       customer: row.customer,
       status: orderStateConverter(row.status),
@@ -49,7 +57,8 @@ const OrderPage = ({ setCurrentView, setCurrentItemID }: OrderPageProps): JSX.El
       store: row.store,
       staff: row.staff,
       detail: <Button color='grey' onClick={() => handleDetail(row.id)}>Detail</Button>
-    })))
+    }))
+    setData(fullData.current)
     setLoading(false)
   }, [])
 
@@ -59,7 +68,10 @@ const OrderPage = ({ setCurrentView, setCurrentItemID }: OrderPageProps): JSX.El
   }
 
   return (
-    <DataTable columns={columns} data={data} pagination={8} loading={loading} title='Orders'/>
+    <>
+      <SearchBar onChange={handleSearch} />
+      <DataTable columns={columns} data={data} pagination={8} loading={loading} title='Orders' />
+    </>
   );
 };
 

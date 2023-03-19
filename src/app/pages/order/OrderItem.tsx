@@ -1,7 +1,11 @@
 import { Dispatch, SetStateAction } from 'react';
 import DataTable, { ColumnType } from '@components/data-table/index';
 import orderMocks from '@assets/mocks/orders.json'
-import { Button, Icon } from 'semantic-ui-react';
+import { Button, Header, Icon, Segment } from 'semantic-ui-react';
+import { useEffect } from 'react';
+import { useRef } from 'react';
+import { useState } from 'react';
+import SearchBar from '@components/search-bar/SearchBar';
 
 interface OrderItemType {
   id: number;
@@ -28,18 +32,36 @@ const OrderItem = ({ id, setCurrentView, setCurrentItemID }: OrderItemProps): JS
   const index = orderMocks.findIndex(item => {
     return item.id === id;
   });
-  const data = index !== -1 ? orderMocks[index].detail : []
-  const node = index !== -1 ? <DataTable columns={columns} data={data} /> : <div>Cannot found any order with this ID</div>
+  const fullData = useRef<OrderItemType[]>(index != -1 ? orderMocks[index].detail : [])
+  const [data, setData] = useState<OrderItemType[]>([])
+  const [loading, setLoading] = useState<boolean>(true)
+
   const backToOrderList = (id: number) => {
     setCurrentItemID(id)
     setCurrentView('order')
   }
+
+  const handleSearch = (searchValue: string) => {
+    let temp = fullData.current.filter((value) => value.product.toLowerCase().includes(searchValue))
+    setData(temp)
+  }
+
+  useEffect(() => {
+    setData(fullData.current)
+    setLoading(false)
+    // setTimeout(() => {
+    //   setLoading(false)
+    // }, 1000)
+  }, [])
+
   return (
     <>
       <Button color='grey' onClick={() => backToOrderList(1)}>
-          <Icon name='arrow left' inverted/>Back
+        <Icon name='arrow left' inverted />Back
       </Button>
-      {node}
+
+      <SearchBar onChange={handleSearch} />
+      <DataTable columns={columns} data={data} loading={loading} />
     </>
   );
 };

@@ -4,6 +4,8 @@ import storeMocks from '@assets/mocks/stores.json'
 import { Button, Header, Icon, Input, Modal, Segment } from 'semantic-ui-react';
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
+import { useRef } from 'react';
+import SearchBar from '@app/components/search-bar/SearchBar';
 
 interface StoreStock {
   id: number;
@@ -25,17 +27,23 @@ const columns: ColumnType<StoreStock, keyof StoreStock>[] = [
   { key: 'detail', header: '' }
 ]
 
-const emptyList = <>
-  <Segment placeholder textAlign='center'>
-    <Header >
-      This store doesn't have any products
-    </Header>
-  </Segment>
-</>
+const EmptyList = ({ text }: { text: string }): JSX.Element => {
+  return (
+    <Segment placeholder textAlign='center'>
+      <Header >
+        {text}
+      </Header>
+    </Segment>
+  )
+}
 
 //Main component
 const StocksTable = ({ id, setCurrentView }: StockItemProps): JSX.Element => {
-
+  //Get stocks based on store id
+  const index = storeMocks.findIndex(item => {
+    return item.id === id;
+  });
+  const fullData = useRef<StoreStock[]>([])
   const [data, setData] = useState<StoreStock[]>([])
   const [loading, setLoading] = useState<boolean>(true)
 
@@ -43,7 +51,7 @@ const StocksTable = ({ id, setCurrentView }: StockItemProps): JSX.Element => {
   const [modalOpen, setModalOpen] = useState(false)
   const { register, getValues, setValue } = useForm()
 
-  const handleSubmit = () => {
+  const handleSubmitModal = () => {
     alert("Quantity: " + getValues("quantity"))
     setModalOpen(false)
   }
@@ -54,27 +62,27 @@ const StocksTable = ({ id, setCurrentView }: StockItemProps): JSX.Element => {
     setValue("quantity", quantity)
   }
 
-  //Get stocks based on store id
-  const index = storeMocks.findIndex(item => {
-    return item.id === id;
-  });
-  const temp = index !== -1 ? storeMocks[index].detail : []
-  const node = index === -1 ? <div>Store Not Found</div> : data.length === 0 ? emptyList :
-    <DataTable columns={columns} data={data} pagination={6} loading={loading} />
+  //Search
+  const handleSearch = (searchValue: string) => {
+    let temp = fullData.current.filter((value) => value.name.toLowerCase().includes(searchValue))
+    setData(temp)
+  }
 
   useEffect(() => {
-    setData(temp.map((row) => ({
-      id: row.id,
-      name: row.name,
-      quantity: row.quantity,
-      detail: <Button color='grey' onClick={() => handleUpdateModal(row.id, row.quantity)}><Icon inverted name='edit' />Edit</Button>
-    })))
+    if (index != -1) {
+      fullData.current = storeMocks[index].detail.map((row) => ({
+        id: row.id,
+        name: row.name,
+        quantity: row.quantity,
+        detail: <Button color='grey' onClick={() => handleUpdateModal(row.id, row.quantity)}><Icon inverted name='edit' />Edit</Button>
+      }))
+    }
+    setData(fullData.current)
     setLoading(false)
   }, [])
 
   return (
     <>
-
       <div style={{ textAlign: 'right' }}>
         <Modal
           onClose={() => setModalOpen(false)}
@@ -86,12 +94,16 @@ const StocksTable = ({ id, setCurrentView }: StockItemProps): JSX.Element => {
           </Modal.Content>
           <Modal.Actions>
             <Button color='black' onClick={() => setModalOpen(false)}>Cancel</Button>
-            <Button content="Edit" onClick={handleSubmit} color='grey' />
+            <Button content="Edit" onClick={handleSubmitModal} color='grey' />
           </Modal.Actions>
         </Modal>
       </div>
-
-      {node}
+      {index === -1 ? <EmptyList text='Store not found' /> : fullData.current.length === 0 ? <EmptyList text="This store doesn't have any products" /> :
+        <>
+          <SearchBar onChange={handleSearch} placeholder="Search name..." />
+          <DataTable columns={columns} data={data} pagination={6} loading={loading} />
+        </>
+      }
     </>
   );
 };
