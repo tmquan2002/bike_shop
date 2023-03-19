@@ -1,6 +1,6 @@
 import { formFields, defaultValues } from "./productItems";
-import productsMocks from '../../../assets/mocks/products.json'
-import { SimpleForm } from "../../../components/simple-form";
+import productsMocks from '@assets/mocks/products.json'
+import { SimpleForm } from "@components/simple-form";
 
 const UpdateProduct = ({ id }: { id: number }): JSX.Element => {
   const index = productsMocks.findIndex(item => {

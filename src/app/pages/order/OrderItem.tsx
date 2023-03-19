@@ -1,6 +1,6 @@
 import { Dispatch, SetStateAction } from 'react';
-import DataTable, { ColumnType } from '../../components/data-table/index';
-import orderMocks from '../../assets/mocks/orders.json'
+import DataTable, { ColumnType } from '@components/data-table/index';
+import orderMocks from '@assets/mocks/orders.json'
 import { Button, Icon } from 'semantic-ui-react';
 
 interface OrderItemType {

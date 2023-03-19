@@ -25,14 +25,16 @@ const SearchBar: React.FC<Props> = (props) => {
   }, [searchValue, onChange]);
 
   return (
-    <Input
-      fluid
-      size={size}
-      placeholder="Search..."
-      onChange={(e, { value }): void => {
-        setSearchValue(value.trim().toLowerCase());
-      }}
-    />
+    <div style={{ marginLeft: 'auto', marginRight: 0, width: '20%' }}>
+      <Input
+        fluid
+        size={size}
+        placeholder="Search..."
+        onChange={(e, { value }): void => {
+          setSearchValue(value.trim().toLowerCase());
+        }}
+      />
+    </div>
   );
 };
 

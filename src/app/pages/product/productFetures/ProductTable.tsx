@@ -1,6 +1,6 @@
-import DataTable, { ColumnType } from '../../../components/data-table/index';
+import DataTable, { ColumnType } from '@components/data-table/index';
 import React, { useState, useEffect, Dispatch, SetStateAction, useCallback } from 'react';
-import productMocks from '../../../assets/mocks/products.json'
+import productMocks from '@assets/mocks/products.json'
 import { Button, Icon } from 'semantic-ui-react';
 
 interface Product {

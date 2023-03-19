@@ -1,6 +1,6 @@
 import { Dispatch, SetStateAction } from 'react';
-import DataTable, { ColumnType } from '../../../components/data-table/index';
-import storeMocks from '../../../assets/mocks/stores.json'
+import DataTable, { ColumnType } from '@components/data-table/index';
+import storeMocks from '@assets/mocks/stores.json'
 import { Button, Header, Icon, Input, Modal, Segment } from 'semantic-ui-react';
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';

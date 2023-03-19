@@ -1,8 +1,8 @@
 import React, { Dispatch, SetStateAction, useState, useEffect } from 'react';
-import DataTable, { ColumnType } from '../../components/data-table/index';
-import orderMocks from '../../assets/mocks/orders.json'
-import { orderStateConverter } from '../../../app/utils/helpers';
-import { OrderStatus } from 'app/utils/enum';
+import DataTable, { ColumnType } from '@components/data-table/index';
+import orderMocks from '@assets/mocks/orders.json'
+import { orderStateConverter } from '@app/utils/helpers';
+import { OrderStatus } from '@app/utils/enum';
 import { Button } from 'semantic-ui-react';
 
 interface Order {

@@ -1,6 +1,6 @@
-import productsMock from '../../../assets/mocks/products.json'
-import { InputProps } from "../../../models/form-field";
-import { StockForm } from 'app/models/stock-info';
+import productsMock from '@assets/mocks/products.json'
+import { InputProps } from "@app/models/form-field";
+import { StockForm } from '@app/models/stock-info';
 
 export const productOptions = productsMock.map((item) => ({
     text: item.name, key: item.name, value: item.name

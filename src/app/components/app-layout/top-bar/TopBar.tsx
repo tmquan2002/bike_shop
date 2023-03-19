@@ -1,8 +1,8 @@
 import React from 'react';
 import { Grid } from 'semantic-ui-react';
 import './TopBar.css';
-import { ReactComponent as BikeIcon } from '../../../assets/svgs/bike_icon.svg';
-import NeumoButton from '../../neumo-button/NeumoButton';
+import { ReactComponent as BikeIcon } from '@assets/svgs/bike_icon.svg';
+import NeumoButton from '@components/neumo-button/NeumoButton';
 
 const TopBar: React.FC = () => {
   return (

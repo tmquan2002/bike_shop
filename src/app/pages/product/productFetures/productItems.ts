@@ -1,7 +1,7 @@
-import brandsMock from '../../../assets/mocks/brands.json'
-import categoriesMock from '../../../assets/mocks/categories.json'
-import { ProductForm } from "../../../models/product-info";
-import { InputProps } from "../../../models/form-field";
+import brandsMock from '@assets/mocks/brands.json'
+import categoriesMock from '@assets/mocks/categories.json'
+import { ProductForm } from "@app/models/product-info";
+import { InputProps } from "@app/models/form-field";
 
 export const brandOptions = brandsMock.map((item) => ({
     text: item.name, key: item.name, value: item.name

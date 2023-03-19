@@ -1,5 +1,5 @@
 import React from 'react';
-import { SimpleForm } from "../../../components/simple-form/index";
+import { SimpleForm } from "@components/simple-form/index";
 import { defaultValues, formFields } from "./productItems";
 
 const AddProduct: React.FC = () => {

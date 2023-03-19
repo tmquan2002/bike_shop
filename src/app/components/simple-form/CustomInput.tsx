@@ -1,6 +1,6 @@
 import { useFormContext } from 'react-hook-form'
 import { Form } from 'semantic-ui-react'
-import { CustomInputProps } from '../../models/form-field'
+import { CustomInputProps } from '@app/models/form-field'
 
 export const CustomInput = ({ name, label, ...props }: CustomInputProps) => {
     const {

@@ -1,6 +1,6 @@
 import BrandTable from './BrandTable';
 import CategoryTable from './CategoryTable';
-import CustomMenu, { CustomMenuObject } from '../../components/custom-menu';
+import CustomMenu, { CustomMenuObject } from '@components/custom-menu';
 import ProductFeature from './productFetures';
 
 const menuItems: CustomMenuObject[] = [

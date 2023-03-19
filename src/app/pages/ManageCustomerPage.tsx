@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
-import DataTable, { ColumnType } from '../components/data-table/index';
-import customerMocks from '../assets/mocks/customers.json'
-import { usaStateConverter } from '../../app/utils/helpers';
-import SearchBar from '../components/SearchBar';
+import DataTable, { ColumnType } from '@components/data-table/index';
+import customerMocks from '@assets/mocks/customers.json'
+import SearchBar from '@components/SearchBar';
+import { usaStateConverter } from '@app/utils/helpers';
 
 interface Customer {
   id: number;
@@ -49,7 +49,7 @@ const ManageCustomerPage: React.FC = () => {
 
   return (
     <>
-      <div style={{ textAlign: 'right', width: '20%' }}><SearchBar onChange={handleSearch}/></div>
+      <SearchBar onChange={handleSearch}/>
       <DataTable columns={columns} data={data} pagination loading={loading} />
     </>
   );

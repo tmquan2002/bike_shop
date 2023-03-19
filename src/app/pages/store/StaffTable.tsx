@@ -1,7 +1,7 @@
-import DataTable, { ColumnType } from '../../components/data-table/index';
+import DataTable, { ColumnType } from '@components/data-table/index';
 import React, { useEffect, useState } from 'react';
-import staffMocks from '../../assets/mocks/staffs.json'
-import { staffState } from '../../utils/enum';
+import staffMocks from '@assets/mocks/staffs.json'
+import { staffState } from '@app/utils/enum';
 
 interface Staff {
   id: number;

@@ -1,6 +1,6 @@
 import { FormProvider, useForm } from 'react-hook-form'
 import { Button, Form } from 'semantic-ui-react'
-import { InputProps } from '../../models/form-field'
+import { InputProps } from '@app/models/form-field'
 import { CustomInput } from './CustomInput'
 import { CustomSelect } from './CustomSelect'
 

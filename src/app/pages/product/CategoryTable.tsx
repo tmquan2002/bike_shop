@@ -1,6 +1,6 @@
-import DataTable, { ColumnType } from '../../components/data-table/index';
+import DataTable, { ColumnType } from '@components/data-table/index';
 import React, { useState } from 'react';
-import categoryMocks from '../../assets/mocks/categories.json'
+import categoryMocks from '@assets/mocks/categories.json'
 import { Button, Header, Input, Modal } from 'semantic-ui-react';
 import { useForm } from 'react-hook-form';
 
