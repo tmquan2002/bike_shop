@@ -46,12 +46,12 @@ const StoreTable = ({ setFeature, setCurrentUpdateID }: Props): JSX.Element => {
   const handleUpdate = useCallback((id: number) => {
     setCurrentUpdateID(id)
     setFeature('edit')
-  }, []);
+  }, [setCurrentUpdateID, setFeature]);
 
-  const handleSearch = (searchValue: string) => {
+  const handleSearch = useCallback((searchValue: string) => {
     let temp = fullData.current.filter((value) => value.name.toLowerCase().includes(searchValue))
     setData(temp)
-  }
+  }, [])
 
   useEffect(() => {
     fullData.current = storeMocks.map((row) => ({
@@ -62,13 +62,13 @@ const StoreTable = ({ setFeature, setCurrentUpdateID }: Props): JSX.Element => {
       address: row.street + ', ' + row.city + ', ' + usaStateConverter(row.state),
       zipCode: row.zipCode,
       stock: <Button.Group>
-        <Button color='grey' onClick={() => handleDetail(row.id)}>View Stock</Button>
+        <Button color='grey' onClick={() => handleDetail(row.id)}><Icon inverted name='eye' />Stock</Button>
         <Button color='grey' onClick={() => handleUpdate(row.id)}><Icon inverted name='edit' />Edit</Button>
       </Button.Group>
     }))
     setData(fullData.current)
     setLoading(false)
-  }, [])
+  }, [handleUpdate])
 
   if (currentView === 'stock') {
     return (
