@@ -8,3 +8,12 @@ export interface StoreInfo {
   state?: string;
   zipCode?: string;
 }
+
+export interface StoreForm {
+  name: string;
+  phone: string;
+  email: string;
+  street: string;
+  city: string;
+  state: string;
+}

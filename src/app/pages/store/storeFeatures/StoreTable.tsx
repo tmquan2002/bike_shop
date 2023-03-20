@@ -1,10 +1,10 @@
 import DataTable, { ColumnType } from '@components/data-table/index';
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, Dispatch, SetStateAction, useCallback } from 'react';
 import storeMocks from '@assets/mocks/stores.json'
 import { usaStateConverter } from '@app/utils/helpers';
-import { Button } from 'semantic-ui-react';
-import StockFeature from './stockFeatures';
-import SearchBar from '@app/components/search-bar/SearchBar';
+import { Button, Icon } from 'semantic-ui-react';
+import StockFeature from '../stockFeatures';
+import SearchBar from '@components/search-bar/SearchBar';
 
 interface Store {
   id: number;
@@ -14,6 +14,10 @@ interface Store {
   address: string;
   zipCode: string;
   stock: React.ReactNode;
+}
+interface Props {
+  setCurrentUpdateID: Dispatch<SetStateAction<number>>;
+  setFeature: Dispatch<SetStateAction<string>>;
 }
 
 const columns: ColumnType<Store, keyof Store>[] = [
@@ -25,17 +29,24 @@ const columns: ColumnType<Store, keyof Store>[] = [
   { key: 'stock', header: '' }
 ]
 
-const StoreTable: React.FC = () => {
+const StoreTable = ({ setFeature, setCurrentUpdateID }: Props): JSX.Element => {
   const fullData = useRef<Store[]>([])
   const [data, setData] = useState<Store[]>([])
   const [loading, setLoading] = useState<boolean>(true)
   const [currentView, setCurrentView] = useState('store')
   const [currentStoreID, setCurrentStoreID] = useState(1)
 
+  //Change to stock table component
   const handleDetail = (id: number) => {
     setCurrentStoreID(id)
     setCurrentView('stock')
   }
+
+  //Change to update form component
+  const handleUpdate = useCallback((id: number) => {
+    setCurrentUpdateID(id)
+    setFeature('edit')
+  }, []);
 
   const handleSearch = (searchValue: string) => {
     let temp = fullData.current.filter((value) => value.name.toLowerCase().includes(searchValue))
@@ -50,7 +61,10 @@ const StoreTable: React.FC = () => {
       email: row.email,
       address: row.street + ', ' + row.city + ', ' + usaStateConverter(row.state),
       zipCode: row.zipCode,
-      stock: <Button color='grey' onClick={() => handleDetail(row.id)}>View</Button>
+      stock: <Button.Group>
+        <Button color='grey' onClick={() => handleDetail(row.id)}>View Stock</Button>
+        <Button color='grey' onClick={() => handleUpdate(row.id)}><Icon inverted name='edit' />Edit</Button>
+      </Button.Group>
     }))
     setData(fullData.current)
     setLoading(false)
@@ -63,6 +77,9 @@ const StoreTable: React.FC = () => {
   } else {
     return (
       <>
+        <div style={{ textAlign: 'right' }}>
+          <Button color='grey' onClick={() => setFeature('add')}>+ Add store</Button>
+        </div>
         <SearchBar onChange={handleSearch} />
         <DataTable columns={columns} data={data} loading={loading} />
       </>

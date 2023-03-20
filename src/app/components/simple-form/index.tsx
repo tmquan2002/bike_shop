@@ -37,7 +37,7 @@ export const SimpleForm = ({ ...props }: Props) => {
 
   return (
     <FormProvider {...formMethods}>
-      <Form onSubmit={formMethods.handleSubmit(onSubmit)}      >
+      <Form onSubmit={formMethods.handleSubmit(onSubmit)}>
         {createInputs()}
         <Button type='submit' size='large' color='grey'>{labelButtonSubmit}</Button>
       </Form>

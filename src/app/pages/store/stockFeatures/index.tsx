@@ -23,7 +23,7 @@ const StockFeature = ({ id, setCurrentView }: StockItemProps): JSX.Element => {
                     <div style={{ textAlign: 'right' }}>
                         <Button color='grey' onClick={() => setFeature('add')}>+ Add to stock</Button>
                     </div>
-                    <StocksTable id={id} setCurrentView={setCurrentView} />
+                    <StocksTable id={id} />
                 </>
             }
             {feature === 'add' &&

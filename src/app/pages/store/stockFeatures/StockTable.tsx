@@ -1,8 +1,7 @@
-import { Dispatch, SetStateAction } from 'react';
 import DataTable, { ColumnType } from '@components/data-table/index';
 import storeMocks from '@assets/mocks/stores.json'
 import { Button, Header, Icon, Input, Modal, Segment } from 'semantic-ui-react';
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useRef } from 'react';
 import SearchBar from '@app/components/search-bar/SearchBar';
@@ -12,13 +11,6 @@ interface StoreStock {
   name: string;
   quantity: number;
   detail: React.ReactNode;
-}
-
-interface StockItemProps {
-  /**Id of the order */
-  id: number,
-  /**Current feature hook */
-  setCurrentView: Dispatch<SetStateAction<string>>
 }
 
 const columns: ColumnType<StoreStock, keyof StoreStock>[] = [
@@ -38,7 +30,7 @@ const EmptyList = ({ text }: { text: string }): JSX.Element => {
 }
 
 //Main component
-const StocksTable = ({ id, setCurrentView }: StockItemProps): JSX.Element => {
+const StocksTable = ({ id }: { id: number }): JSX.Element => {
   //Get stocks based on store id
   const index = storeMocks.findIndex(item => {
     return item.id === id;
@@ -56,11 +48,11 @@ const StocksTable = ({ id, setCurrentView }: StockItemProps): JSX.Element => {
     setModalOpen(false)
   }
 
-  const handleUpdateModal = (id: number, quantity: number) => {
+  const handleUpdateModal = useCallback((id: number, quantity: number) => {
     setModalOpen(true)
     setValue("id", id)
     setValue("quantity", quantity)
-  }
+  }, [setValue])
 
   //Search
   const handleSearch = (searchValue: string) => {
@@ -69,7 +61,7 @@ const StocksTable = ({ id, setCurrentView }: StockItemProps): JSX.Element => {
   }
 
   useEffect(() => {
-    if (index != -1) {
+    if (index !== -1) {
       fullData.current = storeMocks[index].detail.map((row) => ({
         id: row.id,
         name: row.name,
@@ -79,7 +71,7 @@ const StocksTable = ({ id, setCurrentView }: StockItemProps): JSX.Element => {
     }
     setData(fullData.current)
     setLoading(false)
-  }, [])
+  }, [index, handleUpdateModal])
 
   return (
     <>

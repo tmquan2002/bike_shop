@@ -1,9 +1,9 @@
 import StaffTable from './StaffTable';
-import StoreTable from './StoreTable';
 import CustomMenu, { CustomMenuObject } from '@components/custom-menu';
+import StoreFeature from './storeFeatures';
 
 const menuItems: CustomMenuObject[] = [
-    { name: 'stores', content: <StoreTable /> },
+    { name: 'stores', content: <StoreFeature /> },
     { name: 'staffs', content: <StaffTable /> }
 ]
 
