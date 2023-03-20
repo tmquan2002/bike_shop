@@ -7,7 +7,7 @@ const AddStore: React.FC = () => {
     alert(JSON.stringify({ data }))
   };
   return (
-    <SimpleForm inputs={formFields} onSubmit={onSubmit} initialValues={defaultValues} />
+    <SimpleForm inputs={formFields} onSubmit={onSubmit} initialValues={defaultValues} titleForm="New Store"/>
   );
 };
 

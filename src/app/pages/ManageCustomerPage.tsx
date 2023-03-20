@@ -50,7 +50,7 @@ const ManageCustomerPage: React.FC = () => {
   return (
     <>
       <SearchBar onChange={handleSearch} placeholder="Search name..."/>
-      <DataTable columns={columns} data={data} pagination loading={loading} />
+      <DataTable columns={columns} data={data} pagination loading={loading} title="Customers"/>
     </>
   );
 };

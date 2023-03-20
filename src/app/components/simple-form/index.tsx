@@ -5,11 +5,15 @@ import { CustomInput } from './CustomInput'
 import { CustomSelect } from './CustomSelect'
 
 interface Props {
+  /**Call your function when submit */
   onSubmit: (data: unknown) => void
+  /**Submit text (default is Submit) */
   labelButtonSubmit?: string
+  /**Form title */
   titleForm?: string
-
+  /**Default Values */
   initialValues: unknown
+  /**An array of inputs*/
   inputs: InputProps[]
 }
 
@@ -18,7 +22,8 @@ export const SimpleForm = ({ ...props }: Props) => {
     initialValues,
     inputs,
     onSubmit,
-    labelButtonSubmit = 'Submit'
+    labelButtonSubmit = 'Submit',
+    titleForm
   } = props
 
   const formMethods = useForm({
@@ -37,6 +42,7 @@ export const SimpleForm = ({ ...props }: Props) => {
 
   return (
     <FormProvider {...formMethods}>
+      {titleForm && <div className='table-title'>{titleForm}</div>}
       <Form onSubmit={formMethods.handleSubmit(onSubmit)}>
         {createInputs()}
         <Button type='submit' size='large' color='grey'>{labelButtonSubmit}</Button>

@@ -22,7 +22,7 @@ const UpdateStore = ({ id }: { id: number }): JSX.Element => {
   };
 
   return (
-    <SimpleForm inputs={formFields} onSubmit={onSubmit} initialValues={values} />
+    <SimpleForm inputs={formFields} onSubmit={onSubmit} initialValues={values} titleForm="Edit Store"/>
   );
 };
 

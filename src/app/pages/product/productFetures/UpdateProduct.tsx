@@ -19,7 +19,7 @@ const UpdateProduct = ({ id }: { id: number }): JSX.Element => {
     alert(JSON.stringify({ data }))
   };
   return (
-    <SimpleForm inputs={formFields} onSubmit={onSubmit} initialValues={values} />
+    <SimpleForm inputs={formFields} onSubmit={onSubmit} initialValues={values} titleForm="Edit Product"/>
   );
 };
 
