@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Input } from 'semantic-ui-react';
-import './searchBar.css'
+import './searchBar.less'
 
 interface Props {
   /**Size of taskbar */
@@ -34,7 +34,7 @@ const SearchBar: React.FC<Props> = (props) => {
   }, [searchValue, onChange]);
 
   return (
-    <div className={`search-bar-container-${align}`}>
+    <div className={`search-bar-container ${align}`}>
       <Input
         fluid
         size={size}

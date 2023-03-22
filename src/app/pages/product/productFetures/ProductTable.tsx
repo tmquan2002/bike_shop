@@ -37,7 +37,7 @@ const ProductTable = ({ setCurrentProductID, setFeature }: Props): JSX.Element =
   const handleUpdate = useCallback((id: number) => {
     setCurrentProductID(id)
     setFeature('update')
-  }, []);
+  }, [setCurrentProductID, setFeature]);
 
   const handleSearch = (searchValue: string) => {
     let temp = fullData.current.filter((value) => value.name.toLowerCase().includes(searchValue))
@@ -56,11 +56,11 @@ const ProductTable = ({ setCurrentProductID, setFeature }: Props): JSX.Element =
     }))
     setData(fullData.current)
     setLoading(false)
-  }, [setCurrentProductID])
+  }, [handleUpdate])
 
   return (
     <>
-      <SearchBar onChange={handleSearch} align='left'/>
+      <SearchBar onChange={handleSearch} align='left' />
       <DataTable columns={columns} data={data} pagination={7} loading={loading} />
     </>
   );

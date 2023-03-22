@@ -41,10 +41,10 @@ const ManageCustomerPage: React.FC = () => {
       zipCode: row.zipCode
     }))
     setData(fullData.current)
-    // setLoading(false)
-    setTimeout(() => {
-      setLoading(false)
-    }, 1000)
+    setLoading(false)
+    // setTimeout(() => {
+    //   setLoading(false)
+    // }, 1000)
   }, [])
 
   return (

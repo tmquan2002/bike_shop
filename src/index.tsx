@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from '@app/index';
 import 'semantic-ui-less/semantic.less'
-import '@app/assets/styles/styles.css';
+import '@app/assets/styles/styles.less';
 
 if (process.env.NODE_ENV === 'development') {
   whyDidYouRender(React, {

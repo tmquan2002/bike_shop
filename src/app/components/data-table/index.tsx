@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Dimmer, Loader, Pagination, PaginationProps, Table } from "semantic-ui-react";
-import './DataTable.css'
+import './DataTable.less'
 
 export interface ColumnType<T, K extends keyof T> {
     key: K;

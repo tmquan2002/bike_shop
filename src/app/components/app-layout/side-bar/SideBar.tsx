@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid } from 'semantic-ui-react';
-import './SideBar.css';
+import './SideBar.less';
 import { ReactComponent as CustomerIcon } from '@assets/svgs/customer_icon.svg';
 import { ReactComponent as BikeStoreIcon } from '@assets/svgs/bikestore_icon.svg';
 import { ReactComponent as OrderIcon } from '@assets/svgs/order_icon.svg';

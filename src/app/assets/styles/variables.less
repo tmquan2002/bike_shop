@@ -9,7 +9,8 @@
 @primary-dark-button-color: #c14f53;
 @light-background-color: #fff;
 @grey-background-color: #f0f2f5;
-@dark-background-color: #5e5e5e;
+@dark-background-color: #8a8a8a;
+@darker-background-color: #616161;
 @light-blur-background-color: #ffffff85;
 
 //text color
@@ -28,11 +29,8 @@
 //dimension
 @top-bar-height: 60px;
 @side-bar-width: 75px;
-@page-additional-padding: 20px;
-@page-container-padding: calc(@top-bar-height + @page-additional-padding)
-  @page-additional-padding 0
-  calc(@side-bar-width + @page-additional-padding);
+@page-additional-padding: 30px;
+@page-container-padding: @page-additional-padding @page-additional-padding @page-additional-padding;
 
-
-  //border-radius
-  @normal-border-radius:10px;
+//border-radius
+@normal-border-radius: 10px;

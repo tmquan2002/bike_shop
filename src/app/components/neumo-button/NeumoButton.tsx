@@ -1,5 +1,5 @@
 import React from 'react';
-import './NeumoButton.css';
+import './NeumoButton.less';
 import cn from 'classnames';
 import ChevronIcon, { ChevronDirection } from '@assets/svgs/chevron/chevron_icon';
 import { NavLink } from 'react-router-dom';
