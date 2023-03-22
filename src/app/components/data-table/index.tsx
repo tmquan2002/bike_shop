@@ -55,7 +55,7 @@ const DataTable = <T, K extends keyof T>({
             <Dimmer active={loading} inverted>
                 <Loader inverted>Loading</Loader>
             </Dimmer>
-            {title && <div className='table-title'>{title}</div>}
+            {!loading && title && <div className='table-title'>{title}</div>}
             {!loading &&
                 <Table basic='very'>
                     <Table.Header>

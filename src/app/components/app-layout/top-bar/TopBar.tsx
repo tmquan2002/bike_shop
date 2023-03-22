@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid } from 'semantic-ui-react';
-import './TopBar.css';
+import './TopBar.less';
 import { ReactComponent as BikeIcon } from '@assets/svgs/bike_icon.svg';
 import NeumoButton from '@components/neumo-button/NeumoButton';
 

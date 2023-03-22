@@ -1,4 +1,4 @@
-import React, { Dispatch, SetStateAction, useState, useEffect } from 'react';
+import React, { Dispatch, SetStateAction, useState, useEffect, useCallback } from 'react';
 import DataTable, { ColumnType } from '@components/data-table/index';
 import orderMocks from '@assets/mocks/orders.json'
 import { orderStateConverter } from '@app/utils/helpers';
@@ -44,6 +44,11 @@ const OrderPage = ({ setCurrentView, setCurrentItemID }: OrderPageProps): JSX.El
     let temp = fullData.current.filter((value) => value.customer?.toLowerCase().includes(searchValue))
     setData(temp)
   }
+  
+  const handleDetail = useCallback((id: number) => {
+    setCurrentItemID(id)
+    setCurrentView('items')
+  }, [setCurrentItemID, setCurrentView])
 
   useEffect(() => {
     setLoading(false)
@@ -60,12 +65,7 @@ const OrderPage = ({ setCurrentView, setCurrentItemID }: OrderPageProps): JSX.El
     }))
     setData(fullData.current)
     setLoading(false)
-  }, [])
-
-  const handleDetail = (id: number) => {
-    setCurrentItemID(id)
-    setCurrentView('items')
-  }
+  }, [handleDetail])
 
   return (
     <>

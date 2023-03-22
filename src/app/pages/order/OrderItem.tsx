@@ -1,7 +1,7 @@
 import { Dispatch, SetStateAction } from 'react';
 import DataTable, { ColumnType } from '@components/data-table/index';
 import orderMocks from '@assets/mocks/orders.json'
-import { Button, Header, Icon, Segment } from 'semantic-ui-react';
+import { Button, Icon } from 'semantic-ui-react';
 import { useEffect } from 'react';
 import { useRef } from 'react';
 import { useState } from 'react';
@@ -32,7 +32,7 @@ const OrderItem = ({ id, setCurrentView, setCurrentItemID }: OrderItemProps): JS
   const index = orderMocks.findIndex(item => {
     return item.id === id;
   });
-  const fullData = useRef<OrderItemType[]>(index != -1 ? orderMocks[index].detail : [])
+  const fullData = useRef<OrderItemType[]>(index !== -1 ? orderMocks[index].detail : [])
   const [data, setData] = useState<OrderItemType[]>([])
   const [loading, setLoading] = useState<boolean>(true)
 
