@@ -39,15 +39,25 @@
                     font-size: 30px;
                 }
             }
+
+            @media screen and (max-width: 1000px) {
+                flex: 42%;
+                margin: 2%;
+            }
+        }
+    }
+
+    @media screen and (max-width: 650px) {
+        width: 100%;
+
+        .main-title {
+            font-size: x-large;
         }
 
-        @media screen and (max-width: 1000px) {
-            flex: 50%;
-            margin: 2%;
-        }
-
-        @media screen and (max-width: 650px) {
-            flex-direction: column;
+        .main-stat-container {
+            .small-stat {
+                flex: 100%
+            }
         }
     }
 }
