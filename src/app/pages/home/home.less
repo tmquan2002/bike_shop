@@ -45,6 +45,50 @@
                 margin: 2%;
             }
         }
+
+        .big-stat {
+
+            background-color: white;
+            padding: 20px 30px 20px 20px;
+            margin: 1%;
+            border-radius: @normal-border-radius;
+            box-shadow: @normal-box-shadow;
+            height: 300px;
+            padding: 10px;
+
+            .title {
+                font-weight: bold;
+                font-size: larger;
+                text-align: center;
+            }
+
+            &.left {
+                flex-grow: 1;
+            }
+
+            &.right {
+                flex-grow: 4;
+            }
+
+            .result {
+                position: relative;
+                margin: auto;
+
+                &.bar {
+                    height: fit-content;
+                    width: 250px;
+                }
+
+                &.line {
+                    height: 250px;
+                    width: 450px;
+                }
+            }
+
+            @media screen and (max-width: 1000px) {
+                margin: 2%;
+            }
+        }
     }
 
     @media screen and (max-width: 650px) {
