@@ -12,7 +12,7 @@ const TotalStores: React.FC = () => {
   }, [])
   return (
     <div className='small-stat'>
-      <div className='title'>TOAL ORDERS</div>
+      <div className='title'>ORDERS</div>
       <div className={`result ${loading && `loading`}`}>{loading === true ? '. . .' : total}</div>
     </div>
   );

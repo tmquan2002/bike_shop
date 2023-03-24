@@ -4,8 +4,8 @@ import './home.less'
 import TotalStores from './TotalStores';
 import TotalShops from './TotalShops';
 import TotalProducts from './TotalProducts';
-import ChartTest from './ChartTest';
-import ChartTest2 from './ChartTest2';
+import OrderStatusChart from './OrderStatusChart';
+import ChartTest2 from './OrderMonthChart';
 
 const HomePage: React.FC = () => {
   return (
@@ -18,7 +18,7 @@ const HomePage: React.FC = () => {
         <TotalProducts />
       </div>
       <div className='main-stat-container'>
-        <ChartTest />
+        <OrderStatusChart />
         <ChartTest2 />
       </div>
     </div>

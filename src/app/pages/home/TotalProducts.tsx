@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import productMocks from '@assets/mocks/products.json'
+import ordersMocks from '@assets/mocks/orders.json'
 import './home.less'
 
 const TotalProducts: React.FC = () => {
@@ -7,13 +7,19 @@ const TotalProducts: React.FC = () => {
   const [loading, setLoading] = useState(true)
   useEffect(() => {
     //Get API here
-    setTotal(productMocks.length)
+    let revenue = 0;
+    ordersMocks.forEach(order => {
+      order.detail.forEach(detail => {
+        revenue = revenue + detail.listPrice * detail.quantity
+      })
+    })
+    setTotal(revenue)
     setLoading(false)
   }, [])
   return (
     <div className='small-stat'>
-      <div className='title'>TOTAL PRODUCTS</div>
-      <div className={`result ${loading && `loading`}`}>{loading === true ? '. . .' : total}</div>
+      <div className='title'>REVENUE</div>
+      <div className={`result ${loading && `loading`}`}>{loading === true ? '. . .' : Math.ceil(total) + ' $'}</div>
     </div>
   );
 };
