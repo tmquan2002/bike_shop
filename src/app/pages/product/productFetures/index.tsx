@@ -1,12 +1,12 @@
-import { useState } from 'react'
+import { useNumber, useString } from '@app/hooks/use-state-custom'
 import { Button, Icon } from 'semantic-ui-react'
 import AddProduct from './AddProduct'
 import ProductTable from './ProductTable'
 import UpdateProduct from './UpdateProduct'
 
 const ProductFeature: React.FC = () => {
-    const [feature, setFeature] = useState<string>('show')
-    const [currentProductID, setCurrentProductID] = useState<number>(1)
+    const [feature, setFeature] = useString('show')
+    const [currentProductID, setCurrentProductID] = useNumber(1)
 
     return (
         <>

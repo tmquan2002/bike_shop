@@ -1,15 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import storeMocks from '@assets/mocks/stores.json'
-import './home.less'
+import { useTotal } from '@app/hooks/use-total';
+import storeMocks from '@assets/mocks/stores.json';
+import React from 'react';
+import './home.less';
 
 const TotalShops: React.FC = () => {
-  const [total, setTotal] = useState(0)
-  const [loading, setLoading] = useState(true)
-  useEffect(() => {
-    //Get API here
-    setTotal(storeMocks.length)
-    setLoading(false)
-  }, [])
+  const { total, loading } = useTotal(storeMocks.length)
+
   return (
     <div className='small-stat'>
       <div className='title'>STORES</div>

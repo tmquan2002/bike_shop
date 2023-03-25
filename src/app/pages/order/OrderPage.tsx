@@ -6,6 +6,7 @@ import { OrderStatus } from '@app/utils/enum';
 import { Button } from 'semantic-ui-react';
 import SearchBar from '@app/components/search-bar/SearchBar';
 import { useRef } from 'react';
+import { useBoolean } from '@app/hooks/use-state-custom';
 
 interface Order {
   id: number;
@@ -38,7 +39,7 @@ const columns: ColumnType<Order, keyof Order>[] = [
 const OrderPage = ({ setCurrentView, setCurrentItemID }: OrderPageProps): JSX.Element => {
   const fullData = useRef<Order[]>([])
   const [data, setData] = useState<Order[]>([])
-  const [loading, setLoading] = useState<boolean>(true)
+  const [loading, setLoading] = useBoolean(true)
 
   const handleSearch = (searchValue: string) => {
     let temp = fullData.current.filter((value) => value.customer?.toLowerCase().includes(searchValue))
@@ -65,7 +66,7 @@ const OrderPage = ({ setCurrentView, setCurrentItemID }: OrderPageProps): JSX.El
     }))
     setData(fullData.current)
     setLoading(false)
-  }, [handleDetail])
+  }, [handleDetail, setLoading])
 
   return (
     <>

@@ -3,6 +3,7 @@ import DataTable, { ColumnType } from '@components/data-table/index';
 import customerMocks from '@assets/mocks/customers.json'
 import SearchBar from '@app/components/search-bar/SearchBar';
 import { usaStateConverter } from '@app/utils/helpers';
+import { useBoolean } from '@app/hooks/use-state-custom';
 
 interface Customer {
   id: number;
@@ -24,7 +25,7 @@ const columns: ColumnType<Customer, keyof Customer>[] = [
 const ManageCustomerPage: React.FC = () => {
   const fullData = useRef<Customer[]>([])
   const [data, setData] = useState<Customer[]>([])
-  const [loading, setLoading] = useState<boolean>(true)
+  const [loading, setLoading] = useBoolean(true)
 
   const handleSearch = (searchValue: string) => {
     let temp = fullData.current.filter((value) => value.fullName.toLowerCase().includes(searchValue))
@@ -45,7 +46,7 @@ const ManageCustomerPage: React.FC = () => {
     // setTimeout(() => {
     //   setLoading(false)
     // }, 1000)
-  }, [])
+  }, [setLoading])
 
   return (
     <>

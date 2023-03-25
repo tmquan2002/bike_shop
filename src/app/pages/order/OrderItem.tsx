@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 import { useRef } from 'react';
 import { useState } from 'react';
 import SearchBar from '@components/search-bar/SearchBar';
+import { useBoolean } from '@app/hooks/use-state-custom';
 
 interface OrderItemType {
   id: number;
@@ -34,7 +35,7 @@ const OrderItem = ({ id, setCurrentView, setCurrentItemID }: OrderItemProps): JS
   });
   const fullData = useRef<OrderItemType[]>(index !== -1 ? orderMocks[index].detail : [])
   const [data, setData] = useState<OrderItemType[]>([])
-  const [loading, setLoading] = useState<boolean>(true)
+  const [loading, setLoading] = useBoolean(true)
 
   const backToOrderList = (id: number) => {
     setCurrentItemID(id)
@@ -52,7 +53,7 @@ const OrderItem = ({ id, setCurrentView, setCurrentItemID }: OrderItemProps): JS
     // setTimeout(() => {
     //   setLoading(false)
     // }, 1000)
-  }, [])
+  }, [setLoading])
 
   return (
     <>

@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import { useString } from '@app/hooks/use-state-custom';
+import React, { useEffect } from 'react';
 import { Input } from 'semantic-ui-react';
 import './searchBar.less'
 
@@ -21,7 +22,7 @@ const SearchBar: React.FC<Props> = (props) => {
     placeholder = 'Search...'
   } = props;
 
-  const [searchValue, setSearchValue] = useState('');
+  const [searchValue, setSearchValue] = useString('');
 
   useEffect(() => {
     const timeout = setTimeout(() => {

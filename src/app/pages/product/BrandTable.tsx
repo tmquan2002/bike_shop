@@ -6,6 +6,7 @@ import { useForm } from 'react-hook-form';
 import SearchBar from '@app/components/search-bar/SearchBar';
 import { useRef } from 'react';
 import { useEffect } from 'react';
+import { useBoolean } from '@app/hooks/use-state-custom';
 
 interface Brand {
   id: number;
@@ -21,8 +22,8 @@ const columns: ColumnType<Brand, keyof Brand>[] = [
 const BrandTable: React.FC = () => {
   const fullData = useRef<Brand[]>([])
   const [data, setData] = useState<Brand[]>([])
-  const [loading, setLoading] = useState<boolean>(true)
-  const [modalAddOpen, setModalAddOpen] = useState(false)
+  const [loading, setLoading] = useBoolean(true)
+  const [modalAddOpen, setModalAddOpen] = useBoolean(false)
   const [feature, setFeature] = useState<'add' | 'update'>('add')
   const { register, getValues, setValue } = useForm()
 
@@ -41,7 +42,7 @@ const BrandTable: React.FC = () => {
     setFeature('update')
     setValue('brandName', name)
     setModalAddOpen(true)
-  }, [setValue])
+  }, [setValue, setModalAddOpen])
 
   const handleSearch = (searchValue: string) => {
     let temp = fullData.current.filter((value) => value.name.toLowerCase().includes(searchValue))
@@ -56,7 +57,7 @@ const BrandTable: React.FC = () => {
     }))
     setData(fullData.current)
     setLoading(false)
-  }, [handleUpdate])
+  }, [handleUpdate, setLoading])
 
   return (
     <>

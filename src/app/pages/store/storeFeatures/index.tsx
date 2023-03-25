@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useNumber, useString } from '@app/hooks/use-state-custom'
 import { Button, Icon } from 'semantic-ui-react'
 import AddStore from './AddStore'
 import StoreTable from './StoreTable'
@@ -6,8 +6,8 @@ import UpdateStore from './UpdateStore'
 
 
 const StoreFeature = (): JSX.Element => {
-    const [feature, setFeature] = useState<string>('show')
-    const [currentUpdateID, setCurrentUpdateID] = useState(1)
+    const [feature, setFeature] = useString('show')
+    const [currentUpdateID, setCurrentUpdateID] = useNumber(1)
 
     return (
         <>

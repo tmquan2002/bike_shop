@@ -4,6 +4,7 @@ import './home.less'
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, } from 'chart.js';
 import { Line } from 'react-chartjs-2';
 import { countOrderEachMonth } from '@app/utils/helpers';
+import { useNumArr } from '@app/hooks/use-state-custom';
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 
 const options = {
@@ -19,9 +20,9 @@ const labels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', '
 
 
 const OrderMonthChart: React.FC = () => {
-    const [data2016, setData2016] = useState<number[]>([])
-    const [data2017, setData2017] = useState<number[]>([])
-    const [data2018, setData2018] = useState<number[]>([])
+    const [data2016, setData2016] = useNumArr([])
+    const [data2017, setData2017] = useNumArr([])
+    const [data2018, setData2018] = useNumArr([])
     const [loading, setLoading] = useState(true)
     const data = {
         responsive: true,
@@ -49,14 +50,14 @@ const OrderMonthChart: React.FC = () => {
     };
     useEffect(() => {
         //Get API here
-        const datedata2016 = orderMocks.filter((value) => value.orderDate.substring(0, 4) === '2016').map((v) => v.orderDate)
-        const datedata2017 = orderMocks.filter((value) => value.orderDate.substring(0, 4) === '2017').map((v) => v.orderDate)
-        const datedata2018 = orderMocks.filter((value) => value.orderDate.substring(0, 4) === '2018').map((v) => v.orderDate)
-        setData2016(countOrderEachMonth(datedata2016))
-        setData2017(countOrderEachMonth(datedata2017))
-        setData2018(countOrderEachMonth(datedata2018))
+        const dateData2016 = orderMocks.filter((value) => value.orderDate.substring(0, 4) === '2016').map((v) => v.orderDate)
+        const dateData2017 = orderMocks.filter((value) => value.orderDate.substring(0, 4) === '2017').map((v) => v.orderDate)
+        const dateData2018 = orderMocks.filter((value) => value.orderDate.substring(0, 4) === '2018').map((v) => v.orderDate)
+        setData2016(countOrderEachMonth(dateData2016))
+        setData2017(countOrderEachMonth(dateData2017))
+        setData2018(countOrderEachMonth(dateData2018))
         setLoading(false)
-    }, [])
+    }, [setData2016, setData2017, setData2018])
     return (
         <div className='big-stat right'>
             <div className='title'>NUMBER OF ORDERS EACH MONTH 2016-2018</div>
