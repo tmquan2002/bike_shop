@@ -3,7 +3,7 @@ import TotalCustomers from './TotalCustomers';
 import './home.less'
 import TotalStores from './TotalStores';
 import TotalShops from './TotalShops';
-import TotalProducts from './TotalProducts';
+import Revenue from './Revenue';
 import OrderStatusChart from './OrderStatusChart';
 import ChartTest2 from './OrderMonthChart';
 
@@ -15,7 +15,7 @@ const HomePage: React.FC = () => {
         <TotalCustomers />
         <TotalStores />
         <TotalShops />
-        <TotalProducts />
+        <Revenue />
       </div>
       <div className='main-stat-container'>
         <OrderStatusChart />

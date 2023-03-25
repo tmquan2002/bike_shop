@@ -1,3 +1,4 @@
+import { useNumber } from "@app/hooks/use-state-custom";
 import { useEffect, useState } from "react";
 import { Dimmer, Loader, Pagination, PaginationProps, Table } from "semantic-ui-react";
 import './DataTable.less'
@@ -30,7 +31,7 @@ const DataTable = <T, K extends keyof T>({
 }: TableProps<T, K>): JSX.Element => {
 
     //Pagination
-    const [currentPage, setCurrentPage] = useState<number>(1);
+    const [currentPage, setCurrentPage] = useNumber(1);
     const [pageData, setPageData] = useState(data)
     const pageSize = typeof pagination === "number" ? pagination : 10;
     const totalItems = data.length;
@@ -48,7 +49,7 @@ const DataTable = <T, K extends keyof T>({
         if (totalPages < currentPage) {
             setCurrentPage(1)
         }
-    }, [currentPage, pagination, endIndex, startIndex, data, totalPages]);
+    }, [currentPage, pagination, endIndex, startIndex, data, totalPages, setCurrentPage]);
 
     return (
         <>

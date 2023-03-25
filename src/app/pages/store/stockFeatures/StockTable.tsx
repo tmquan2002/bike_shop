@@ -5,6 +5,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useRef } from 'react';
 import SearchBar from '@app/components/search-bar/SearchBar';
+import { useBoolean } from '@app/hooks/use-state-custom';
 
 interface StoreStock {
   id: number;
@@ -37,10 +38,10 @@ const StocksTable = ({ id }: { id: number }): JSX.Element => {
   });
   const fullData = useRef<StoreStock[]>([])
   const [data, setData] = useState<StoreStock[]>([])
-  const [loading, setLoading] = useState<boolean>(true)
+  const [loading, setLoading] = useBoolean(true)
 
   //Modal
-  const [modalOpen, setModalOpen] = useState(false)
+  const [modalOpen, setModalOpen] = useBoolean(false)
   const { register, getValues, setValue } = useForm()
 
   const handleSubmitModal = () => {
@@ -52,7 +53,7 @@ const StocksTable = ({ id }: { id: number }): JSX.Element => {
     setModalOpen(true)
     setValue("id", id)
     setValue("quantity", quantity)
-  }, [setValue])
+  }, [setValue, setModalOpen])
 
   //Search
   const handleSearch = (searchValue: string) => {
@@ -71,7 +72,7 @@ const StocksTable = ({ id }: { id: number }): JSX.Element => {
     }
     setData(fullData.current)
     setLoading(false)
-  }, [index, handleUpdateModal])
+  }, [index, handleUpdateModal, setLoading])
 
   return (
     <>

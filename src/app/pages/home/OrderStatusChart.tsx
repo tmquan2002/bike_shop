@@ -4,11 +4,12 @@ import './home.less'
 
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Pie } from 'react-chartjs-2';
+import { useNumArr } from '@app/hooks/use-state-custom';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const OrderStatusChart: React.FC = () => {
-  const [data, setData] = useState([1, 2, 4, 5])
+  const [data, setData] = useNumArr([1, 2, 4, 5])
   const [loading, setLoading] = useState(true)
 
   const chartData = {
@@ -31,7 +32,7 @@ const OrderStatusChart: React.FC = () => {
     ]
     setData(temp)
     setLoading(false)
-  }, [])
+  }, [setData])
   return (
     <div className='big-stat left'>
       <div className='title'>ORDER STATUS</div>

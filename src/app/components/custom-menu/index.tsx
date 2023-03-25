@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useString } from "@app/hooks/use-state-custom";
 import { Menu, MenuItemProps } from "semantic-ui-react";
 
 export interface CustomMenuObject {
@@ -16,7 +16,7 @@ interface MenuProps {
 }
 
 const CustomMenu = ({ menuItems }: MenuProps): JSX.Element => {
-    const [currentItem, setCurrentItem] = useState(menuItems[0].name)
+    const [currentItem, setCurrentItem] = useString(menuItems[0].name)
     const handleItemClick = (event: React.MouseEvent<HTMLAnchorElement>, data: MenuItemProps) => {
         setCurrentItem(data.name as string)
     }

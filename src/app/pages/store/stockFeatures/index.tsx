@@ -1,4 +1,5 @@
-import { Dispatch, SetStateAction, useState } from 'react'
+import { useString } from '@app/hooks/use-state-custom'
+import { Dispatch, SetStateAction } from 'react'
 import { Button, Icon } from 'semantic-ui-react'
 import AddToStock from './AddToStock'
 import StocksTable from './StockTable'
@@ -11,7 +12,7 @@ interface StockItemProps {
 }
 
 const StockFeature = ({ id, setCurrentView }: StockItemProps): JSX.Element => {
-    const [feature, setFeature] = useState<string>('show')
+    const [feature, setFeature] = useString('show')
 
     return (
         <>

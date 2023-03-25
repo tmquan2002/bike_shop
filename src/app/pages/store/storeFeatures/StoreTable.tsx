@@ -5,6 +5,7 @@ import { usaStateConverter } from '@app/utils/helpers';
 import { Button, Icon } from 'semantic-ui-react';
 import StockFeature from '../stockFeatures';
 import SearchBar from '@components/search-bar/SearchBar';
+import { useBoolean, useNumber, useString } from '@app/hooks/use-state-custom';
 
 interface Store {
   id: number;
@@ -32,15 +33,15 @@ const columns: ColumnType<Store, keyof Store>[] = [
 const StoreTable = ({ setFeature, setCurrentUpdateID }: Props): JSX.Element => {
   const fullData = useRef<Store[]>([])
   const [data, setData] = useState<Store[]>([])
-  const [loading, setLoading] = useState<boolean>(true)
-  const [currentView, setCurrentView] = useState('store')
-  const [currentStoreID, setCurrentStoreID] = useState(1)
+  const [loading, setLoading] = useBoolean(true)
+  const [currentView, setCurrentView] = useString('store')
+  const [currentStoreID, setCurrentStoreID] = useNumber(1)
 
   //Change to stock table component
-  const handleDetail = (id: number) => {
+  const handleDetail = useCallback((id: number) => {
     setCurrentStoreID(id)
     setCurrentView('stock')
-  }
+  }, [setCurrentStoreID, setCurrentView]);
 
   //Change to update form component
   const handleUpdate = useCallback((id: number) => {
@@ -68,7 +69,7 @@ const StoreTable = ({ setFeature, setCurrentUpdateID }: Props): JSX.Element => {
     }))
     setData(fullData.current)
     setLoading(false)
-  }, [handleUpdate])
+  }, [handleUpdate, handleDetail, setLoading])
 
   if (currentView === 'stock') {
     return (

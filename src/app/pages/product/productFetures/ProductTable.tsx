@@ -4,6 +4,7 @@ import productMocks from '@assets/mocks/products.json'
 import { Button, Icon } from 'semantic-ui-react';
 import { useRef } from 'react';
 import SearchBar from '@app/components/search-bar/SearchBar';
+import { useBoolean } from '@app/hooks/use-state-custom';
 
 interface Product {
   id: number;
@@ -32,7 +33,7 @@ const columns: ColumnType<Product, keyof Product>[] = [
 const ProductTable = ({ setCurrentProductID, setFeature }: Props): JSX.Element => {
   const fullData = useRef<Product[]>([])
   const [data, setData] = useState<Product[]>([])
-  const [loading, setLoading] = useState<boolean>(true)
+  const [loading, setLoading] = useBoolean(true)
 
   const handleUpdate = useCallback((id: number) => {
     setCurrentProductID(id)
@@ -56,7 +57,7 @@ const ProductTable = ({ setCurrentProductID, setFeature }: Props): JSX.Element =
     }))
     setData(fullData.current)
     setLoading(false)
-  }, [handleUpdate])
+  }, [handleUpdate, setLoading])
 
   return (
     <>
