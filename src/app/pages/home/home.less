@@ -87,6 +87,23 @@
 
             @media screen and (max-width: 1000px) {
                 margin: 2%;
+                .result {
+                    &.line {
+                        width: 400px;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 500px) {
+                .title {
+                    font-size: medium;
+                }
+
+                .result {
+                    &.line {
+                        width: 250px;
+                    }
+                }
             }
         }
     }
@@ -101,18 +118,15 @@
         .main-stat-container {
             .small-stat {
                 flex: 100%;
+
                 .result {
                     font-size: larger;
                 }
             }
+
             .big-stat {
                 .title {
                     font-size: large;
-                }
-                .result {
-                    &.line {
-                        width: 300px;
-                    }
                 }
             }
         }
