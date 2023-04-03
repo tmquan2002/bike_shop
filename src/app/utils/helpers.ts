@@ -116,19 +116,13 @@ export const orderStateConverter = (state: number): OrderStatus => {
   }
 }
 
-export const countOrderEachMonth = (data: string[]): number[] => {
-  let temp = []
-  temp.push(data.filter((value) => value.substring(5, 7) === '01').length)
-  temp.push(data.filter((value) => value.substring(5, 7) === '02').length)
-  temp.push(data.filter((value) => value.substring(5, 7) === '03').length)
-  temp.push(data.filter((value) => value.substring(5, 7) === '04').length)
-  temp.push(data.filter((value) => value.substring(5, 7) === '05').length)
-  temp.push(data.filter((value) => value.substring(5, 7) === '06').length)
-  temp.push(data.filter((value) => value.substring(5, 7) === '07').length)
-  temp.push(data.filter((value) => value.substring(5, 7) === '08').length)
-  temp.push(data.filter((value) => value.substring(5, 7) === '09').length)
-  temp.push(data.filter((value) => value.substring(5, 7) === '10').length)
-  temp.push(data.filter((value) => value.substring(5, 7) === '11').length)
-  temp.push(data.filter((value) => value.substring(5, 7) === '12').length)
-  return temp
+export const countOrderEachMonth = (data: string[], year: number): number[] => {
+  let result = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  data.forEach(value => {
+    let date = new Date(value)
+    if (date.getFullYear() === year) {
+      result[date.getMonth()] += 1
+    }
+  });
+  return result
 }

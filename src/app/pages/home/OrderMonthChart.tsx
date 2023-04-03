@@ -50,12 +50,10 @@ const OrderMonthChart: React.FC = () => {
     };
     useEffect(() => {
         //Get API here
-        const dateData2016 = orderMocks.filter((value) => value.orderDate.substring(0, 4) === '2016').map((v) => v.orderDate)
-        const dateData2017 = orderMocks.filter((value) => value.orderDate.substring(0, 4) === '2017').map((v) => v.orderDate)
-        const dateData2018 = orderMocks.filter((value) => value.orderDate.substring(0, 4) === '2018').map((v) => v.orderDate)
-        setData2016(countOrderEachMonth(dateData2016))
-        setData2017(countOrderEachMonth(dateData2017))
-        setData2018(countOrderEachMonth(dateData2018))
+        const dateData = orderMocks.map((v) => v.orderDate)
+        setData2016(countOrderEachMonth(dateData, 2016))
+        setData2017(countOrderEachMonth(dateData, 2017))
+        setData2018(countOrderEachMonth(dateData, 2018))
         setLoading(false)
     }, [setData2016, setData2017, setData2018])
     return (
