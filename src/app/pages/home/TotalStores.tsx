@@ -4,7 +4,7 @@ import React from 'react';
 import './home.less';
 
 const TotalStores: React.FC = () => {
-  const { total, loading } = useTotal(orderMocks.length)
+  const { total, loading } = useTotal(`${process.env.REACT_APP_CUSTOMER_API}`)
 
   return (
     <div className='small-stat'>

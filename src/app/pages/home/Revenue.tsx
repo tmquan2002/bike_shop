@@ -3,7 +3,7 @@ import React from 'react';
 import './home.less';
 
 const Revenue: React.FC = () => {
-  const { total, loading } = useTotal(0, true)
+  const { total, loading } = useTotal(`${process.env.REACT_APP_CUSTOMER_API}`, true)
 
   return (
     <div className='small-stat'>
