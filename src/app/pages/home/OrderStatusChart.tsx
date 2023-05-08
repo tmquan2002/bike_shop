@@ -1,16 +1,17 @@
-import React, { useEffect, useState } from 'react';
-import orderMocks from '@assets/mocks/orders.json'
+import React, { useEffect, useState, useRef } from 'react';
 import './home.less'
 
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Pie } from 'react-chartjs-2';
 import { useNumArr } from '@app/hooks/use-state-custom';
+import apiLinks from '@app/utils/api-links';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const OrderStatusChart: React.FC = () => {
-  const [data, setData] = useNumArr([1, 2, 4, 5])
+  const [data, setData] = useNumArr([])
   const [loading, setLoading] = useState(true)
+  const rendered = useRef(true)
 
   const chartData = {
     labels: ['PENDING', 'PROCESSING', 'REJECTED', 'COMPLETED'],
@@ -22,17 +23,33 @@ const OrderStatusChart: React.FC = () => {
       },
     ],
   };
+
   useEffect(() => {
-    //Get API here
-    const temp = [
-      (orderMocks.filter((value) => value.status === 1)).length,
-      (orderMocks.filter((value) => value.status === 2)).length,
-      (orderMocks.filter((value) => value.status === 3)).length,
-      (orderMocks.filter((value) => value.status === 4)).length
-    ]
-    setData(temp)
+    //fetch status
+    async function fetchStatus(status_id: number) {
+      const res = await fetch(apiLinks.order.getStatus + status_id)
+        .then((res) => res.json())
+        .catch((error) => { console.log(error) })
+      if (res.status === 200) {
+        setData(old => [...old, res.length])
+      }
+    }
+    //Run every status
+    async function fetchAll() {
+      await Promise.all([
+        fetchStatus(1),
+        fetchStatus(2),
+        fetchStatus(3),
+        fetchStatus(4),
+      ])
+    }
+    if (rendered.current) {
+      rendered.current = false
+      fetchAll()
+    }
     setLoading(false)
   }, [setData])
+
   return (
     <div className='big-stat left'>
       <div className='title'>ORDER STATUS</div>

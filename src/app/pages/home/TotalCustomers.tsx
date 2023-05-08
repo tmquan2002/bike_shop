@@ -1,10 +1,10 @@
 import { useTotal } from '@app/hooks/use-total';
-import customerMocks from '@assets/mocks/customers.json';
 import React from 'react';
 import './home.less';
+import apiLinks from '@app/utils/api-links';
 
 const TotalCustomers: React.FC = () => {
-  const { total, loading } = useTotal(`${process.env.REACT_APP_CUSTOMER_API}/total`)
+  const { total, loading } = useTotal(apiLinks.customer.getTotal)
   
   return (
     <div className='small-stat'>

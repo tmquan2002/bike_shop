@@ -1,23 +1,25 @@
 import { useEffect } from "react"
 import { useBoolean, useNumber } from "./use-state-custom"
+import ordersMocks from '@assets/mocks/orders.json'
+import apiLinks from "@app/utils/api-links"
 
-/**Get the total to display on dashboard*/
-export const useTotal = (apiURL: string) => {
-    const [total, setTotal] = useNumber(0)
+/**Get the total revenue*/
+export const useRevenue = () => {
+    const [revenue, setRevenue] = useNumber(0)
     const [loading, setLoading] = useBoolean(true)
 
     useEffect(() => {
         async function fetchList() {
-            const response = await fetch(apiURL)
+            const response = await fetch(apiLinks.order.getRevenue)
                 .then((res) => res.json())
                 .catch((error) => { console.log(error) })
             // console.log(response)
             if (response.status === 200) {
-                setTotal(response.total)
+                setRevenue(response.revenue)
             }
         }
         fetchList()
         setLoading(false)
-    }, [setLoading, setTotal, total, apiURL])
-    return { total, loading }
+    }, [setLoading, setRevenue, revenue])
+    return { revenue, loading }
 }
