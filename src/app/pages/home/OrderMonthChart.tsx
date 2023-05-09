@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import orderMocks from '@assets/mocks/orders.json'
+import React, { useEffect, useRef, useState } from 'react';
 import './home.less'
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, } from 'chart.js';
 import { Line } from 'react-chartjs-2';
 import { countOrderEachMonth } from '@app/utils/helpers';
 import { useNumArr } from '@app/hooks/use-state-custom';
+import apiLinks from '@app/utils/api-links';
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 
 const options = {
@@ -20,6 +20,7 @@ const labels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', '
 
 
 const OrderMonthChart: React.FC = () => {
+    const dateData = useRef<string[]>([])
     const [data2016, setData2016] = useNumArr([])
     const [data2017, setData2017] = useNumArr([])
     const [data2018, setData2018] = useNumArr([])
@@ -50,10 +51,18 @@ const OrderMonthChart: React.FC = () => {
     };
     useEffect(() => {
         //Get API here
-        const dateData = orderMocks.map((v) => v.orderDate)
-        setData2016(countOrderEachMonth(dateData, 2016))
-        setData2017(countOrderEachMonth(dateData, 2017))
-        setData2018(countOrderEachMonth(dateData, 2018))
+        async function fetchOrderDate() {
+            const res = await fetch(apiLinks.order.getOrderDate)
+                .then((res) => res.json())
+                .catch((error) => { console.log(error) })
+            if (res.status === 200) {
+                dateData.current = res.dateArray
+                setData2016(countOrderEachMonth(dateData.current, 2016))
+                setData2017(countOrderEachMonth(dateData.current, 2017))
+                setData2018(countOrderEachMonth(dateData.current, 2018))
+            }
+        }
+        fetchOrderDate()
         setLoading(false)
     }, [setData2016, setData2017, setData2018])
     return (
