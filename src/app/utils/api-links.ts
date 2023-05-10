@@ -10,7 +10,8 @@ const apiLinks = {
     getTotal: `${authUrl}/api/order/total`,
     getRevenue: `${authUrl}/api/order/revenue`,
     getStatus: `${authUrl}/api/order/status/`,
-    getOrderDate: `${authUrl}/api/order/order_date`
+    getOrderDate: `${authUrl}/api/order/order_date`,
+    getDetail: `${authUrl}/api/order/order_item/`
   },
   store: {
     get: `${authUrl}/api/store`,

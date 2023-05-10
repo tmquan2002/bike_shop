@@ -7,6 +7,7 @@ import { useRef } from 'react';
 import { useState } from 'react';
 import SearchBar from '@components/search-bar/SearchBar';
 import { useBoolean } from '@app/hooks/use-state-custom';
+import apiLinks from '@app/utils/api-links';
 
 interface OrderItemType {
   id: number;
@@ -30,10 +31,8 @@ const columns: ColumnType<OrderItemType, keyof OrderItemType>[] = [
 ]
 
 const OrderItem = ({ id, setCurrentView, setCurrentItemID }: OrderItemProps): JSX.Element => {
-  const index = orderMocks.findIndex(item => {
-    return item.id === id;
-  });
-  const fullData = useRef<OrderItemType[]>(index !== -1 ? orderMocks[index].detail : [])
+
+  const fullData = useRef<OrderItemType[]>([])
   const [data, setData] = useState<OrderItemType[]>([])
   const [loading, setLoading] = useBoolean(true)
 
@@ -48,6 +47,16 @@ const OrderItem = ({ id, setCurrentView, setCurrentItemID }: OrderItemProps): JS
   }
 
   useEffect(() => {
+    async function fetchList() {
+      const orderList = await fetch(apiLinks.order.getDetail + id)
+        .then((res) => res.json())
+        .catch((error) => { console.log(error) })
+        console.log(orderList)
+      if (orderList.status === 200) {
+        fullData.current = orderList.orderItem[0]
+      }
+    }
+    fetchList()
     setData(fullData.current)
     setLoading(false)
     // setTimeout(() => {

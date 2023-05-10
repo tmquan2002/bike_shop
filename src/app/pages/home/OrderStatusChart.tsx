@@ -9,7 +9,7 @@ import apiLinks from '@app/utils/api-links';
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const OrderStatusChart: React.FC = () => {
-  const [data, setData] = useNumArr([])
+  const [data, setData] = useNumArr([0, 0, 0, 0])
   const [loading, setLoading] = useState(true)
   const rendered = useRef(true)
 
@@ -31,17 +31,21 @@ const OrderStatusChart: React.FC = () => {
         .then((res) => res.json())
         .catch((error) => { console.log(error) })
       if (res.status === 200) {
-        setData(old => [...old, res.length])
+        setData(old => {
+          return [
+            ...old.slice(0, status_id - 1),
+            res.length,
+            ...old.slice(status_id),
+          ]
+        })
       }
     }
     //Run every status
     async function fetchAll() {
-      await Promise.all([
-        fetchStatus(1),
-        fetchStatus(2),
-        fetchStatus(3),
-        fetchStatus(4),
-      ])
+      fetchStatus(1)
+      fetchStatus(2)
+      fetchStatus(3)
+      fetchStatus(4)
     }
     if (rendered.current) {
       rendered.current = false

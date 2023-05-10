@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import DataTable, { ColumnType } from '@components/data-table/index';
-import customerMocks from '@assets/mocks/customers.json'
 import SearchBar from '@app/components/search-bar/SearchBar';
 import { usaStateConverter } from '@app/utils/helpers';
 import { useBoolean } from '@app/hooks/use-state-custom';
+import apiLinks from '@app/utils/api-links';
 
 interface Customer {
   id: number;
@@ -33,14 +33,22 @@ const ManageCustomerPage: React.FC = () => {
   }
 
   useEffect(() => {
-    fullData.current = customerMocks.map((row) => ({
-      id: row.id,
-      fullName: row.firstName + ' ' + row.lastName,
-      phone: row.phone,
-      email: row.email,
-      address: row.street + ', ' + row.city + ', ' + usaStateConverter(row.state),
-      zipCode: row.zipCode
-    }))
+    async function fetchList() {
+      const response = await fetch(apiLinks.customer.get)
+        .then((res) => res.json())
+        .catch((error) => { console.log(error) })
+      if (response.status === 200) {
+        fullData.current = response.customers[0].map((row: any) => ({
+          id: row.customer_id,
+          fullName: row.first_name + ' ' + row.last_name,
+          phone: row.phone,
+          email: row.email,
+          address: row.street + ', ' + row.city + ', ' + usaStateConverter(row.state),
+          zipCode: row.zip_code
+        }))
+      }
+    }
+    fetchList()
     setData(fullData.current)
     setLoading(false)
     // setTimeout(() => {
@@ -50,8 +58,8 @@ const ManageCustomerPage: React.FC = () => {
 
   return (
     <>
-      <SearchBar onChange={handleSearch} placeholder="Search name..."/>
-      <DataTable columns={columns} data={data} pagination loading={loading} title="Customers"/>
+      <SearchBar onChange={handleSearch} placeholder="Search name..." />
+      <DataTable columns={columns} data={data} pagination loading={loading} title="Customers" />
     </>
   );
 };

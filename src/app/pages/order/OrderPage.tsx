@@ -1,12 +1,12 @@
 import React, { Dispatch, SetStateAction, useState, useEffect, useCallback } from 'react';
 import DataTable, { ColumnType } from '@components/data-table/index';
-import orderMocks from '@assets/mocks/orders.json'
 import { orderStateConverter } from '@app/utils/helpers';
 import { OrderStatus } from '@app/utils/enum';
 import { Button } from 'semantic-ui-react';
 import SearchBar from '@app/components/search-bar/SearchBar';
 import { useRef } from 'react';
 import { useBoolean } from '@app/hooks/use-state-custom';
+import apiLinks from '@app/utils/api-links';
 
 interface Order {
   id: number;
@@ -45,25 +45,33 @@ const OrderPage = ({ setCurrentView, setCurrentItemID }: OrderPageProps): JSX.El
     let temp = fullData.current.filter((value) => value.customer?.toLowerCase().includes(searchValue))
     setData(temp)
   }
-  
+
   const handleDetail = useCallback((id: number) => {
+    console.log(id)
     setCurrentItemID(id)
     setCurrentView('items')
   }, [setCurrentItemID, setCurrentView])
 
   useEffect(() => {
-    setLoading(false)
-    fullData.current = orderMocks.map((row) => ({
-      id: row.id,
-      customer: row.customer,
-      status: orderStateConverter(row.status),
-      orderDate: row.orderDate,
-      requiredDate: row.requiredDate,
-      shippedDate: row.shippedDate,
-      store: row.store,
-      staff: row.staff,
-      detail: <Button color='grey' onClick={() => handleDetail(row.id)}>Detail</Button>
-    }))
+    async function fetchList() {
+      const orderList = await fetch(apiLinks.order.get)
+        .then((res) => res.json())
+        .catch((error) => { console.log(error) })
+      if (orderList.status === 200) {
+        fullData.current = orderList.orders[0].map((row: any) => ({
+          id: row.id,
+          customer: row.customer,
+          status: orderStateConverter(row.order_status),
+          orderDate: row.order_date,
+          requiredDate: row.required_date,
+          shippedDate: row.shipped_date,
+          store: row.store,
+          staff: row.staff,
+          detail: <Button color='grey' onClick={() => handleDetail(row.id)}>Detail</Button>
+        }))
+      }
+    }
+    fetchList()
     setData(fullData.current)
     setLoading(false)
   }, [handleDetail, setLoading])
